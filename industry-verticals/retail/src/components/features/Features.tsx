@@ -126,15 +126,15 @@ export const ThreeColGridCentered = (props: FeaturesProps) => {
           return (
             <div className="flex flex-col items-center justify-start 2xl:w-80" key={index}>
               {/* Image */}
-              <div className="bg-accent mb-7 flex h-20 w-20 items-center justify-center rounded-full">
+              <div className="bg-accent ring-accent/30 mb-7 flex h-20 w-20 items-center justify-center rounded-full shadow-sm ring-2">
                 <Image field={image} />
               </div>
               {/* Title and Description */}
               <div className="flex flex-col items-center justify-center">
                 <div className="mb-2 leading-0.5">
-                  <Text tag="h5" className="text-accent" field={title} />
+                  <Text tag="h5" className="text-primary" field={title} />
                 </div>
-                <div className="text-background-muted-light text-center">
+                <div className="text-foreground-muted text-center">
                   <Text field={description} />
                 </div>
               </div>
@@ -152,31 +152,33 @@ export const NumberedGrid = (props: FeaturesProps) => {
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container grid grid-cols-1 gap-4 py-24 md:grid-cols-2 lg:grid-cols-3">
-        {results.map((item, index) => {
-          const title = item?.featureTitle.jsonValue;
-          const description = item?.featureDescription.jsonValue;
-          return (
-            <div
-              className="group text-background hover:bg-accent cursor-pointer rounded-xl p-6"
-              key={index}
-            >
-              {/* Generated Number */}
-              <h1 className="group-hover:text-background text-background-muted-dark mb-2 text-7xl leading-24">
-                {generateIndexes(index)}
-              </h1>
-              {/* Title and Description */}
-              <div>
-                <div className="text-accent group-hover:text-background mb-4 text-2xl leading-8 font-bold">
-                  <Text field={title} />
-                </div>
-                <div className="text-background-muted-dark group-hover:text-background leading-7">
-                  <Text field={description} />
+      <div className="bg-primary text-primary-foreground">
+        <div className="container grid grid-cols-1 gap-4 py-16 md:grid-cols-2 md:py-20 lg:grid-cols-3 lg:py-24">
+          {results.map((item, index) => {
+            const title = item?.featureTitle.jsonValue;
+            const description = item?.featureDescription.jsonValue;
+            return (
+              <div
+                className="group hover:bg-primary-foreground/10 border-primary-foreground/15 cursor-pointer rounded-md border p-6 transition-colors"
+                key={index}
+              >
+                {/* Generated Number */}
+                <h1 className="text-primary-foreground/35 group-hover:text-primary-foreground mb-2 text-6xl leading-none font-bold md:text-7xl">
+                  {generateIndexes(index)}
+                </h1>
+                {/* Title and Description */}
+                <div>
+                  <div className="text-accent group-hover:text-primary-foreground mb-4 text-xl leading-8 font-bold md:text-2xl">
+                    <Text field={title} />
+                  </div>
+                  <div className="text-primary-foreground/85 group-hover:text-primary-foreground leading-relaxed">
+                    <Text field={description} />
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </FeatureWrapper>
   );

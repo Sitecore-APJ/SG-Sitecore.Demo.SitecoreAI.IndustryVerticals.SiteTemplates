@@ -1,5 +1,6 @@
 @utility container {
   margin-inline: auto;
+  max-width: 75rem;
   padding-inline: 1rem;
 }
 

@@ -59,9 +59,18 @@
 }
 
 .main-btn {
-  @apply bg-accent text-background hover:bg-accent/95 flex w-full items-center justify-center rounded-md p-3 text-center text-lg font-semibold transition-all hover:shadow-md;
+  @apply bg-accent text-accent-foreground hover:bg-accent/95 flex w-full items-center justify-center rounded-md p-3 text-center text-lg font-semibold transition-all hover:shadow-md;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
+  }
+}
+
+/* Hero over imagery — MOM-style light copy on primary overlay */
+.hero-banner .arrow-btn {
+  @apply border-b-primary-foreground text-primary-foreground;
+
+  &::after {
+    @apply bg-primary-foreground;
   }
 }

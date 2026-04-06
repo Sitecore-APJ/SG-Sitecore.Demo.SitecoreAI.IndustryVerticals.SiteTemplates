@@ -74,7 +74,7 @@ const HeroBannerCommon = ({
         )}
         {/* Gradient overlay to fade image/video at bottom */}
         {!hideGradientOverlay && (
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent from-85% to-white"></div>
+          <div className="from-primary/45 via-primary/70 to-primary/95 absolute inset-0 bg-gradient-to-b" />
         )}
       </div>
 
@@ -100,18 +100,18 @@ export const Default = ({ params, fields, rendering }: HeroBannerProps) => {
             className={`flex min-h-238 w-full py-10 lg:w-1/2 lg:items-center ${reverseLayout ? 'lg:mr-auto' : 'lg:ml-auto'}`}
           >
             <div className="max-w-182">
-              <div className={clsx({ shim: screenLayer })}>
+              <div className={clsx('text-primary-foreground', { shim: screenLayer })}>
                 {/* Title */}
-                <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] lg:text-left xl:text-[80px]">
+                <h1 className="text-primary-foreground text-center text-4xl leading-[110%] font-bold capitalize md:text-5xl md:leading-[130%] lg:text-left xl:text-6xl">
                   <ContentSdkText field={fields.Title} />
                   {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch] lg:mx-0" />}
                 </h1>
 
                 {/* Description */}
-                <div className="mt-7 text-xl md:text-2xl">
+                <div className="text-primary-foreground/95 mt-7 text-lg md:text-xl">
                   <ContentSdkRichText
                     field={fields.Description}
-                    className="text-center lg:text-left"
+                    className="[&_a]:text-accent text-center lg:text-left [&_a]:underline"
                   />
                 </div>
 
@@ -148,16 +148,19 @@ export const TopContent = ({ params, fields, rendering }: HeroBannerProps) => {
           <div
             className={`flex flex-col items-center py-10 lg:py-44 ${reverseLayout ? 'justify-end' : 'justify-start'}`}
           >
-            <div className={clsx({ shim: screenLayer })}>
+            <div className={clsx('text-primary-foreground', { shim: screenLayer })}>
               {/* Title */}
-              <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] xl:text-[80px]">
+              <h1 className="text-primary-foreground text-center text-4xl leading-[110%] font-bold capitalize md:text-5xl md:leading-[130%] xl:text-6xl">
                 <ContentSdkText field={fields.Title} />
                 {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch]" />}
               </h1>
 
               {/* Description */}
-              <div className="mt-7 text-xl md:text-2xl">
-                <ContentSdkRichText field={fields.Description} className="text-center" />
+              <div className="text-primary-foreground/95 mt-7 text-lg md:text-xl">
+                <ContentSdkRichText
+                  field={fields.Description}
+                  className="[&_a]:text-accent text-center [&_a]:underline"
+                />
               </div>
 
               {/* CTA Link or Placeholder */}

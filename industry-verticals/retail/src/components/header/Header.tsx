@@ -11,6 +11,12 @@ export const Default = (props: HeaderProps): JSX.Element => {
 
   return (
     <div className={`component header bg-background ${styles}`} id={id}>
+      <div className="bg-background-muted/90 border-border border-b">
+        <div className="text-foreground-muted container flex flex-wrap items-center justify-between gap-2 py-1.5 text-[0.6875rem]">
+          <span className="font-semibold tracking-wide">Singapore Government</span>
+          <span className="hidden sm:inline">Accessible digital services</span>
+        </div>
+      </div>
       <div className="container flex items-center gap-3 lg:gap-5">
         <div className="max-lg:order-1 lg:flex-[1_1]">
           <Placeholder name={`header-left-${DynamicPlaceholderId}`} rendering={props.rendering} />

@@ -44,7 +44,7 @@ export const Default = (props: OfferProps) => {
 
   return (
     <div className={`component offers ${styles}`} id={id}>
-      <div className="mx-auto flex w-full max-w-3xl items-center justify-center gap-5 p-2">
+      <div className="bg-background-accent border-border/70 mx-auto flex w-full max-w-5xl items-center justify-center gap-5 border-y p-3">
         <button
           className={`swiper-btn-prev-${uid}`}
           name="previous-offer"

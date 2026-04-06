@@ -49,7 +49,7 @@ export const ProductCard = ({ product, url, className }: ProductCardProps) => {
           <StarRating
             rating={product.Rating || 0}
             showOnlyFilled
-            className="!text-accent mt-1 mb-5"
+            className="text-primary mt-1 mb-5 font-semibold"
           />
 
           <h6 className="!text-foreground mt-auto font-semibold">

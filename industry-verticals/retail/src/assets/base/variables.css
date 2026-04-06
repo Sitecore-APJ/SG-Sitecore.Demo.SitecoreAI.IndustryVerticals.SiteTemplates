@@ -1,26 +1,34 @@
+/* MOM-inspired design tokens: primary navy, orange CTAs, cool neutral surfaces */
 @theme {
-  --color-foreground: #1e1e1e;
-  --color-foreground-light: #505050;
-  --color-foreground-muted: #9f9f9f;
+  --color-primary: #005288;
+  --color-primary-foreground: #ffffff;
 
-  --color-background: #fff;
-  --color-background-accent: #faf3ea;
-  --color-background-muted: #f7f7f7;
-  --color-background-muted-light: #7a7a7a;
-  --color-background-muted-dark: #666;
-  --color-background-surface: #fafafa;
+  --color-foreground: #1a1a1a;
+  --color-foreground-light: #3d3d3d;
+  --color-foreground-muted: #64748b;
 
-  --color-accent: #c1a25f;
+  --color-background: #ffffff;
+  --color-background-accent: #f0f4f7;
+  --color-background-muted: #f1f5f9;
+  --color-background-muted-light: #64748b;
+  --color-background-muted-dark: #475569;
+  --color-background-surface: #f8fafc;
 
-  --color-success: #2ec1ac;
-  --color-danger: #e97171;
+  /* CTAs, icons on blue, accent rules */
+  --color-accent: #f9a844;
+  --color-accent-foreground: #ffffff;
 
-  --color-border: #e8e8e8;
+  --color-success: #0d9488;
+  --color-danger: #dc2626;
 
-  --font-heading: 'Manrope', sans-serif;
-  --font-body: 'Manrope', sans-serif;
+  --color-border: #e2e8f0;
+  --color-ring: #005288;
 
-  --radius-base: 0.5rem;
+  --font-heading: 'Open Sans', system-ui, sans-serif;
+  --font-body: 'Open Sans', system-ui, sans-serif;
+
+  /* Slightly tighter radii — flatter, gov-style UI */
+  --radius-base: 0.375rem;
 
   /*
   This does not show in the theme editor
