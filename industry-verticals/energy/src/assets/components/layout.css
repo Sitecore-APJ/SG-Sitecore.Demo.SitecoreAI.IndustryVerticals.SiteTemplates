@@ -42,15 +42,19 @@
 
 .container-dark-background {
   > .component-content {
-    @apply border-accent;
+    @apply border-primary;
   }
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-accent border-accent text-background;
+    @apply bg-primary border-primary text-primary-foreground;
 
     * {
       @apply text-inherit;
+    }
+
+    a {
+      @apply text-primary-foreground underline-offset-2 hover:underline;
     }
   }
 }

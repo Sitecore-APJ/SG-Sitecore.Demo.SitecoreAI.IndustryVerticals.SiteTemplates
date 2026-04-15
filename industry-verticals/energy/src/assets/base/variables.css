@@ -1,30 +1,38 @@
+/* Design tokens aligned with Singapore government / MOM-style civic UI (navy + amber accent) */
 @theme {
-  --color-foreground: #111828;
-  --color-foreground-light: #4a5565;
-  --color-foreground-muted: #384354;
-  --color-foreground-secondary: #99a1af;
+  --color-foreground: #1a1a1a;
+  --color-foreground-light: #333333;
+  --color-foreground-muted: #666666;
+  --color-foreground-secondary: #888888;
 
-  --color-background: #fff;
-  --color-background-accent: #dbf3f5;
+  --color-background: #ffffff;
+  --color-background-accent: #eaf4f9;
   --color-background-muted: #f5f5f5;
 
-  --color-accent: #3cbed1;
-  --color-accent-dark: #228091;
+  /* Primary navy — headers, bands, links, focus */
+  --color-primary: #00548c;
+  --color-primary-foreground: #ffffff;
+
+  /* Accent amber — primary actions, highlights */
+  --color-accent: #f9a825;
+  --color-accent-foreground: #1a1a1a;
+  /* Darker navy for secondary emphasis, charts, metric labels */
+  --color-accent-dark: #003d66;
 
   --color-success: #2ec1ac;
   --color-warning: #f5a623;
-  --color-danger: #e7000b;
+  --color-danger: #c62828;
 
-  --color-border: #e5e5e5;
+  --color-border: #e0e0e0;
 
-  --font-heading: 'Open Sans', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-heading: 'Open Sans', system-ui, sans-serif;
+  --font-body: 'Open Sans', system-ui, sans-serif;
 
-  --radius-base: 0.5rem;
+  /* MOM-style subtle rounding (~4px) */
+  --radius-base: 0.25rem;
 
   /*
-  This does not show in the theme editor
-  but is used to override the defaults based on the user's selection for radius-base
+  Overrides for radius scale (theme editor may still tweak --radius-base)
   */
   --radius-xs: calc(var(--radius-base) * 0.25);
   --radius-sm: calc(var(--radius-base) * 0.5);

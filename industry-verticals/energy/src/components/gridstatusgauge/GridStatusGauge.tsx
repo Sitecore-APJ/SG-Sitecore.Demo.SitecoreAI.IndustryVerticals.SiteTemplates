@@ -14,7 +14,7 @@ export const Default = (props: GridStatusGaugeProps) => {
 
   return (
     <div className={`container py-10 ${styles}`} id={id}>
-      <div className="flex flex-col items-center rounded-xl border p-10 shadow-sm">
+      <div className="border-border flex flex-col items-center rounded-md border p-8 shadow-sm md:p-10">
         {/* Title */}
         <h2 className="text-foreground mb-6 text-center text-3xl font-bold">
           {t('grid_conditions_status_title') || 'Grid Conditions'}
@@ -42,7 +42,7 @@ export const Default = (props: GridStatusGaugeProps) => {
 
           {/* Center Content */}
           <div className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 text-center">
-            <p className="text-accent-dark text-xs font-bold tracking-wide uppercase">
+            <p className="text-primary text-xs font-bold tracking-wide uppercase">
               {t('grid_conditions_status_subtitle') || 'Operating Reserves'}
             </p>
             <p className="text-foreground text-2xl font-bold">

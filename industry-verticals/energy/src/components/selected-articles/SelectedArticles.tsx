@@ -28,15 +28,15 @@ export const Default = (props: SelectedArticlesProps) => {
   const articles = props.fields?.Articles || [];
 
   return (
-    <section className={`py-16 ${styles}`} id={id}>
+    <section className={`bg-background-accent py-16 md:py-20 ${styles}`} id={id}>
       <div className="container">
         {/* header */}
         <div className="in-[.column-splitter]:px-0">
           <div className="mb-12 text-center">
-            <h2 className="mb-4">
+            <h2 className="text-foreground border-primary mb-4 inline-block border-b-2 pb-2 text-2xl font-bold md:text-3xl">
               <ContentSdkText field={props.fields.Title} />
             </h2>
-            <div className="text-foreground-light text-xl">
+            <div className="text-foreground-light mx-auto mt-4 max-w-2xl text-base leading-relaxed md:text-lg">
               <ContentSdkRichText field={props.fields.Description} />
             </div>
           </div>
@@ -48,7 +48,7 @@ export const Default = (props: SelectedArticlesProps) => {
             return (
               <div
                 key={index}
-                className="bg-background flex flex-col overflow-hidden rounded-lg border shadow-lg"
+                className="border-border bg-background flex flex-col overflow-hidden rounded-md border shadow-sm"
               >
                 <ContentSdkImage
                   field={article.fields.Image}
@@ -60,7 +60,7 @@ export const Default = (props: SelectedArticlesProps) => {
                   </h6>
                   <Link
                     href={article.url}
-                    className="text-accent-dark inline-flex items-center gap-1 self-start text-sm font-bold transition-colors hover:underline"
+                    className="text-primary inline-flex items-center gap-1 self-start text-sm font-semibold transition-colors hover:underline"
                   >
                     {t('read_more') || 'Read More'}
                     <ArrowRight className="h-4 w-5" />

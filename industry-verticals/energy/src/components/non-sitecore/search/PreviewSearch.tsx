@@ -102,14 +102,21 @@ export const PreviewSearchComponent = ({
 
   return (
     <PreviewSearch.Root>
-      <form ref={formRef} onSubmit={handleSubmit} className="flex-1">
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit}
+        className="flex flex-1 flex-col gap-2 sm:flex-row sm:items-stretch"
+      >
         <PreviewSearch.Input
           name="query"
-          className="focus:ring-accent border-border w-full rounded-md border px-3 py-2 text-base focus:border-transparent focus:ring-2 focus:outline-none sm:px-4 sm:py-3 sm:text-lg"
+          className="focus:ring-primary border-border border-border text-foreground w-full flex-1 rounded-md border bg-white px-3 py-2 text-base focus:border-transparent focus:ring-2 focus:outline-none sm:px-4 sm:py-3 sm:text-lg"
           onChange={keyphraseHandler}
           autoComplete="off"
-          placeholder="Search content, products..."
+          placeholder="Search for keywords..."
         />
+        <button type="submit" className="main-btn shrink-0 px-6 py-2 sm:py-3">
+          Search
+        </button>
       </form>
 
       <PreviewSearch.Content

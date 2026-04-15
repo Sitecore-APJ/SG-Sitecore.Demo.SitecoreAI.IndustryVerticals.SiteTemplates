@@ -22,7 +22,10 @@ const ArticleCard = ({ fields, id, url }: ArticlesProps) => {
   const { page } = useSitecore();
   const isPageEditing = page.mode.isEditing;
   return (
-    <div className="flex h-full flex-col overflow-hidden rounded-lg shadow-md" key={id}>
+    <div
+      className="border-border flex h-full flex-col overflow-hidden rounded-md border shadow-sm"
+      key={id}
+    >
       <div className="bg-background-accent relative h-72">
         <ContentSdkImage field={fields?.Image} className="h-full w-full object-cover" />
       </div>
@@ -67,7 +70,7 @@ const ArticleCard = ({ fields, id, url }: ArticlesProps) => {
           )}
           <Link
             href={url}
-            className="hover:text-accent flex items-center gap-2 text-sm font-medium transition-colors"
+            className="text-primary flex items-center gap-2 text-sm font-semibold transition-colors hover:underline"
             aria-label="Read full article"
           >
             {t('read_more') || 'Read More'}

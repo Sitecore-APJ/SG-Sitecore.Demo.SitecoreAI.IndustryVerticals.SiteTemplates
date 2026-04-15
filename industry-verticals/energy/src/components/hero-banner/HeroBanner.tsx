@@ -41,40 +41,46 @@ export const Default = ({ params, fields }: HeroBannerProps) => {
   }
 
   return (
-    <div className={`component hero-banner relative flex items-center py-24 ${styles}`} id={id}>
+    <div
+      className={`component hero-banner bg-primary relative flex min-h-[280px] items-center py-16 md:min-h-[360px] md:py-20 lg:py-24 ${styles}`}
+      id={id}
+    >
       {/* Background Media */}
-      <div className="absolute inset-0 z-1">
-        {!isPageEditing && fields?.Video?.value?.src ? (
-          <video
-            className="h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster={fields.Image?.value?.src}
-          >
-            <source src={fields.Video?.value?.src} type="video/webm" />
-          </video>
-        ) : (
-          <ContentSdkImage field={fields.Image} className="h-full w-full object-cover" priority />
-        )}
-      </div>
-      {/* Gradient Overlay using primary color */}
-      <div className="from-accent-dark to-accent absolute inset-0 z-0 bg-linear-to-r"></div>
+      {hasMedia && (
+        <div className="absolute inset-0 z-0">
+          {!isPageEditing && fields?.Video?.value?.src ? (
+            <video
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster={fields.Image?.value?.src}
+            >
+              <source src={fields.Video?.value?.src} type="video/webm" />
+            </video>
+          ) : (
+            <ContentSdkImage field={fields.Image} className="h-full w-full object-cover" priority />
+          )}
+        </div>
+      )}
 
-      {/* Content Container */}
-      <div className="relative z-3 container mx-auto flex flex-col items-center justify-center">
-        {/* Title - styled in accent/primary color */}
-        <h1 className={`${hasMedia ? 'text-accent' : 'text-background'} text-center`}>
+      {/* Navy scrim — civic portal band over imagery */}
+      <div
+        className={`absolute inset-0 z-[1] ${hasMedia ? 'bg-primary/80' : 'bg-primary'}`}
+        aria-hidden
+      />
+
+      {/* Content */}
+      <div className="relative z-[3] container mx-auto flex flex-col items-center justify-center px-4">
+        <h1 className="text-center text-white">
           <ContentSdkText field={fields.Title} />
         </h1>
 
-        {/* Description/Tagline - white text */}
-        <div className="**:text-background mt-4 max-w-2xl text-xl **:text-center">
+        <div className="mt-4 max-w-2xl text-center text-lg text-white/95 md:text-xl [&_a]:text-white [&_a]:underline [&_p]:m-0">
           <ContentSdkRichText field={fields.Description} />
         </div>
 
-        {/* CTA Buttons */}
         {(fields?.CtaLink || fields?.SecondaryCtaLink) && (
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             {fields?.CtaLink && <Link field={fields.CtaLink} className="main-btn" />}

@@ -28,16 +28,18 @@ export const HomeHighlightedComponent = (): JSX.Element => {
   const { handleSearch } = useSearchTracking();
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="my-12 text-center">
-        <h2 className="text-foreground mb-4 text-3xl font-bold md:text-4xl">Get Inspired</h2>
-        <p className="text-foreground-muted text-xl">
-          Discover amazing products and articles from our latest stories
-        </p>
-      </div>
+    <div className="bg-background-accent w-full py-12 md:py-16">
+      <div className="container mx-auto px-4">
+        <div className="mb-10 text-center md:mb-12">
+          <h2 className="text-foreground border-primary inline-block border-b-2 pb-2 text-2xl font-bold md:text-3xl">
+            Highlights
+          </h2>
+          <p className="text-foreground-muted mx-auto mt-4 max-w-2xl text-base leading-relaxed md:text-lg">
+            Recent updates and featured content from our services.
+          </p>
+        </div>
 
-      <div className="text-foreground my-10 flex w-full justify-around">
-        <div className="grid grid-cols-4 gap-x-5 gap-y-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {articlesToShow.map((a, index) => (
             <ArticleCard
               article={a}

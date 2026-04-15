@@ -42,7 +42,7 @@ export const Default = (props: SocialFollowProps) => {
         <ContentSdkLink field={field} key={key}>
           <FontAwesomeIcon
             icon={icon}
-            className="text-accent-light hover:text-background h-5 w-5 cursor-pointer"
+            className="text-primary-foreground/85 hover:text-primary-foreground h-5 w-5 cursor-pointer"
           />
         </ContentSdkLink>
       ))}

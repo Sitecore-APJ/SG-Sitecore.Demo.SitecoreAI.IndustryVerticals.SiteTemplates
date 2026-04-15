@@ -50,9 +50,9 @@ const GridChart = (props: GridChartProps) => {
 
   return (
     <div className={`container py-10 ${styles}`} id={id}>
-      <div className="flex flex-col rounded-xl border p-10 shadow-sm">
+      <div className="border-border flex flex-col rounded-md border p-8 shadow-sm md:p-10">
         {/* Title */}
-        <h2 className="text-foreground mb-6 text-3xl font-bold">
+        <h2 className="text-foreground border-primary mb-6 inline-block border-b-2 pb-2 text-2xl font-bold md:text-3xl">
           <ContentSdkText field={props.fields.Title} />
         </h2>
 

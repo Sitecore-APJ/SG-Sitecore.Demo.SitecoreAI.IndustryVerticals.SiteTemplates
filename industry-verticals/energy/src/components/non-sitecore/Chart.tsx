@@ -68,15 +68,15 @@ export const Chart = (props: ChartProps) => {
             <Area
               dataKey={props.var_one}
               type={props.lineType || 'monotone'}
-              stroke={props.colors?.forecast1 || 'var(--color-accent)'}
-              fill={props.colors?.forecast1 || 'var(--color-accent)'}
+              stroke={props.colors?.forecast1 || 'var(--color-primary)'}
+              fill={props.colors?.forecast1 || 'var(--color-primary)'}
               {...sharedAreaProps}
             />
             <Area
               dataKey={props.var_two}
               type={props.lineType || 'monotone'}
-              stroke={props.colors?.forecast2 || 'var(--color-accent-dark)'}
-              fill={props.colors?.forecast2 || 'var(--color-accent-dark)'}
+              stroke={props.colors?.forecast2 || 'var(--color-accent)'}
+              fill={props.colors?.forecast2 || 'var(--color-accent)'}
               {...sharedAreaProps}
             />
           </AreaChart>
@@ -106,13 +106,13 @@ export const Chart = (props: ChartProps) => {
             <Line
               dataKey={props.var_one}
               type={props.lineType || 'linear'}
-              stroke={props.colors?.forecast1 || 'var(--color-accent)'}
+              stroke={props.colors?.forecast1 || 'var(--color-primary)'}
               {...sharedLineProps}
             />
             <Line
               dataKey={props.var_two}
               type={props.lineType || 'linear'}
-              stroke={props.colors?.forecast2 || 'var(--color-accent-dark)'}
+              stroke={props.colors?.forecast2 || 'var(--color-accent)'}
               {...sharedLineProps}
             />
           </LineChart>
@@ -125,11 +125,11 @@ export const Chart = (props: ChartProps) => {
       {/* Variables Section */}
       <div className="mb-2 flex flex-col items-end justify-end gap-2 text-sm md:flex-row md:gap-6">
         <div className="flex items-center gap-2">
-          <span className="bg-accent h-1 w-4 rounded" />
+          <span className="bg-primary h-1 w-4 rounded" />
           <span>{props.t(props.var_one) || props.var_one}</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="bg-accent-dark h-1 w-4 rounded" />
+          <span className="bg-accent h-1 w-4 rounded" />
           <span>{props.t(props.var_two) || props.var_two}</span>
         </div>
       </div>

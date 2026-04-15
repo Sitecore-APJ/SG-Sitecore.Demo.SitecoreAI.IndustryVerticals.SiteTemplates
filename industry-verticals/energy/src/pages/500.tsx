@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { SitecoreProvider, SitecorePageProps, Page, ErrorPage } from '@sitecore-content-sdk/nextjs';
 import Layout from 'src/Layout';
 import { GetStaticProps } from 'next';
@@ -8,17 +9,23 @@ import components from '.sitecore/component-map';
 import { JSX } from 'react';
 
 /**
- * Rendered in case if we have 500 error
+ * Rendered in case if we have 500 error (fallback when no Sitecore error page)
  */
 const ServerError = (): JSX.Element => (
   <>
     <Head>
-      <title>500: Server Error</title>
+      <title>500: Server error</title>
     </Head>
-    <div style={{ padding: 10 }}>
-      <h1>500 Internal Server Error</h1>
-      <p>There is a problem with the resource you are looking for, and it cannot be displayed.</p>
-      <a href="/">Go to the Home page</a>
+    <div className="bg-background-accent min-h-[50vh] px-4 py-16 md:py-24">
+      <div className="container mx-auto max-w-lg">
+        <h1 className="text-foreground mb-4 text-3xl font-bold">Internal server error</h1>
+        <p className="text-foreground-light mb-10 text-base leading-relaxed">
+          There is a problem with the resource you are looking for, and it cannot be displayed.
+        </p>
+        <Link href="/" className="main-btn inline-flex">
+          Go to the home page
+        </Link>
+      </div>
     </div>
   </>
 );

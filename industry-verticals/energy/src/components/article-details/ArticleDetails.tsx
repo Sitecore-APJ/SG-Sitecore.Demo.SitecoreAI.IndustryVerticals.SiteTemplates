@@ -55,7 +55,7 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
             <ContentSdkText
               field={fields.Category?.fields?.Category}
               tag="span"
-              className="border-accent text-accent-dark bg-background-accent rounded-md border px-2 py-0.5 font-medium"
+              className="border-primary text-primary bg-background-accent rounded-md border px-2 py-0.5 text-sm font-medium"
             />
 
             {(fields?.PublishedDate?.value || isPageEditing) && (

@@ -71,7 +71,7 @@ export const Default = (props: ArticleListingProps) => {
               <div
                 key={category.name + index}
                 onClick={() => setSelectedCategory(category.name)}
-                className={`bg-background flex aspect-square w-full cursor-pointer flex-col items-center justify-center rounded-lg border shadow-md transition-colors hover:shadow-lg ${selectedCategory === category.name ? 'border-accent pointer-events-none shadow-lg' : ''}`}
+                className={`bg-background flex aspect-square w-full cursor-pointer flex-col items-center justify-center rounded-md border shadow-sm transition-colors hover:shadow-md ${selectedCategory === category.name ? 'border-primary pointer-events-none shadow-md' : 'border-border'}`}
               >
                 <div>
                   <ContentSdkImage
@@ -84,7 +84,7 @@ export const Default = (props: ArticleListingProps) => {
                 </div>
 
                 <div className="mt-2 text-center font-bold xl:mt-5">{category.name}</div>
-                <div className="border-accent text-accent-dark bg-background-accent mt-2 rounded-md border px-2 text-sm font-medium">
+                <div className="border-primary text-primary bg-background-accent mt-2 rounded-md border px-2 text-sm font-medium">
                   {category.count} {t('articles_label') || 'articles'}
                 </div>
               </div>
@@ -107,7 +107,7 @@ export const Default = (props: ArticleListingProps) => {
             <InfiniteScroll isLoading={isLoading} hasMore={hasMore} next={loadMore} threshold={1}>
               {hasMore && (
                 <div className="col-span-full flex justify-center py-4">
-                  <Loader2 className="text-accent-dark h-8 w-8 animate-spin" />
+                  <Loader2 className="text-primary h-8 w-8 animate-spin" />
                 </div>
               )}
             </InfiniteScroll>

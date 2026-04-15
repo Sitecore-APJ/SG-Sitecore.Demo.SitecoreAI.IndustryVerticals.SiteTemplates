@@ -32,7 +32,7 @@ export const Default = (props: PromoProps): JSX.Element => {
   return (
     <div className={`${sxaStyles}`} id={id}>
       <div className="container">
-        <div className="my-12 grid overflow-hidden rounded-xl border shadow transition-shadow hover:shadow-lg lg:grid-cols-2">
+        <div className="border-border my-12 grid overflow-hidden rounded-md border shadow-sm transition-shadow hover:shadow-md lg:grid-cols-2">
           {/* Image Section */}
           <div className={`relative flex items-stretch ${isPromoReversed}`}>
             <ContentSdkImage
@@ -41,7 +41,7 @@ export const Default = (props: PromoProps): JSX.Element => {
             />
           </div>
           <div className="flex flex-col justify-center p-6 lg:p-20">
-            <span className="text-accent-dark mb-1 text-sm font-bold">
+            <span className="text-primary mb-1 text-sm font-bold">
               <ContentSdkText field={props.fields.PromoSubTitle} />
             </span>
             <h4>
@@ -66,7 +66,7 @@ export const Stacked = (props: PromoProps): JSX.Element => {
   return (
     <div className={`${sxaStyles}`} id={id}>
       <div className="container">
-        <div className="my-12 grid overflow-hidden rounded-xl border shadow transition-shadow hover:shadow-lg">
+        <div className="border-border my-12 grid overflow-hidden rounded-md border shadow-sm transition-shadow hover:shadow-md">
           <div className={`relative flex items-stretch ${isPromoReversed}`}>
             <ContentSdkImage
               field={props.fields.PromoImageOne}
@@ -74,7 +74,7 @@ export const Stacked = (props: PromoProps): JSX.Element => {
             />
           </div>
           <div className="flex flex-col justify-center p-6 lg:p-12">
-            <span className="text-accent-dark mb-1 text-sm font-bold">
+            <span className="text-primary mb-1 text-sm font-bold">
               <ContentSdkText field={props.fields.PromoSubTitle} />
             </span>
             <h4>

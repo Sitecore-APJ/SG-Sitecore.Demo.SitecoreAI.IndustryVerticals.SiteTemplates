@@ -20,12 +20,12 @@ const ArticleItemCard = ({ className = '', article }: ArticleItemCardProps) => {
   return (
     <Link
       href={article.url}
-      className="focus:outline-accent"
+      className="focus:outline-primary"
       aria-label={article.name || article.title}
     >
       <ArticleCard.Root
         key={article.id}
-        className={`group border-border hover:shadow-accent/20 relative rounded-md border shadow-sm hover:shadow-md hover:transition-all hover:duration-300 hover:ease-linear ${className}`}
+        className={`group border-border hover:shadow-primary/20 relative rounded-md border shadow-sm hover:shadow-md hover:transition-all hover:duration-300 hover:ease-linear ${className}`}
       >
         <div className="bg-background-muted h-50 w-full overflow-hidden rounded-t-md">
           <Image
@@ -43,7 +43,7 @@ const ArticleItemCard = ({ className = '', article }: ArticleItemCardProps) => {
             {article.name || article.title}
           </ArticleCard.Title>
           <ArticleCard.Subtitle className="text-foreground-light mt-3 flex text-sm">
-            <div className="text-foreground-muted group-hover:text-accent right-0 flex items-center gap-1 text-sm font-medium transition-colors">
+            <div className="text-foreground-muted group-hover:text-primary right-0 flex items-center gap-1 text-sm font-medium transition-colors">
               {t('view') || 'View'} <ArrowRight className="size-3" />
             </div>
           </ArticleCard.Subtitle>

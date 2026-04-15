@@ -20,7 +20,7 @@ const ResultsPerPage = ({ defaultItemsPerPage }: ResultsPerPageProps) => {
           })
         }
       >
-        <Select.Trigger className="focus:outline-accent inline-flex h-10 cursor-pointer items-center gap-1 border-0 bg-transparent px-4 py-1">
+        <Select.Trigger className="focus:outline-primary inline-flex h-10 cursor-pointer items-center gap-1 border-0 bg-transparent px-4 py-1">
           <Select.SelectValue />
           <Select.Icon />
         </Select.Trigger>
@@ -30,7 +30,7 @@ const ResultsPerPage = ({ defaultItemsPerPage }: ResultsPerPageProps) => {
               <Select.SelectItem
                 key={`${option}_${idx}`}
                 value={String(option)}
-                className="text-foreground-muted whitespace-no-wrap hover:text-foreground focus:outline-accent data-[state=checked]:bg-background-accent data-[state=checked]:text-foreground flex h-6 cursor-pointer items-center rounded-sm px-1 leading-none select-none"
+                className="text-foreground-muted whitespace-no-wrap hover:text-foreground focus:outline-primary data-[state=checked]:bg-background-accent data-[state=checked]:text-foreground flex h-6 cursor-pointer items-center rounded-sm px-1 leading-none select-none"
               >
                 <SortSelect.OptionText>{option}</SortSelect.OptionText>
               </Select.SelectItem>

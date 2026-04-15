@@ -11,7 +11,7 @@ const SortOrder = ({ options, selected }: SortOrderProps) => {
   const { onSortChange } = useSearchResultsActions();
   return (
     <SortSelect.Root defaultValue={options[selectedSortIndex]?.name} onValueChange={onSortChange}>
-      <SortSelect.Trigger className="focus:outline-accent inline-flex h-10 cursor-pointer items-center gap-1 border-0 bg-transparent py-1">
+      <SortSelect.Trigger className="focus:outline-primary inline-flex h-10 cursor-pointer items-center gap-1 border-0 bg-transparent py-1">
         <SortSelect.SelectValue>
           {selectedSortIndex > -1 ? options[selectedSortIndex].label : ''}
         </SortSelect.SelectValue>
@@ -23,7 +23,7 @@ const SortOrder = ({ options, selected }: SortOrderProps) => {
             <SortSelect.Option
               value={option}
               key={option.name}
-              className="text-foreground-muted whitespace-no-wrap hover:text-foreground focus:outline-accent data-[state=checked]:bg-background-accent data-[state=checked]:text-foreground flex h-6 cursor-pointer items-center rounded-sm px-1 leading-none select-none"
+              className="text-foreground-muted whitespace-no-wrap hover:text-foreground focus:outline-primary data-[state=checked]:bg-background-accent data-[state=checked]:text-foreground flex h-6 cursor-pointer items-center rounded-sm px-1 leading-none select-none"
             >
               <SortSelect.OptionText>{option.label}</SortSelect.OptionText>
             </SortSelect.Option>

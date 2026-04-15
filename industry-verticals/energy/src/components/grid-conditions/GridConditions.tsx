@@ -57,7 +57,7 @@ const SectionGrid = () => {
     {
       id: 'capacity',
       title: t('grid_available_capacity') || 'Available Capacity',
-      icon: <Activity className="text-accent-dark size-4" />,
+      icon: <Activity className="text-primary size-4" />,
       value: GRID_CONDITIONS_DATA.grid.capacity.value,
       unit: 'MW',
       status: GRID_CONDITIONS_DATA.grid.capacity.status,
@@ -73,7 +73,7 @@ const SectionGrid = () => {
     {
       id: 'frequency',
       title: t('grid_frequency') || 'Frequency',
-      icon: <Activity className="text-accent-dark size-4" />,
+      icon: <Activity className="text-primary size-4" />,
       value: GRID_CONDITIONS_DATA.grid.frequency.value,
       unit: 'Hz',
       status: GRID_CONDITIONS_DATA.grid.frequency.status,
@@ -151,7 +151,7 @@ const SectionTemperature = () => {
           <span>{t('grid_forecast_high') || 'Forecast High'}</span>
         </div>
         <div className="text-center">
-          <p className="text-accent-dark text-3xl font-bold">
+          <p className="text-primary text-3xl font-bold">
             {GRID_CONDITIONS_DATA.temperature.loadIncrease}
           </p>
           <span>{t('grid_load_increase') || 'Load Increase'}</span>

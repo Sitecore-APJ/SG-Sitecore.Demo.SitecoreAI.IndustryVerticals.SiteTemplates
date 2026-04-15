@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import Link from 'next/link';
 
 interface ErrorPageProps {
   statusCode?: number | null | undefined;
@@ -14,14 +15,18 @@ const ErrorPage: NextPage<ErrorPageProps> = ({ statusCode }) => (
     <Head>
       <title>Error</title>
     </Head>
-    <div style={{ padding: 10 }}>
-      <h1>An error occurred</h1>
-      <p>
-        {statusCode
-          ? `A server-side ${statusCode} error occurred.`
-          : 'A client-side error occurred.'}
-      </p>
-      <a href="/">Go to the Home page</a>
+    <div className="bg-background-accent min-h-[50vh] px-4 py-16">
+      <div className="container mx-auto max-w-lg">
+        <h1 className="text-foreground mb-4 text-3xl font-bold">Something went wrong</h1>
+        <p className="text-foreground-light mb-10 text-base leading-relaxed">
+          {statusCode
+            ? `A server-side error occurred (${statusCode}). Please try again later.`
+            : 'A client-side error occurred. Please refresh the page or return home.'}
+        </p>
+        <Link href="/" className="main-btn inline-flex">
+          Go to the home page
+        </Link>
+      </div>
     </div>
   </>
 );

@@ -19,7 +19,7 @@ export const ParentPathLink = ({ text }: { text: string }) => {
   return (
     <Link
       href={parentPath || '/'}
-      className="my-4 flex items-center gap-3 text-sm font-semibold hover:underline"
+      className="text-primary my-4 flex items-center gap-3 text-sm font-semibold hover:underline"
     >
       <ChevronLeft className="size-4" />
       {text || t('back_button_label') || 'Back'}
