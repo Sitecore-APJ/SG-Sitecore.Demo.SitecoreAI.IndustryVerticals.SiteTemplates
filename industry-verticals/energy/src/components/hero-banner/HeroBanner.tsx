@@ -77,7 +77,7 @@ export const Default = ({ params, fields }: HeroBannerProps) => {
           <ContentSdkText field={fields.Title} />
         </h1>
 
-        <div className="mt-4 max-w-2xl text-center text-lg text-white/95 md:text-xl [&_a]:text-white [&_a]:underline [&_p]:m-0">
+        <div className="mt-4 max-w-2xl text-center text-lg text-white md:text-xl [&_a]:text-white [&_a]:underline [&_em]:text-white [&_li]:text-white [&_p]:m-0 [&_p]:text-white [&_span]:text-white [&_strong]:text-white">
           <ContentSdkRichText field={fields.Description} />
         </div>
 
