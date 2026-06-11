@@ -1,0 +1,35 @@
+﻿---
+ID: "72ebfaa1-2d7f-4f5f-b73c-cc13fedcf734"
+Parent: "8e3ad82c-764f-458a-800f-a5efc2e54345"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/industry-verticals/forma-lux/Home/Landing Pages/employment-pass-salary-update-effective-2027/Data/salary-criteria-based-on-experience"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T103334Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <h2 id="experience">Salary criteria based on experience</h2><ul><li><strong>Entry-level professionals:</strong> Must meet the updated minimum salary of <strong>SGD 6,000</strong> (most sectors).</li><li><strong>Mid-level professionals:</strong> Higher thresholds apply based on years of relevant experience.</li><li><strong>Senior professionals:</strong> Significantly higher salary expectations reflecting leadership and expertise.</li></ul>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dbaf3160-14ba-48d3-9072-f2c9756a759c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T103335Z

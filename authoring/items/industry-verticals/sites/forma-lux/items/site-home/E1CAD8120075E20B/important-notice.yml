@@ -1,0 +1,35 @@
+﻿---
+ID: "881b2952-533a-45cc-8797-cd5836e4296d"
+Parent: "8e3ad82c-764f-458a-800f-a5efc2e54345"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/industry-verticals/forma-lux/Home/Landing Pages/employment-pass-salary-update-effective-2027/Data/important-notice"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T103344Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <h2 id="notice">Important notice</h2><ul><li>The updated salary criteria apply to all new Employment Pass applications submitted from the effective date in 2027.</li><li>Applications submitted before the effective date will be assessed based on the previous criteria.</li></ul><div class="footer">Styled with MOM brand colors (primary: #4F46E5, secondary: #A78BFA).</div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "30e70de5-082d-4ac1-abe2-32623720d16b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T103345Z

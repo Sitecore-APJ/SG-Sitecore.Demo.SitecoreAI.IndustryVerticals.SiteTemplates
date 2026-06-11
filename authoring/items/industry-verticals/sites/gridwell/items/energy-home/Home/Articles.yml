@@ -13,14 +13,14 @@ SharedFields:
     <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/040d8df067394821b06a0f164b9651cb?v=9ca7ea03" dam-id="OOtx41rpRA6_5tSlbA7GCg" width="200" height="200" alt="knowledge center banner.png" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/76845/thumbnail" />
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 150
+  Value: 500
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
     <image mediaid="{1A61BB56-2D71-4684-927B-21934B4C7632}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "5fa5b034-ebba-4f40-ac10-4085828510f3"
+  Value: "70d0a0a7-66a8-475c-a54c-8632800977d3"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -71,14 +71,14 @@ Languages:
       Value: Explore Gridwell’s collection of articles covering energy conservation, grid operations, emergency preparedness, and market analysis. These insights are designed to help Texans better understand the grid and make informed energy decisions.
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bc7990cb-f277-44ba-bce5-5e9cec7d0580"
+      Value: "4a29391c-f6f9-4434-9553-0a53935ebd85"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\ranula.gamage@sitecore.com
+        sitecore\swati.gupta@sitecore.com
     - ID: "d3886445-9ee0-46a0-ae5e-8857dd6b395f"
       Hint: pageSummary
       Value: The Gridwell Articles page brings together educational content on energy reliability, conservation, alerts, and market trends. Visitors can explore expert insights and practical guidance that explain how the grid works and how individual actions support system stability.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260205T090606Z
+      Value: 20260611T093051Z

@@ -1,0 +1,202 @@
+﻿---
+ID: "28e59cae-acba-4590-9c30-b56866650d1e"
+Parent: "af977a9b-c5e9-4195-aa90-00c05f900365"
+Template: "98e60957-0783-4a9a-85cc-77dad30e9711"
+Path: "/sitecore/content/industry-verticals/forma-lux/Home/Landing Pages/employment-pass-salary-update-effective-2027"
+SharedFields:
+- ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
+  Hint: SxaTags
+  Value: Employment Pass|Salary Criteria|2027 Updates|Singapore MOM
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{83B9C3BC-6BF4-40F0-A52D-AC1EE94670A0}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "70ff1c23-e9d7-41db-9356-b88531808161"
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "13ed278b-bc55-44cb-a5b4-20e07f53067f"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Employment Pass Salary Update (Effective 2027)
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{424C041E-AA7B-413D-A277-41B8095F88FB}"
+              p:before="*"
+              s:ds="local:/Data/salary-update-summary-notice"
+              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+              s:par="DynamicPlaceholderId=2"
+              s:ph="headless-main" />
+            <r
+              uid="{377CD6E5-CC2C-45E2-B573-D9D8958E383A}"
+              p:after="r[@uid='{424C041E-AA7B-413D-A277-41B8095F88FB}']"
+              s:ds="local:/Data/salary-criteria-based-on-experience"
+              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+              s:par="DynamicPlaceholderId=3"
+              s:ph="headless-main" />
+            <r
+              uid="{3C462EA4-8A97-4395-947F-4D7921AD8686}"
+              p:after="r[@uid='{377CD6E5-CC2C-45E2-B573-D9D8958E383A}']"
+              s:ds="local:/Data/application-impact"
+              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+              s:par="DynamicPlaceholderId=4"
+              s:ph="headless-main" />
+            <r
+              uid="{6A3DA9A9-8DE4-49CB-88D2-FF2B8FD2819C}"
+              p:after="r[@uid='{3C462EA4-8A97-4395-947F-4D7921AD8686}']"
+              s:ds="local:/Data/how-to-apply"
+              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+              s:par="DynamicPlaceholderId=5"
+              s:ph="headless-main" />
+            <r
+              uid="{5056944F-94D0-46CD-B1DA-0A968CE30392}"
+              p:after="*[1=2]"
+              s:ds="local:/Data/important-notice"
+              s:id="{9C6D53E3-FE57-4638-AF7B-6D68304C7A94}"
+              s:par="DynamicPlaceholderId=6"
+              s:ph="headless-main" />
+          </d>
+        </r>
+    - ID: "13fe722e-a8c7-4432-a983-23fb28ffab05"
+      Hint: metadataKeywords
+      Value: |
+        Employment Pass
+        EP salary
+        minimum qualifying salary
+        Singapore MOM
+        2027 salary criteria
+        financial services sector
+        work pass eligibility
+        salary threshold by experience
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T103325Z
+    - ID: "32c603c2-c858-4138-8fcb-8e18a5ad8240"
+      Hint: metadataTitle
+      Value: Employment Pass Salary Update (Effective 2027)
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: EP Salary Update 2027
+    - ID: "4ff91248-33ab-4254-b6f7-2618fd0aebae"
+      Hint: Title
+      Value: Employment Pass Salary Update
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "581d7a02-ce94-4a73-9add-258867a8b60f"
+      Hint: Content
+      Value: |
+        <section aria-label="Summary">
+          <p><strong>Summary:</strong> The minimum qualifying salary has increased. Salary thresholds are now more structured by relevant experience and sector.</p>
+        </section>
+        
+        <section>
+          <h2>Current vs Updated Salary Criteria</h2>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Criteria</th>
+                <th scope="col">Current (Before 2027)</th>
+                <th scope="col">Updated (From 2027)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Minimum salary (most sectors)</th>
+                <td>SGD 5,600</td>
+                <td>SGD 6,000</td>
+              </tr>
+              <tr>
+                <th scope="row">Financial services sector</th>
+                <td>SGD 6,200</td>
+                <td>SGD 6,600</td>
+              </tr>
+              <tr>
+                <th scope="row">Salary progression with experience</th>
+                <td>Gradual increase</td>
+                <td>More structured and higher thresholds</td>
+              </tr>
+              <tr>
+                <th scope="row">Senior professionals</th>
+                <td>~SGD 10,700+</td>
+                <td>~SGD 11,500+ and above</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        
+        <section>
+          <h2>Salary criteria based on experience</h2>
+          <ul>
+            <li><strong>Entry-level professionals:</strong> Must meet the updated minimum salary of <strong>SGD 6,000</strong> (most sectors).</li>
+            <li><strong>Mid-level professionals:</strong> Higher thresholds apply based on years of relevant experience.</li>
+            <li><strong>Senior professionals:</strong> Significantly higher salary expectations reflecting leadership and expertise.</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>How this affects your application</h2>
+          <ul>
+            <li>You must meet the updated salary threshold based on your experience level and sector.</li>
+            <li>Applications will be assessed using the revised salary criteria.</li>
+            <li>Ensure all submitted information reflects the latest requirements.</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>How to apply</h2>
+          <ol>
+            <li><strong>Check your eligibility:</strong> Review the updated salary criteria based on your experience.</li>
+            <li><strong>Prepare your documents:</strong> Ensure your qualifications and employment history are accurate.</li>
+            <li><strong>Submit your application:</strong> Apply through the official MOM portal.</li>
+            <li><strong>Application processing:</strong> Applications will be assessed based on updated criteria.</li>
+            <li><strong>Receive outcome:</strong> You will be notified once a decision has been made.</li>
+          </ol>
+          <p><a href="#">Check your eligibility</a> | <a href="#">Apply on MOM portal</a></p>
+          <p><small>Links are placeholders. Replace with official URLs before publishing.</small></p>
+        </section>
+        
+        <section>
+          <h2>Important notice</h2>
+          <ul>
+            <li>The updated salary criteria apply to all new Employment Pass applications submitted from the effective date in 2027.</li>
+            <li>Applications submitted before the effective date will be assessed based on the previous criteria.</li>
+          </ul>
+        </section>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "6b43d550-6d5f-46ce-ac84-3d9493c45bc6"
+      Hint: metadataDescription
+      Value: Updated criteria effective 2027 for Employment Pass qualifying salaries in Singapore. New minimum salary thresholds by sector and experience, plus guidance on application impact and steps to apply.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5ed4a9ef-56bb-4da3-acdb-99a08f3e0222"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d3886445-9ee0-46a0-ae5e-8857dd6b395f"
+      Hint: pageSummary
+      Value: "Overview of Employment Pass qualifying salary updates effective 2027, including revised minimum salaries (most sectors and financial services), experience-based thresholds, application impact, and how to apply."
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T103624Z

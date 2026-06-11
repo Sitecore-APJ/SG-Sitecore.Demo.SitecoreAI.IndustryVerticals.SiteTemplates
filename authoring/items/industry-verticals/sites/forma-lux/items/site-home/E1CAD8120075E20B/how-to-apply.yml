@@ -1,0 +1,35 @@
+﻿---
+ID: "dd01fb80-a59a-4a64-b14a-c5c414fbc100"
+Parent: "8e3ad82c-764f-458a-800f-a5efc2e54345"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/industry-verticals/forma-lux/Home/Landing Pages/employment-pass-salary-update-effective-2027/Data/how-to-apply"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T103338Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <h2 id="apply">How to apply</h2><ol><li><strong>Check your eligibility:</strong> Review the updated salary criteria based on your experience.</li><li><strong>Prepare your documents:</strong> Ensure your qualifications and employment history are accurate.</li><li><strong>Submit your application:</strong> Apply through the official MOM portal.</li><li><strong>Application processing:</strong> Applications will be assessed based on updated criteria.</li><li><strong>Receive outcome:</strong> You will be notified once a decision has been made.</li></ol><p class="small">Links are placeholders. Replace with official URLs before publishing.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0b9e1a1c-5862-49a3-8a47-8734ff5bd53f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260414T103343Z

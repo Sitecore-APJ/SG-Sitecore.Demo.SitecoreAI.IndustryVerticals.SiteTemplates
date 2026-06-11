@@ -1,0 +1,259 @@
+﻿---
+ID: "bd3080db-0e9b-463a-95c4-88350b17d042"
+Parent: "e9a6e6f8-3dd6-4664-a6e0-1923816f94c6"
+Template: "412bf445-b1a6-4aff-8054-0b21a1febc47"
+Path: "/sitecore/content/industry-verticals/forma-lux/Home/Articles/employment-pass-salary-update"
+SharedFields:
+- ID: "5f90c361-338c-4896-b022-11dafa5c2241"
+  Hint: PublishedDate
+  Value: 20270101T000000Z
+- ID: "97fb669d-5b8e-4829-9a24-06418c315d73"
+  Hint: SxaTags
+  Value: Employment Pass|Work Visas|Salary Requirements|2027 Updates|HR Compliance
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{BB48A4BA-EC0A-4E62-BDD9-FC66F2774A34}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "04e613b0-dfe5-45e3-bf5b-b4747a627675"
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "51fb6a53-b1c9-4adf-aa80-f66e95ffc75c"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "MOMEP - Employment Pass Salary Update"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{90A9DAC7-46DD-43F8-922C-D918A174364F}"
+              s:ds="b9269c37-6247-4342-b058-a2c674dd265e"
+              s:id="{96E7CF65-48A4-47BE-9BB7-DCE50CF7AEA1}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:ph="/headless-main/sxa-articlecontent/article-details-full-width-1" />
+          </d>
+        </r>
+    - ID: "17b75967-9b67-4eb9-bb35-bbe0228ca368"
+      Hint: pageSummary
+      Value: "Overview of the 2027 Employment Pass salary update (illustrative), with a comparison to current thresholds, experience/age-based tiers, and a step-by-step guide and checklist to prepare compliant applications and renewals."
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260414T112754Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: EP Salary Update
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "56a52337-177b-46b4-ae72-6b9083bb6700"
+      Hint: Content
+      Value: |
+        <h1>Employment Pass Salary Update</h1>
+        
+        <h2>Quick summary</h2>
+        <ul>
+          <li>This page explains important changes to Employment Pass (EP) salary requirements effective in 2027, compares the current and updated thresholds, explains how the updated rules vary by experience level, and gives a clear step-by-step guide for applying under the new rules.</li>
+          <li><strong>Important:</strong> The figures below are presented as a clear, actionable example to help you plan. If you are dealing with a specific country or jurisdiction, confirm the exact official numbers and effective dates with the relevant government website or your company’s HR/legal advisor.</li>
+        </ul>
+        
+        <h2>Assumptions used in this guide</h2>
+        <ul>
+          <li>This content assumes a single, nationally administered Employment Pass scheme and that the government has announced higher minimum qualifying salaries applying from <strong>1 January 2027</strong>.</li>
+          <li>Example figures used here (for clarity) are: current baseline minimum salary = <strong>$4,500</strong> per month; 2027 baseline minimum salary = <strong>$5,500</strong> per month. Experience-based thresholds for 2027 are shown as illustrative tiers. If your jurisdiction publishes different figures, substitute those official numbers.</li>
+        </ul>
+        
+        <h2>What’s changing (high-level)</h2>
+        <ul>
+          <li>Baseline minimum qualifying salary rises from <strong>$4,500</strong> to <strong>$5,500</strong> per month (example).</li>
+          <li>New experience-based thresholds mean higher minimums for candidates with more senior experience or older applicants.</li>
+          <li>Transitional provisions: existing EP holders are generally allowed to finish their current pass term but must meet updated thresholds on renewal (assumption). Employers should check official transitional rules.</li>
+        </ul>
+        
+        <h2>Current vs updated salary comparison (example)</h2>
+        <ul>
+          <li><strong>Current (pre-2027) baseline</strong>
+            <ul>
+              <li>Minimum qualifying salary (new EP applications): <strong>$4,500/month</strong></li>
+              <li>Higher thresholds may apply for older applicants (e.g., +<strong>$1,000</strong> for ages 40+)</li>
+            </ul>
+          </li>
+          <li><strong>Updated (effective 1 Jan 2027) baseline</strong>
+            <ul>
+              <li>New minimum qualifying salary (new EP applications): <strong>$5,500/month</strong></li>
+              <li>Experience- and age-adjusted thresholds (see next section)</li>
+            </ul>
+          </li>
+          <li><strong>Practical impact</strong>
+            <ul>
+              <li>Some mid- to senior-level hires who met the old baseline may need higher offers to qualify under 2027 rules.</li>
+              <li>Employers should review all pending and planned hires and adjust offers or roles to match the new thresholds.</li>
+            </ul>
+          </li>
+        </ul>
+        
+        <h2>Experience-based thresholds (2027 — illustrative tiers)</h2>
+        <ul>
+          <li><strong>Entry-level / early-career (0–3 years’ relevant experience)</strong>: <strong>$5,500/month</strong></li>
+          <li><strong>Mid-career (3–7 years’ relevant experience)</strong>: <strong>$7,000/month</strong></li>
+          <li><strong>Senior / specialist (7+ years’ relevant experience)</strong>: <strong>$10,000/month</strong></li>
+        </ul>
+        
+        <h3>Age adjustments</h3>
+        <ul>
+          <li>Applicants aged 40 and above: add <strong>$1,500</strong> to the relevant experience threshold (e.g., senior 7+ yrs → <strong>$11,500</strong>).</li>
+        </ul>
+        
+        <h3>Notes</h3>
+        <ul>
+          <li>“Relevant experience” is industry- and role-specific; employers should document job relevance.</li>
+          <li>Some exceptional candidates (highly specialized skills or outstanding track record) may still qualify at lower salaries under discretionary exceptions — check official guidance.</li>
+        </ul>
+        
+        <h2>Step-by-step application guidance (for employers and applicants)</h2>
+        <ol>
+          <li><strong>Confirm eligibility and thresholds</strong>
+            <ul>
+              <li>Use the official government EP calculator or published guidance to confirm the exact 2027 threshold that applies to your candidate’s experience and age.</li>
+              <li>If using the illustrative figures above, map the candidate to the correct experience band.</li>
+            </ul>
+          </li>
+          <li><strong>Set the employment offer</strong>
+            <ul>
+              <li>Ensure the offered gross monthly salary (and any fixed allowances counted toward qualifying salary) meets or exceeds the applicable 2027 threshold.</li>
+              <li>Include a competitive benefits package and clarify probation terms if applicable.</li>
+            </ul>
+          </li>
+          <li><strong>Prepare required documents (typical list)</strong>
+            <ul>
+              <li>Completed EP application form (online or paper as required)</li>
+              <li>Copy of candidate’s passport and identity page</li>
+              <li>Educational certificates and transcript copies (attested if required)</li>
+              <li>Detailed CV showing relevant work experience with dates and employer contact details</li>
+              <li>Employment contract or letter of offer specifying salary, job title, and duties</li>
+              <li>Company documents (business registration, license, proof of local operations)</li>
+              <li>Any professional licenses or registrations required for the role</li>
+              <li>If applicable: employer justification letter explaining need for the foreign hire and why local candidates were not suitable</li>
+            </ul>
+          </li>
+          <li><strong>Employer files the application</strong>
+            <ul>
+              <li>Apply through the official online portal used in your jurisdiction.</li>
+              <li>Pay the application fee and submit all supporting documents. Incomplete submissions cause delays or rejection.</li>
+            </ul>
+          </li>
+          <li><strong>Track the application and respond to queries</strong>
+            <ul>
+              <li>Typical processing times: expect 3–8 weeks (varies by jurisdiction and case complexity).</li>
+              <li>Monitor the portal and respond promptly to any document requests or clarifications.</li>
+            </ul>
+          </li>
+          <li><strong>Receive outcome and manage next steps</strong>
+            <ul>
+              <li>If approved: arrange for issuance of the pass, work start date, and any onboarding logistics (medical checks, insurance, housing guidance).</li>
+              <li>If refused: review the refusal reason; you may consider re-submitting with stronger justification or a higher salary offer, or lodging an appeal if allowed.</li>
+            </ul>
+          </li>
+          <li><strong>Renewal and compliance</strong>
+            <ul>
+              <li>At renewal, the updated 2027 thresholds may apply; confirm renewal criteria earlier to budget for salary adjustments.</li>
+              <li>Maintain employment records, payroll documentation, and evidence of performance; these support renewals and future audits.</li>
+            </ul>
+          </li>
+        </ol>
+        
+        <h2>Practical tips for employers and applicants</h2>
+        <ul>
+          <li><strong>Audit planned hires now:</strong> review all offers and pending applications to ensure compliance with the 2027 thresholds.</li>
+          <li><strong>Consider alternative pathways:</strong> for candidates who don’t meet the new thresholds, explore local hiring, training, alternative visa categories, or restructured roles with appropriate skills/compensation.</li>
+          <li><strong>Document relevance:</strong> when applying under experience-based thresholds, clearly link past roles and accomplishments to the job’s required skills.</li>
+          <li><strong>Budget for increases:</strong> the higher salary floors will affect compensation planning and total cost of hiring.</li>
+        </ul>
+        
+        <h2>Checklist before submitting under 2027 rules</h2>
+        <ul>
+          <li>Offer salary meets the applicable threshold for experience and age</li>
+          <li>All supporting documents are complete, consistent, and translated/attested if required</li>
+          <li>Employer has written justification for hiring the foreign candidate</li>
+          <li>Application fees and portal requirements confirmed</li>
+          <li>Plan for onboarding, accommodation, and statutory compliance (tax, social contributions)</li>
+        </ul>
+        
+        <h2>Common questions (and short answers)</h2>
+        <dl>
+          <dt>Will current EP holders be affected?</dt>
+          <dd>Assumption: Current holders can usually keep their pass until renewal; they may need to meet new criteria at renewal. Confirm with official guidance.</dd>
+          <dt>Can exceptions be made for outstanding candidates?</dt>
+          <dd>Some jurisdictions allow discretionary exceptions for highly valued talent; these are assessed case-by-case.</dd>
+          <dt>How soon should employers act?</dt>
+          <dd>Start now — review offers and pending recruitment so you can adjust before the 2027 cutoff.</dd>
+        </dl>
+        
+        <h2>Where to get official confirmation</h2>
+        <ul>
+          <li>Always verify final thresholds, effective date, transitional rules, and procedural changes on your jurisdiction’s official immigration or ministry of manpower website.</li>
+          <li>If your company uses immigration counsel or HR service providers, notify them and request a compliance review for 2027.</li>
+        </ul>
+        
+        <h2>Closing note</h2>
+        <p>The 2027 EP salary updates raise the bar for new hires. Employers should review current offers, adjust budgeting, and ensure applications are fully documented. Applicants should confirm that their salary and experience align with the updated thresholds and be ready to provide clear evidence of relevant experience.</p>
+        
+        <p>If you need a printable checklist or an example application timeline tailored to your company size and hiring plan, adapt the steps and numbers here to your official local figures and policies.</p>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "62c99938-d40e-4878-ab77-3464abd79fd5"
+      Hint: ShortDescription
+      Value: |
+        Provides a clear explanation of the updated 2027 Employment Pass (EP) salary requirements. This includes illustrative figures to clarify current and updated salary benchmarks, details on experience- and age-based salary tiers, and a step-by-step guide to the application process.
+        
+        Note: The figures and transition rules presented are for illustration only. Please verify the official thresholds and effective dates applicable to your location.
+    - ID: "7a52d039-c368-46c1-b93d-5cbd5b802f73"
+      Hint: metadataDescription
+      Value: Learn what changes in the 2027 Employment Pass salary requirements (illustrative figures), including updated minimum salary tiers by experience and age, current vs updated comparisons, and a practical application checklist. Always confirm official thresholds for your jurisdiction.
+    - ID: "844baf54-2f0e-42a5-8cab-5f596ea60c3e"
+      Hint: ReadTime
+      Value: 6 min
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b319de75-4e35-4389-a6ef-8ceadfe3d1d3"
+    - ID: "9c8beb3d-e162-4540-bb7d-9504db078f44"
+      Hint: Title
+      Value: Employment Pass Salary Update
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260415T034304Z
+    - ID: "e4df8bb9-c0d9-475d-92b4-dcb526bd6b38"
+      Hint: metadataTitle
+      Value: Employment Pass Salary Update (2027 Salary Requirements Guide)
+    - ID: "f04feaa2-f9a4-4030-907d-18fc3b18b0f4"
+      Hint: metadataKeywords
+      Value: |
+        employment pass
+        EP salary requirements
+        2027 salary update
+        minimum qualifying salary
+        work pass application
+        experience-based salary tiers
+        age-based salary adjustment
+        immigration compliance
+        employer checklist
