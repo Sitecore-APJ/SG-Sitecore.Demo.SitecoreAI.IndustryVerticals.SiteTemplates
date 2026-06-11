@@ -62,6 +62,41 @@ Languages:
     - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
       Hint: __Lock
       Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{0C849E92-802A-435B-812D-2DB4BE3A8D9B}">
+              <p:d />
+            </r>
+            <r
+              uid="{F28ADA70-6DFC-4956-9158-AA0F22146A45}">
+              <p:d />
+            </r>
+            <r
+              uid="{BB70BE12-0EB4-4F76-B83D-72B8F6A6B166}"
+              p:before="*"
+              s:ds="4d5dcb0b-917f-4a4b-8eaf-21951347193d"
+              s:id="{B49CF2D7-7CB2-4918-8F38-2607D956D995}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=4"
+              s:ph="headless-main" />
+            <r
+              uid="{CEDE1544-9034-43CC-8D98-8F8634145589}"
+              p:after="*[1=2]"
+              s:ds="605f5c27-8c5f-4c3d-abbe-d41966027297"
+              s:id="{E3CCF1D0-7855-4898-8BDE-77F83C6A487C}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B556139BC-FA1F-41FD-A6DD-04B9B6D825A4%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles"
+              s:ph="headless-main" />
+            <r
+              uid="{16F37146-9536-4A6D-BD85-CDA7E9ED5B68}">
+              <p:d />
+            </r>
+          </d>
+        </r>
     - ID: "13fe722e-a8c7-4432-a983-23fb28ffab05"
       Hint: metadataKeywords
       Value: grid status, power grid conditions, electricity demand, grid reliability, Texas grid, Gridwell dashboard
@@ -73,7 +108,7 @@ Languages:
       Value: Current Grid Status & Conditions | Gridwell
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Grid Status
+      Value: Workplace safety and health
     - ID: "4ff91248-33ab-4254-b6f7-2618fd0aebae"
       Hint: Title
       Value: Grid Status
@@ -82,7 +117,7 @@ Languages:
       Value: "View the current status of the Texas power grid, including demand levels, supply conditions, and reliability indicators. Gridwell provides real-time visibility into grid conditions so Texans can stay informed and take action when needed."
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3bd76499-66d7-4311-a613-acc7c26fed9f"
+      Value: "09cfa092-498d-4100-9fe1-c65095098feb"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -92,4 +127,4 @@ Languages:
       Value: "The Grid Status page provides real-time insight into electricity demand, supply, and overall system conditions. By offering clear, up-to-date information, Gridwell helps Texans understand grid health and respond appropriately during periods of high demand."
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260611T093009Z
+      Value: 20260611T125942Z
