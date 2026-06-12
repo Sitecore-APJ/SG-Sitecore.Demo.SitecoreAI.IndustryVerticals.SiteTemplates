@@ -1,5 +1,5 @@
 .grid-load-status {
-  @apply inline-flex items-center gap-2 rounded-md border px-2 py-1 text-xs font-bold uppercase;
+  @apply inline-flex items-center gap-2 border px-2 py-1 text-xs font-bold tracking-wide uppercase;
 
   &[data-status='normal'] {
     @apply text-success bg-success/5 border-success/50;
@@ -15,7 +15,7 @@
 }
 
 .grid-outage-status {
-  @apply inline-flex items-center gap-2 rounded-md px-2 py-1 text-xs font-bold;
+  @apply inline-flex items-center gap-2 px-2 py-1 text-xs font-bold tracking-wide uppercase;
 
   &[data-status='restored'] {
     @apply text-foreground-light bg-background-muted;

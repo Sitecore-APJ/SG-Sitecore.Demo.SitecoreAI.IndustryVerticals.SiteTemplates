@@ -37,7 +37,7 @@ const baseRendering = {
 };
 
 const baseFields = {
-  Title: createTextField('Behind the Scenes: How Gridwell Balances Supply and Demand'),
+  Title: createTextField('Behind the Scenes: How Moxa Powers Industrial Connectivity'),
   ShortDescription: createTextField(),
   Content: createRichTextField(),
   Image: createImageField('placeholder'),

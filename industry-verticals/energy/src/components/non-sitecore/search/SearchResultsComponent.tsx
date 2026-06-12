@@ -17,7 +17,8 @@ import { HIGHLIGHTED_ARTICLES_RFKID, SEARCH_WIDGET_ID } from '@/constants/search
 import { useSearchTracking, type Events } from '@/hooks/useSearchTracking';
 
 const SEARCH_CONFIG = {
-  source: process.env.NEXT_PUBLIC_GRIDWELL_SEARCH_SOURCE as string,
+  source: (process.env.NEXT_PUBLIC_MOXA_SEARCH_SOURCE ||
+    process.env.NEXT_PUBLIC_GRIDWELL_SEARCH_SOURCE) as string,
 };
 
 export type ArticleModel = {

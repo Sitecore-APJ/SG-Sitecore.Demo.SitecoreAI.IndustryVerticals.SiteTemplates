@@ -37,12 +37,12 @@ export const Default = (props: SocialFollowProps) => {
   ];
 
   return (
-    <div className="flex space-x-4" id={id}>
+    <div className="flex gap-4" id={id}>
       {socialLinks.map(({ icon, field, key }) => (
         <ContentSdkLink field={field} key={key}>
           <FontAwesomeIcon
             icon={icon}
-            className="text-accent-light hover:text-background h-5 w-5 cursor-pointer"
+            className="hover:text-accent-light h-5 w-5 cursor-pointer text-white/70 transition-colors"
           />
         </ContentSdkLink>
       ))}

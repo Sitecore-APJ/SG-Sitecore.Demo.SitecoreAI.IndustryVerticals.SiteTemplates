@@ -19,53 +19,54 @@ export const Default = (props: HeaderProps): JSX.Element => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  // Close search when route changes
   useEffect(() => {
     setIsSearchOpen(false);
   }, [pathname, searchParams]);
 
   return (
-    <div className={`component header bg-background border-b ${styles}`} id={id}>
-      <div className="container flex items-center gap-4 py-4 lg:gap-6">
+    <div
+      className={`component header bg-background border-border sticky top-0 z-40 border-b ${styles}`}
+      id={id}
+    >
+      <div className="container flex items-center gap-4 py-3 lg:gap-8 lg:py-4">
         <div className="header-block *:shrink max-lg:w-full max-lg:justify-between lg:shrink-0">
           <Placeholder name={`header-left-${DynamicPlaceholderId}`} rendering={props.rendering} />
         </div>
-        <div className="hidden! lg:flex! lg:shrink lg:basis-full">
+        <div className="hidden! lg:flex! lg:shrink lg:basis-full lg:justify-end">
           <Placeholder name={`header-nav-${DynamicPlaceholderId}`} rendering={props.rendering} />
         </div>
 
-        {/* Search Button */}
         <button
           onClick={() => setIsSearchOpen(!isSearchOpen)}
-          className="text-gray-700 transition-colors hover:text-blue-600"
+          className="text-foreground-muted hover:text-accent p-2 transition-colors"
+          aria-label="Search"
         >
           <Search className="size-5" />
         </button>
 
-        {/* Mobile Drawer Trigger */}
         <div className="lg:hidden">
           <Drawer direction="left">
             <DrawerTrigger asChild>
               <button
                 type="button"
                 aria-label="Open menu"
-                className="text-foreground hover:text-foreground-light p-2 transition-colors"
+                className="text-foreground hover:text-accent p-2 transition-colors"
               >
                 <Menu className="h-6 w-6" />
               </button>
             </DrawerTrigger>
 
-            <DrawerContent className="bg-background-accent w-xl! max-w-full! p-5">
+            <DrawerContent className="bg-background w-xl! max-w-full! p-5">
               <div className="flex h-full flex-col">
-                <div className="mb-14 flex items-center justify-between self-end">
+                <div className="mb-8 flex items-center justify-end">
                   <DrawerClose asChild>
-                    <button type="button" aria-label="Close menu">
+                    <button type="button" aria-label="Close menu" className="p-2">
                       <X className="h-5 w-5" />
                     </button>
                   </DrawerClose>
                 </div>
 
-                <div className="mb-6 flex flex-col gap-y-6 px-12">
+                <div className="mb-6 flex flex-col gap-y-6 px-6">
                   <Placeholder
                     name={`header-nav-${DynamicPlaceholderId}`}
                     rendering={props.rendering}
@@ -78,8 +79,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
       </div>
 
       {isSearchOpen && (
-        <div className="border-border bg-background absolute top-full right-0 left-0 z-50 border-b shadow-lg">
-          <div className="mx-auto max-w-7xl px-4 py-4">
+        <div className="border-border bg-background absolute top-full right-0 left-0 z-50 border-b shadow-md">
+          <div className="container py-4">
             <div className="flex items-center gap-2">
               <PreviewSearch
                 rfkId={PREVIEW_WIDGET_ID}
@@ -89,7 +90,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
 
               <button
                 onClick={() => setIsSearchOpen(false)}
-                className="text-foreground-muted hover:text-foreground p-3 transition-colors"
+                className="text-foreground-muted hover:text-accent p-3 transition-colors"
+                aria-label="Close search"
               >
                 <X className="size-5" />
               </button>

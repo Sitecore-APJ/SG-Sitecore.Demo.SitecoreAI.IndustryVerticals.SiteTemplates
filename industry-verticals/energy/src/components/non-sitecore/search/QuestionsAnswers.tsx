@@ -3,7 +3,8 @@ import { ChevronDownIcon } from '@radix-ui/react-icons';
 import { WidgetDataType, useQuestions, widget } from '@sitecore-search/react';
 
 const SEARCH_CONFIG = {
-  source: process.env.NEXT_PUBLIC_GRIDWELL_SEARCH_SOURCE as string,
+  source: (process.env.NEXT_PUBLIC_MOXA_SEARCH_SOURCE ||
+    process.env.NEXT_PUBLIC_GRIDWELL_SEARCH_SOURCE) as string,
 };
 
 type Question = {
@@ -87,7 +88,7 @@ export const QuestionsAnswersComponent = ({
   return (
     <div>
       {((answer && question) || relatedQuestionsResponse.length > 0) && (
-        <div className="border-border bg-background mb-8 rounded-lg border p-5 shadow-sm">
+        <div className="border-border bg-background mb-8 border p-5">
           {answer && question && <MainQuestionComponent answer={answer} question={question} />}
           {relatedQuestionsResponse.length > 0 && (
             <RelatedQuestionsComponent relatedQuestions={relatedQuestionsResponse} />

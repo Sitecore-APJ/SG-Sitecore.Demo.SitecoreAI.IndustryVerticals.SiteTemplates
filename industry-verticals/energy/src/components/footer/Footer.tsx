@@ -33,13 +33,9 @@ type FooterProps = {
 };
 
 const Footer = (props: FooterProps): JSX.Element => {
-  // styles
   const sxaStyles = `${props.params?.styles || ''}`;
-
-  // rendering item id
   const id = props.params.RenderingIdentifier;
 
-  // placeholders keys
   const phKeyOne = `footer-list-first-${props?.params?.DynamicPlaceholderId}`;
   const phKeyTwo = `footer-list-second-${props?.params?.DynamicPlaceholderId}`;
   const phKeyThree = `footer-list-third-${props?.params?.DynamicPlaceholderId}`;
@@ -64,53 +60,50 @@ const Footer = (props: FooterProps): JSX.Element => {
   ];
 
   return (
-    <div className={`bg-foreground py-12 text-white ${sxaStyles}`} id={id}>
+    <div className={`bg-accent-dark py-14 text-white ${sxaStyles}`} id={id}>
       <div className="container mx-auto">
-        {/* content section */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {/* footer content data */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="mb-4 flex max-w-40 space-x-2">
+            <div className="mb-6 flex max-w-44">
               <ContentSdkImage field={props.fields.Logo} width={200} />
             </div>
-            <div className="**:text-foreground-secondary mb-4">
+            <div className="mb-6 text-sm leading-relaxed **:text-white/70">
               <RichText field={props.fields.Description} />
             </div>
             <Placeholder name={phKeyFour} rendering={props.rendering} />
           </div>
 
-          {/* footer link lists */}
           {sections.map(({ key, title, content }) => (
             <div key={key}>
-              <div className="mb-4 text-lg font-semibold">{title}</div>
-              <div className="text-foreground-secondary">{content}</div>
+              <div className="mb-4 text-sm font-bold tracking-wide uppercase">{title}</div>
+              <div className="[&_a:hover]:text-accent-light text-sm text-white/70 [&_a]:text-white/70 [&_a]:transition-colors">
+                {content}
+              </div>
             </div>
           ))}
         </div>
 
-        {/* seperator */}
-        <hr className="border-foreground-light my-8" />
+        <hr className="my-10 border-white/20" />
 
-        {/* copyright section */}
-        <div className="flex flex-col items-center justify-between md:flex-row">
-          <p className="text-foreground-secondary order-2 mt-8 text-sm md:order-1 md:mt-0">
+        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+          <p className="order-2 text-sm text-white/60 md:order-1">
             <ContentSdkText field={props.fields.CopyrightText} />
           </p>
-          <div className="mt-4 grid grid-cols-2 justify-between gap-6 md:order-2 md:mt-0 md:flex">
+          <div className="order-1 flex flex-wrap justify-center gap-6 md:order-2">
             <ContentSdkLink
-              className="text-foreground-secondary hover:text-background text-sm"
+              className="hover:text-accent-light text-sm text-white/60 transition-colors"
               field={props.fields.PolicyText}
             />
             <ContentSdkLink
-              className="text-foreground-secondary hover:text-background text-sm"
+              className="hover:text-accent-light text-sm text-white/60 transition-colors"
               field={props.fields.TermsText}
             />
             <ContentSdkLink
-              className="text-foreground-secondary hover:text-background text-sm"
+              className="hover:text-accent-light text-sm text-white/60 transition-colors"
               field={props.fields.CookiesText}
             />
             <ContentSdkLink
-              className="text-foreground-secondary hover:text-background text-sm"
+              className="hover:text-accent-light text-sm text-white/60 transition-colors"
               field={props.fields.ContactText}
             />
           </div>

@@ -45,10 +45,10 @@ const baseRendering = {
 };
 
 const baseFields = {
-  TitleOne: createTextField('About Gridwell'),
+  TitleOne: createTextField('About Moxa'),
   TitleTwo: createTextField('Contact'),
   TitleThree: createTextField('Quick Links'),
-  CopyrightText: createTextField('© 2025 Gridwell. All rights reserved.'),
+  CopyrightText: createTextField('© 2025 Moxa Inc. All rights reserved.'),
   PolicyText: createLinkField('Privacy'),
   TermsText: createLinkField('Terms'),
   CookiesText: createLinkField('Cookies'),

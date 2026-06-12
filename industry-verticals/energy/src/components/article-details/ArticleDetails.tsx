@@ -55,7 +55,7 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
             <ContentSdkText
               field={fields.Category?.fields?.Category}
               tag="span"
-              className="border-accent text-accent-dark bg-background-accent rounded-md border px-2 py-0.5 font-medium"
+              className="text-accent border-accent/30 border px-2 py-0.5 text-xs font-bold tracking-wide uppercase"
             />
 
             {(fields?.PublishedDate?.value || isPageEditing) && (
@@ -94,7 +94,7 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
             </button>
           </div>
 
-          <ContentSdkImage field={fields?.Image} className="h-auto w-full rounded-lg" />
+          <ContentSdkImage field={fields?.Image} className="h-auto w-full" />
 
           <div>
             <ContentSdkRichText field={fields?.Content} />
@@ -107,11 +107,14 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
       {fields.Tags && fields.Tags.length > 0 && (
         <div className="container">
           <div className="mx-auto max-w-4xl">
-            <div className="bg-background w-full space-y-4 rounded-lg border p-6 shadow-md">
+            <div className="bg-background border-border w-full space-y-4 border p-6">
               <h6>{t('tags_label') || 'Tags'}</h6>
               <div className="flex flex-wrap gap-4">
                 {fields.Tags.map((tag) => (
-                  <span key={tag.id} className="bg-background-muted rounded-sm px-2 py-0.5 text-sm">
+                  <span
+                    key={tag.id}
+                    className="bg-background-muted text-foreground-light px-2 py-0.5 text-sm"
+                  >
                     <ContentSdkText field={tag.fields.Tag} />
                   </span>
                 ))}

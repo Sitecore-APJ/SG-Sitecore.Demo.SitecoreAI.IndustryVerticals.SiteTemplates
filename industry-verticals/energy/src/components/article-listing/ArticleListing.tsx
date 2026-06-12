@@ -71,7 +71,7 @@ export const Default = (props: ArticleListingProps) => {
               <div
                 key={category.name + index}
                 onClick={() => setSelectedCategory(category.name)}
-                className={`bg-background flex aspect-square w-full cursor-pointer flex-col items-center justify-center rounded-lg border shadow-md transition-colors hover:shadow-lg ${selectedCategory === category.name ? 'border-accent pointer-events-none shadow-lg' : ''}`}
+                className={`bg-background border-border hover:border-accent flex aspect-square w-full cursor-pointer flex-col items-center justify-center border transition-colors ${selectedCategory === category.name ? 'border-accent pointer-events-none' : ''}`}
               >
                 <div>
                   <ContentSdkImage
@@ -84,7 +84,7 @@ export const Default = (props: ArticleListingProps) => {
                 </div>
 
                 <div className="mt-2 text-center font-bold xl:mt-5">{category.name}</div>
-                <div className="border-accent text-accent-dark bg-background-accent mt-2 rounded-md border px-2 text-sm font-medium">
+                <div className="text-accent border-accent/30 mt-2 border px-2 text-sm font-bold">
                   {category.count} {t('articles_label') || 'articles'}
                 </div>
               </div>

@@ -12,7 +12,8 @@ import { DEFAULT_IMG_URL, PREVIEW_WIDGET_ID } from '@/constants/search';
 import { useSearchTracking, type Events } from '@/hooks/useSearchTracking';
 
 const SEARCH_CONFIG = {
-  source: process.env.NEXT_PUBLIC_GRIDWELL_SEARCH_SOURCE as string,
+  source: (process.env.NEXT_PUBLIC_MOXA_SEARCH_SOURCE ||
+    process.env.NEXT_PUBLIC_GRIDWELL_SEARCH_SOURCE) as string,
 };
 
 type ArticleModel = {
@@ -105,7 +106,7 @@ export const PreviewSearchComponent = ({
       <form ref={formRef} onSubmit={handleSubmit} className="flex-1">
         <PreviewSearch.Input
           name="query"
-          className="focus:ring-accent border-border w-full rounded-md border px-3 py-2 text-base focus:border-transparent focus:ring-2 focus:outline-none sm:px-4 sm:py-3 sm:text-lg"
+          className="focus:ring-accent border-border w-full border px-3 py-2 text-base focus:border-transparent focus:ring-2 focus:outline-none sm:px-4 sm:py-3 sm:text-lg"
           onChange={keyphraseHandler}
           autoComplete="off"
           placeholder="Search content, products..."

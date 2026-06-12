@@ -42,12 +42,12 @@
 
 .container-dark-background {
   > .component-content {
-    @apply border-accent;
+    @apply border-accent-dark;
   }
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-accent border-accent text-background;
+    @apply bg-accent-dark border-accent-dark text-background;
 
     * {
       @apply text-inherit;

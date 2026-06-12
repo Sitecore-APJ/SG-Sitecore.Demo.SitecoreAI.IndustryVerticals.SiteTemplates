@@ -22,19 +22,19 @@ const ArticleCard = ({ fields, id, url }: ArticlesProps) => {
   const { page } = useSitecore();
   const isPageEditing = page.mode.isEditing;
   return (
-    <div className="flex h-full flex-col overflow-hidden rounded-lg shadow-md" key={id}>
-      <div className="bg-background-accent relative h-72">
+    <div className="border-border flex h-full flex-col overflow-hidden border bg-white" key={id}>
+      <div className="bg-background-accent relative h-56">
         <ContentSdkImage field={fields?.Image} className="h-full w-full object-cover" />
       </div>
 
-      <div className="flex grow flex-col p-6 pt-8">
+      <div className="flex grow flex-col p-6">
         <div className="mb-4 flex flex-wrap items-center justify-between gap-4">
           {fields.Category.fields.Category?.value && (
-            <span className="bg-background-muted text-foreground-muted rounded-md border px-2 py-1 text-xs font-semibold">
+            <span className="text-accent border-accent/30 border px-2 py-0.5 text-xs font-bold tracking-wide uppercase">
               <ContentSdkText field={fields.Category.fields.Category} />
             </span>
           )}
-          <div className="flex items-center gap-2 text-sm">
+          <div className="text-foreground-muted flex items-center gap-2 text-sm">
             {(fields?.PublishedDate?.value || isPageEditing) && (
               <div className="flex items-center gap-1">
                 <Calendar className="size-3" />
@@ -49,25 +49,25 @@ const ArticleCard = ({ fields, id, url }: ArticlesProps) => {
           </div>
         </div>
         {(fields?.Title?.value || isPageEditing) && (
-          <div className="mb-3 font-bold wrap-break-word hyphens-auto">
+          <div className="mb-3 text-lg font-bold wrap-break-word hyphens-auto">
             <ContentSdkText field={fields?.Title} />
           </div>
         )}
         {(fields?.ShortDescription?.value || isPageEditing) && (
-          <div className="mb-4 grow text-sm leading-relaxed wrap-break-word hyphens-auto">
+          <div className="text-foreground-light mb-4 grow text-sm leading-relaxed wrap-break-word hyphens-auto">
             <ContentSdkRichText field={fields?.ShortDescription} />
           </div>
         )}
-        <div className="mt-auto flex items-center justify-between border-t pt-4">
+        <div className="border-border mt-auto flex items-center justify-between border-t pt-4">
           {(fields?.PublishedDate?.value || isPageEditing) && (
-            <div className="flex items-center gap-1 text-sm">
+            <div className="text-foreground-muted flex items-center gap-1 text-sm">
               <User className="size-3" />
               <ContentSdkText field={fields?.Author?.fields?.AuthorName} tag="p" />
             </div>
           )}
           <Link
             href={url}
-            className="hover:text-accent flex items-center gap-2 text-sm font-medium transition-colors"
+            className="text-accent hover:text-accent-dark flex items-center gap-2 text-sm font-bold transition-colors"
             aria-label="Read full article"
           >
             {t('read_more') || 'Read More'}

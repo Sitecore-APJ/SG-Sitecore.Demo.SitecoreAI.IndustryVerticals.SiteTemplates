@@ -28,42 +28,40 @@ export const Default = (props: SelectedArticlesProps) => {
   const articles = props.fields?.Articles || [];
 
   return (
-    <section className={`py-16 ${styles}`} id={id}>
+    <section className={`bg-background-accent py-16 lg:py-20 ${styles}`} id={id}>
       <div className="container">
-        {/* header */}
         <div className="in-[.column-splitter]:px-0">
           <div className="mb-12 text-center">
             <h2 className="mb-4">
               <ContentSdkText field={props.fields.Title} />
             </h2>
-            <div className="text-foreground-light text-xl">
+            <div className="text-foreground-light text-lg">
               <ContentSdkRichText field={props.fields.Description} />
             </div>
           </div>
         </div>
 
-        {/* article list section */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {articles.map((article, index) => {
             return (
               <div
                 key={index}
-                className="bg-background flex flex-col overflow-hidden rounded-lg border shadow-lg"
+                className="bg-background border-border flex flex-col overflow-hidden border"
               >
                 <ContentSdkImage
                   field={article.fields.Image}
-                  className="h-36 w-full shrink-0 object-cover"
+                  className="h-40 w-full shrink-0 object-cover"
                 />
                 <div className="flex grow flex-col justify-between p-6">
-                  <h6 className="mb-4 text-lg">
+                  <h6 className="mb-4 text-base leading-snug font-bold">
                     <ContentSdkText field={article.fields.Title} />
                   </h6>
                   <Link
                     href={article.url}
-                    className="text-accent-dark inline-flex items-center gap-1 self-start text-sm font-bold transition-colors hover:underline"
+                    className="text-accent hover:text-accent-dark inline-flex items-center gap-1 self-start text-sm font-bold tracking-wide uppercase transition-colors"
                   >
                     {t('read_more') || 'Read More'}
-                    <ArrowRight className="h-4 w-5" />
+                    <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
               </div>

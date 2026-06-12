@@ -25,7 +25,7 @@ const ArticleItemCard = ({ className = '', article }: ArticleItemCardProps) => {
     >
       <ArticleCard.Root
         key={article.id}
-        className={`group border-border hover:shadow-accent/20 relative rounded-md border shadow-sm hover:shadow-md hover:transition-all hover:duration-300 hover:ease-linear ${className}`}
+        className={`group border-border hover:border-accent relative border bg-white transition-colors hover:transition-all hover:duration-300 hover:ease-linear ${className}`}
       >
         <div className="bg-background-muted h-50 w-full overflow-hidden rounded-t-md">
           <Image

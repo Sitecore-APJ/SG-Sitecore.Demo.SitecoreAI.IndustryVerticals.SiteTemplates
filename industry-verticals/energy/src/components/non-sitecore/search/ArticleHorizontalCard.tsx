@@ -27,7 +27,7 @@ const ArticleHorizontalItemCard = ({ className = '', article }: ArticleCardItemC
     >
       <ArticleCard.Root
         key={article.id}
-        className={`group border-border hover:shadow-accent/20 bg-background relative my-4 flex max-h-52 w-full flex-row flex-nowrap rounded-md border p-6 shadow-sm transition-shadow hover:shadow-md ${className}`}
+        className={`group border-border hover:border-accent bg-background relative my-4 flex max-h-52 w-full flex-row flex-nowrap border p-6 transition-colors ${className}`}
       >
         {validImageUrl && (
           <div className="bg-background-muted w-1/4 flex-none overflow-hidden rounded">
@@ -48,7 +48,7 @@ const ArticleHorizontalItemCard = ({ className = '', article }: ArticleCardItemC
           <ArticleCard.Subtitle className="text-foreground-light mt-3 line-clamp-2 text-sm">
             {article.description}
           </ArticleCard.Subtitle>
-          <div className="text-foreground bg-background-accent absolute top-4 right-4 rounded-md px-2.5 py-0.5 text-xs font-semibold">
+          <div className="text-accent border-accent/30 bg-background absolute top-4 right-4 border px-2.5 py-0.5 text-xs font-bold tracking-wide uppercase">
             {article.type}
           </div>
         </div>

@@ -30,16 +30,18 @@
   @apply border-r;
 }
 
+/* Moxa primary CTA — solid teal, sharp corners */
 .main-btn {
-  @apply bg-accent text-background hover:bg-accent/95 flex items-center justify-center rounded-md px-6 py-3 text-center text-lg font-semibold transition-all hover:shadow-md;
+  @apply bg-accent text-background hover:bg-accent/90 inline-flex items-center justify-center px-8 py-3 text-center text-sm font-bold tracking-wide uppercase transition-colors;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
   }
 }
 
+/* Moxa ghost CTA — white border on dark backgrounds */
 .secondary-btn {
-  @apply bg-background text-foreground hover:bg-background/95 flex items-center justify-center rounded-md px-6 py-3 text-center text-lg font-semibold transition-all hover:shadow-md;
+  @apply border-background text-background hover:bg-background/10 inline-flex items-center justify-center border-2 bg-transparent px-8 py-3 text-center text-sm font-bold tracking-wide uppercase transition-colors;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
@@ -47,15 +49,11 @@
 }
 
 .outline-btn {
-  @apply border-border hover:bg-background-muted rounded-md border px-4 py-1.5 text-sm transition-colors;
+  @apply border-accent text-accent hover:bg-accent hover:text-background inline-flex items-center justify-center border-2 px-6 py-2 text-sm font-bold tracking-wide uppercase transition-colors;
 }
 
 .simple-btn {
-  @apply bg-background-muted flex items-center gap-2 rounded-md border px-2 py-1 text-sm font-semibold shadow-sm transition-all;
-
-  &:hover {
-    @apply shadow-md;
-  }
+  @apply bg-background border-border text-foreground hover:border-accent hover:text-accent inline-flex items-center gap-2 border px-4 py-2 text-sm font-semibold transition-colors;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
@@ -66,12 +64,12 @@
   }
 
   &.inverted {
-    @apply bg-foreground text-background hover:bg-foreground/90;
+    @apply bg-accent-dark text-background hover:bg-accent border-accent-dark;
   }
 }
 
 .info-card {
-  @apply bg-background space-y-4 rounded-lg border p-6 text-sm shadow-sm;
+  @apply bg-background border-border space-y-4 border p-6 text-sm;
 
   .info-card-title {
     @apply text-foreground mb-6 flex items-center gap-2 text-base font-bold;
@@ -80,4 +78,13 @@
       @apply size-5;
     }
   }
+}
+
+/* Navigation items */
+.navigation-item {
+  @apply text-foreground hover:text-accent text-sm font-medium tracking-wide transition-colors;
+}
+
+.navigation-item-primary {
+  @apply text-foreground hover:text-accent text-sm font-medium tracking-wide uppercase transition-colors;
 }

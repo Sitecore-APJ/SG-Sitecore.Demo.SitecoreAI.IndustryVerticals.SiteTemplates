@@ -28,8 +28,6 @@ export const Default = ({ params, fields }: HeroBannerProps) => {
   const { styles, RenderingIdentifier: id } = params;
   const isPageEditing = page.mode.isEditing;
 
-  const hasMedia = fields?.Video?.value?.src || fields?.Image?.value?.src;
-
   if (!fields) {
     return isPageEditing ? (
       <div className={`component hero-banner ${styles}`} id={id}>
@@ -41,7 +39,10 @@ export const Default = ({ params, fields }: HeroBannerProps) => {
   }
 
   return (
-    <div className={`component hero-banner relative flex items-center py-24 ${styles}`} id={id}>
+    <div
+      className={`component hero-banner relative flex min-h-[420px] items-center py-16 lg:min-h-[480px] lg:py-24 ${styles}`}
+      id={id}
+    >
       {/* Background Media */}
       <div className="absolute inset-0 z-1">
         {!isPageEditing && fields?.Video?.value?.src ? (
@@ -59,25 +60,23 @@ export const Default = ({ params, fields }: HeroBannerProps) => {
           <ContentSdkImage field={fields.Image} className="h-full w-full object-cover" priority />
         )}
       </div>
-      {/* Gradient Overlay using primary color */}
-      <div className="from-accent-dark to-accent absolute inset-0 z-0 bg-linear-to-r"></div>
 
-      {/* Content Container */}
-      <div className="relative z-3 container mx-auto flex flex-col items-center justify-center">
-        {/* Title - styled in accent/primary color */}
-        <h1 className={`${hasMedia ? 'text-accent' : 'text-background'} text-center`}>
+      {/* Navy overlay — Moxa hero treatment */}
+      <div className="bg-accent-dark/85 absolute inset-0 z-0"></div>
+
+      {/* Content Container — left-aligned like moxa.com */}
+      <div className="relative z-3 container mx-auto flex flex-col items-start justify-center">
+        <h1 className="text-background max-w-3xl text-left">
           <ContentSdkText field={fields.Title} />
         </h1>
 
-        {/* Description/Tagline - white text */}
-        <div className="**:text-background mt-4 max-w-2xl text-xl **:text-center">
+        <div className="**:text-background/90 mt-4 max-w-2xl text-lg **:text-left">
           <ContentSdkRichText field={fields.Description} />
         </div>
 
-        {/* CTA Buttons */}
         {(fields?.CtaLink || fields?.SecondaryCtaLink) && (
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            {fields?.CtaLink && <Link field={fields.CtaLink} className="main-btn" />}
+          <div className="mt-8 flex flex-wrap gap-4">
+            {fields?.CtaLink && <Link field={fields.CtaLink} className="secondary-btn" />}
             {fields?.SecondaryCtaLink && (
               <Link field={fields.SecondaryCtaLink} className="secondary-btn" />
             )}

@@ -16,13 +16,13 @@ export const Default = ({ params, fields, rendering }: SectionWrapperProps) => {
   const componentPlaceholderKey = `section-wrapper-content-${params.DynamicPlaceholderId}`;
 
   return (
-    <section className={`component section-wrapper py-10 lg:py-16 ${styles}`} id={id}>
+    <section className={`component section-wrapper py-12 lg:py-20 ${styles}`} id={id}>
       <div className="container">
-        <div className="mb-12 space-y-4 in-[.header-text-position-center]:text-center in-[.header-text-position-left]:text-left in-[.header-text-position-right]:text-right">
+        <div className="mb-12 space-y-3 in-[.header-text-position-center]:text-center in-[.header-text-position-left]:text-left in-[.header-text-position-right]:text-right">
           <h2>
             <Text field={fields.Title} />
           </h2>
-          <p className="text-foreground-light text-xl">
+          <p className="text-foreground-light text-lg">
             <Text field={fields.Description} />
           </p>
         </div>

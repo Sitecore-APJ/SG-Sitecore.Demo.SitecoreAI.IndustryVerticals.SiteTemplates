@@ -32,7 +32,7 @@ export const createMockArticles = (count: number): Article[] =>
     name: `article${i + 1}`,
     url: `/articles/article-${i + 1}`,
     fields: {
-      Title: createTextField('Behind the Scenes: How Gridwell Balances Supply and Demand'),
+      Title: createTextField('Behind the Scenes: How Moxa Powers Industrial Connectivity'),
       ShortDescription: createTextField(),
       Content: createRichTextField(),
       Image: createImageField('placeholder'),

@@ -171,7 +171,7 @@ const SectionOutages = () => {
         {t('grid_current_outages') || 'Current Outages'}
       </h6>
       {GRID_CONDITIONS_DATA.outages.map((outage, index) => (
-        <div key={index} className="flex justify-between rounded-md border px-4 py-3">
+        <div key={index} className="border-border flex justify-between border px-4 py-3">
           <span className="font-semibold">{outage.area}</span>
           <span className="grid-outage-status" data-status={outage.status.value}>
             {t(outage.status.tLabel) || outage.status.value}
