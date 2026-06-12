@@ -1,0 +1,36 @@
+﻿---
+ID: "7c018450-763c-40d3-bd6e-ae008d01ad14"
+Parent: "fc6fda6a-2e85-4745-9fa6-c065ca8840c9"
+Template: "c2dc4690-af44-48c7-bb21-90d1ad246732"
+Path: "/sitecore/content/industry-verticals/moxa/Settings/Redirects"
+BranchID: "50213d5e-83f8-4fa7-a91d-825e61c7b8a2"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{DC338247-8B52-4159-8095-88F00E323E2D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260112T100955Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\neli.kostadinova@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\neli.kostadinova@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "200888f0-d03a-4332-910a-e9cd09be32e2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mick.wingert@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260605T071932Z

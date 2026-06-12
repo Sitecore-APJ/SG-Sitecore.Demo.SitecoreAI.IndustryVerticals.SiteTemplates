@@ -72,14 +72,14 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "36aa7a86-94fb-4e96-8335-9c7a6f4978d0"
+      Value: "74de3e9d-8e99-41e2-9cfb-956f86d64ed6"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\Anonymous
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260612T061246Z
+      Value: 20260612T105412Z
 - Language: "es-ES"
   Versions:
   - Version: 1

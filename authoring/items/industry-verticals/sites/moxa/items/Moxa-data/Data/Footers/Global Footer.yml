@@ -7,15 +7,18 @@ SharedFields:
 - ID: "2895a16e-c1b8-4e79-959a-802d5bc81a5a"
   Hint: Logo
   Value: |
-    <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/6dd78aa2fc7b4dfa8f0ec3699b4e32a9?v=f36ae7dd" dam-id="jCMds1N0Q8WFy1I6YZgwUg" width="88" height="22" alt="Gridwell Logo.svg" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/81368/thumbnail" />
+    <Image src="https://moxa-dam-verticals.sitecoresandbox.cloud/api/public/content/e8affde6b04d48f6add697ebeb332c2e?v=4499a224" dam-id="TOnpIKrQTMu7LfPj0b89xg" width="169" height="25" alt="moxa-logo.svg" dam-content-type="Image" thumbnailsrc="https://moxa-dam-verticals.sitecoresandbox.cloud/api/gateway/93012/thumbnail" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "831d0c46-51b3-467a-bb05-c51cf4f34c8f"
+  Value: "2e2546e2-f2fe-42c9-89d1-2261572408f4"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260113T114314Z
@@ -40,13 +43,13 @@ Languages:
         <div class="ck-content"><p>Empowering minds, shaping futures, and building tomorrow's leaders through excellence in education and research.</p></div>
     - ID: "775b58bb-13a1-426d-86e5-765ad797e407"
       Hint: TitleOne
-      Value: About Gridwell
+      Value: About MOXA
     - ID: "79d2d2a7-b0d5-421c-89fb-b7d040f56d26"
       Hint: CopyrightText
       Value: © 2026 Gridwell. All rights reserved.
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "11069a94-bdf9-42c6-b559-f5786f53b784"
+      Value: "0e7e1431-236c-4f7b-8fbd-e98a3b8d5582"
     - ID: "9f2b5ebe-6b3a-4128-b6e9-6b7adf4e86da"
       Hint: PolicyText
       Value: |
@@ -54,13 +57,13 @@ Languages:
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\ranula.gamage@sitecore.com
+        sitecore\swati.gupta@sitecore.com
     - ID: "d12db112-ac8e-4701-9186-1c25d7c2c148"
       Hint: TitleTwo
       Value: Contact Us
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260205T090609Z
+      Value: 20260612T101152Z
     - ID: "ec567a2a-8549-4add-93c2-d26ed076e45b"
       Hint: ContactText
       Value: |

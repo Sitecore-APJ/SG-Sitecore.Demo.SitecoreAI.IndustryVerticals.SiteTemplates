@@ -1,0 +1,51 @@
+﻿---
+ID: "0c7d4f2d-d5cb-451b-adca-089d6c1583c8"
+Parent: "636f0c23-498d-4bd6-8dee-d5abf1444c96"
+Template: "0a39f168-834c-46c5-8866-65a60764c0a4"
+Path: "/sitecore/content/industry-verticals/moxa/Data/Features/MOXA Solutions/Feature 4"
+SharedFields:
+- ID: "83bc80ee-e97a-474b-8c05-a2559394eebe"
+  Hint: FeatureImage
+  Value: |
+    <Image src="https://moxa-dam-verticals.sitecoresandbox.cloud/api/public/content/e6b3b2e7e70641459774808158f64902?v=5d4b3ad7" dam-id="Y7iA6q1dQAOvglb5BVRfjQ" alt="Bell Icon.jpg" dam-content-type="Image" thumbnailsrc="https://moxa-dam-verticals.sitecoresandbox.cloud/api/gateway/93165/thumbnail" />
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "2084a7b7-3d9a-4e09-a961-aeba1142ef81"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260612T103752Z
+    - ID: "35b07fa2-ce95-4459-8dd6-074203dda9a7"
+      Hint: FeatureDescription
+      Value: Critical oil and gas assets need the highest level of security, performance, and reliability from components operating in demanding conditions.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "5f507c84-84f9-4033-81a2-90bca3d12606"
+      Hint: FeatureTitle
+      Value: Oil & Gas
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "517a4e80-5cf6-4e79-94fc-68227ec1f7d8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260612T104455Z

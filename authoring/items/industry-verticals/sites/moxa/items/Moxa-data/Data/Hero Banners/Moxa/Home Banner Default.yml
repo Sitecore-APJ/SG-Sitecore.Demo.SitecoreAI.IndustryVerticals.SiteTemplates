@@ -10,11 +10,10 @@ SharedFields:
     <Image src="https://moxa-dam-verticals.sitecoresandbox.cloud/api/public/content/8cbefbf8a5134e51b89184d6b7e6a9a2?v=d0cb30aa" dam-id="9R9aH2ByQmaIYUxBjDp5MA" width="3840" height="1100" alt="MGate-G2_KV_1920x550.jpg" dam-content-type="Image" thumbnailsrc="https://moxa-dam-verticals.sitecoresandbox.cloud/api/gateway/92999/thumbnail" />
 - ID: "d74790ee-7289-4a66-b921-71da75df6cde"
   Hint: Video
-  Value: |
-    <file mediaid="7768d574-2526-4e00-8996-8ffdfab2e3ca" src="-/media/7768D57425264E0089968FFDFAB2E3CA.ashx" />
+  Value: 
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "a74fc143-a628-47df-9d32-b7d51cc61fad"
+  Value: "a3d8a243-f3d4-4f66-81fc-437402c603f5"
 Languages:
 - Language: en
   Versions:
@@ -40,7 +39,7 @@ Languages:
         sitecore\mick.wingert@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f25d382d-2291-4604-8306-de2be1b78598"
+      Value: "f455ed70-f377-4a59-8ab6-801f438a8eb6"
     - ID: "985b877b-bfee-473e-aada-0a9f156dfecc"
       Hint: Title
       Value: Robust Security, Effortless Management
@@ -50,8 +49,8 @@ Languages:
         sitecore\swati.gupta@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260612T060358Z
+      Value: 20260612T102655Z
     - ID: "e3c72e5d-cbf1-4af8-8a73-dc4d3c8590f3"
       Hint: CtaLink
       Value: |
-        <link linktype="internal" id="ef8c1147-5c01-459d-b698-87a0f848382d" anchor="" querystring="" target="" class="" text="LEARN MORE" title=""/>
+        <link linktype="external" url="https://www.moxa.com/en" target="" text="LEARN MORE" title="" class=""/>

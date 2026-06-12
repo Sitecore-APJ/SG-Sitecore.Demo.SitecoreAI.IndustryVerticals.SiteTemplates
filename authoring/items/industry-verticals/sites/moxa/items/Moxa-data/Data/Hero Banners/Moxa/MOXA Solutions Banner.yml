@@ -1,0 +1,56 @@
+﻿---
+ID: "78370030-d59e-4e38-92d2-55951f053def"
+Parent: "88782c3c-e96e-4330-8b12-3254476526ae"
+Template: "ac18eef2-f134-4985-8b74-6ad16cca6577"
+Path: "/sitecore/content/industry-verticals/moxa/Data/Hero Banners/Moxa/MOXA Solutions Banner"
+SharedFields:
+- ID: "00b71f70-411d-4ea1-a423-74ed20b60157"
+  Hint: Image
+  Value: |
+    <Image src="https://moxa-dam-verticals.sitecoresandbox.cloud/api/public/content/1cd2720814734c2fa1e81fa0fbb8db6e?v=3ed7b5a2" dam-id="ne5LlznYSB-q-HyEHfPQNg" alt="banner.jpg" dam-content-type="Image" thumbnailsrc="https://moxa-dam-verticals.sitecoresandbox.cloud/api/gateway/93156/thumbnail" />
+- ID: "d74790ee-7289-4a66-b921-71da75df6cde"
+  Hint: Video
+  Value: 
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "4f720fd6-6bbb-44ba-8583-ea3f0daccf98"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1dec177a-1a9b-41cf-a60c-d89f28fa41e8"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Our solutions are tailored to overcome the unique challenges facing specific demanding environments.<br />&nbsp;</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260605T080000Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\mick.wingert@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\mick.wingert@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4b8f90af-b398-430c-9175-b968332d8b9d"
+    - ID: "985b877b-bfee-473e-aada-0a9f156dfecc"
+      Hint: Title
+      Value: Moxa Industry Solutions
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260612T103442Z
+    - ID: "e3c72e5d-cbf1-4af8-8a73-dc4d3c8590f3"
+      Hint: CtaLink
+      Value: |
+        <link linktype="external" url="https://www.moxa.com/en" target="" text="LEARN MORE" title="" class=""/>

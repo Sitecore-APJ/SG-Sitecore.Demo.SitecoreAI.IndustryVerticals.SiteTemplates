@@ -20,7 +20,8 @@ Languages:
         sitecore\neli.kostadinova@sitecore.com
     - ID: "57caf172-ce57-4e48-b3a1-46f8aea71c08"
       Hint: Image
-      Value: 
+      Value: |
+        <Image src="https://moxa-dam-verticals.sitecoresandbox.cloud/api/public/content/e8affde6b04d48f6add697ebeb332c2e?v=4499a224" dam-id="TOnpIKrQTMu7LfPj0b89xg" width="169" height="25" alt="moxa-logo.svg" dam-content-type="Image" thumbnailsrc="https://moxa-dam-verticals.sitecoresandbox.cloud/api/gateway/93012/thumbnail" />
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
@@ -31,11 +32,11 @@ Languages:
         <link linktype="internal" id="EF8C1147-5C01-459D-B698-87A0F848382D" anchor="" querystring="" target="" class="" text="" title=""/>
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "163ff761-9b3d-4fac-8f22-6aeffaceb982"
+      Value: "633a394c-95e3-4015-a38c-014b1dd4631f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\swati.gupta@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260612T061410Z
+      Value: 20260612T061755Z

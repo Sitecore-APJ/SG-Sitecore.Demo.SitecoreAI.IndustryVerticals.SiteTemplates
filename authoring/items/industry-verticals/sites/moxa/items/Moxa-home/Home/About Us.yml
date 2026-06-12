@@ -59,6 +59,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "13fe722e-a8c7-4432-a983-23fb28ffab05"
       Hint: metadataKeywords
       Value: grid status, power grid conditions, electricity demand, grid reliability, Texas grid, Gridwell dashboard
@@ -70,7 +73,7 @@ Languages:
       Value: Current Grid Status & Conditions | Gridwell
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Grid Status
+      Value: About Us
     - ID: "4ff91248-33ab-4254-b6f7-2618fd0aebae"
       Hint: Title
       Value: Grid Status
@@ -79,7 +82,7 @@ Languages:
       Value: "View the current status of the Texas power grid, including demand levels, supply conditions, and reliability indicators. Gridwell provides real-time visibility into grid conditions so Texans can stay informed and take action when needed."
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "793a7582-0368-4f4d-834b-404699dd8a74"
+      Value: "c70ec795-7d33-44e3-8bb3-a1f3d7f9aa20"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -89,4 +92,4 @@ Languages:
       Value: "The Grid Status page provides real-time insight into electricity demand, supply, and overall system conditions. By offering clear, up-to-date information, Gridwell helps Texans understand grid health and respond appropriately during periods of high demand."
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260611T072009Z
+      Value: 20260612T074749Z

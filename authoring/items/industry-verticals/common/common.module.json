@@ -51,6 +51,11 @@
             "path": "/gridwell",
             "scope": "SingleItem",
             "allowedPushOperations": "CreateOnly"
+          },
+          {
+            "path": "/moxa",
+            "scope": "SingleItem",
+            "allowedPushOperations": "CreateOnly"
           }
         ]
       },

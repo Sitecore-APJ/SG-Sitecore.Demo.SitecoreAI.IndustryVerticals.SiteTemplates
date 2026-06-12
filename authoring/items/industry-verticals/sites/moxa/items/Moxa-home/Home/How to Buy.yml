@@ -30,6 +30,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "13fe722e-a8c7-4432-a983-23fb28ffab05"
       Hint: metadataKeywords
       Value: Gridwell alerts, energy notifications, grid alerts, Texas power alerts, TXANS, EEA alerts, energy emergencies, grid reliability
@@ -41,7 +44,7 @@ Languages:
       Value: Energy Alerts & Notifications | Gridwell
     - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
       Hint: NavigationTitle
-      Value: Alerts
+      Value: How to buy
     - ID: "4ff91248-33ab-4254-b6f7-2618fd0aebae"
       Hint: Title
       Value: Alerts
@@ -50,7 +53,7 @@ Languages:
       Value: Gridwell provides timely energy alerts and notifications to help Texans stay informed during periods of grid stress, extreme weather, and system emergencies. This page explains the different types of alerts available, how they work, and how residents can subscribe to receive accurate, official updates directly from Gridwell.
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "915454cb-9036-494a-b6df-d032bcfa8631"
+      Value: "53b49286-6ad1-47ae-88af-6c13670f6b7f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -60,4 +63,4 @@ Languages:
       Value: The Gridwell Alerts page explains how Texans can stay informed about grid conditions through official notifications. Visitors can learn about advisory alerts, emergency alerts, and how proactive communication helps reduce uncertainty, improve conservation efforts, and support grid reliability during critical events.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260611T071951Z
+      Value: 20260612T074739Z

@@ -9,20 +9,20 @@ SharedFields:
   Value: |
     {06F347A9-389B-486F-87BC-B64E5EEFE162}
     {C14079CF-004E-40DD-8C58-63F306F0F24C}
-    {CE6AE4B0-F073-4D3E-B3A4-5105B477BEE3}
-    {7A8D064B-A653-46F5-9B37-9F3108E6E2BB}
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "9d5daf4a-8ebd-4551-ac65-2f176689546f"
+  Value: "95c2f551-8043-4a6f-87f9-c3ffce1f7afb"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "173353d6-b07d-442c-b2f0-5b95c498f794"
       Hint: Description
-      Value: |
-        <div class="ck-content"><p style="text-align:center;">Discover amazing products and articles from our latest stories&nbsp;</p></div>
+      Value: 
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260119T090219Z
@@ -36,14 +36,14 @@ Languages:
         sitecore\jeral.sandeeptha@sitecore.com
     - ID: "7e4e530b-eb83-4515-801c-4cc914d2605a"
       Hint: Title
-      Value: Get Inspired
+      Value: Explore Now 
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2bc2dc2e-41bd-4064-834a-97709b914d55"
+      Value: "71b5492a-c99f-4bbb-926a-edbf7e1bc7f7"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\mick.wingert@sitecore.com
+        sitecore\swati.gupta@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260605T071953Z
+      Value: 20260612T073008Z

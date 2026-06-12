@@ -17,14 +17,14 @@ SharedFields:
 - ID: "7f7ef9d5-f278-4bfe-94fb-c4be7894feb5"
   Hint: Image
   Value: |
-    <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/f9642ac28fc54dfd81184769545e9435?v=6a4550b9" dam-id="iDugleSpQ2CwYJIsmlerzQ" width="1024" height="683" alt="gridwell-transmission-lines-dawn.png" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/70183/thumbnail" />
+    <Image src="https://moxa-dam-verticals.sitecoresandbox.cloud/api/public/content/bb2333275ace43d89ebe1c7956a74796?v=178b1e0f" dam-id="OMOod7rEQWibKEiffoqiug" width="553" height="375" alt="remote-io_553x375.jpg" dam-content-type="Image" thumbnailsrc="https://moxa-dam-verticals.sitecoresandbox.cloud/api/gateway/93049/thumbnail" />
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{2C677CA4-BBDA-4999-BAA8-E0FACBB8E152}" />
+    <image mediaid="{5861025D-5567-4BF7-90D4-EB5CF14BB104}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "88c75ca5-dfb1-4d58-8dd7-83efcfce3b0c"
+  Value: "8acfc8d2-bcb9-437b-ad72-80ffc84678de"
 - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
   Hint: __Renderings
   Value: |
@@ -48,6 +48,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "17b75967-9b67-4eb9-bb35-bbe0228ca368"
       Hint: pageSummary
       Value: TXANS is Gridwell’s early advisory alert system designed to inform Texans when the power grid may experience stress. This article explains what TXANS alerts are, how they differ from Energy Emergency Alerts, and how subscribing helps households prepare early, conserve energy, and reduce pressure on the grid before conditions become critical.
@@ -69,17 +72,17 @@ Languages:
       Value: The Texas Advisory Notification System (TXANS) helps Texans prepare for potential grid stress before an emergency occurs. This article explains how TXANS works, how it differs from Energy Emergency Alerts, and why early awareness and voluntary conservation play a critical role in grid reliability.
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cc3abffb-1b4d-4dcf-a7b7-1f71fe03bdae"
+      Value: "68ba724b-4583-49c0-b0fc-6bc1854a8527"
     - ID: "9c8beb3d-e162-4540-bb7d-9504db078f44"
       Hint: Title
-      Value: Understanding the TXANS Alert System
+      Value: Empowering Essential Industries With Reliable Remote I/O
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\mick.wingert@sitecore.com
+        sitecore\swati.gupta@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260605T072006Z
+      Value: 20260612T073250Z
     - ID: "e4df8bb9-c0d9-475d-92b4-dcb526bd6b38"
       Hint: metadataTitle
       Value: Understanding the TXANS Alert System

@@ -17,14 +17,14 @@ SharedFields:
 - ID: "7f7ef9d5-f278-4bfe-94fb-c4be7894feb5"
   Hint: Image
   Value: |
-    <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/18a0c7804ffa4fbcb58e0c6c2ec41e1b?v=075678ec" dam-id="9kvntgm5SYCwdMGUycIzgQ" width="1536" height="1024" alt="gridwell-line-worker-big-transformer.png" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/70165/thumbnail" />
+    <Image src="https://moxa-dam-verticals.sitecoresandbox.cloud/api/public/content/6adafe1e50814c93ae40d13f163ebf8c?v=5c2a5d6a" dam-id="rjnKyRoASHO5wllq7I1QTw" width="553" height="375" alt="Machine-OEM-553x375.jpg" dam-content-type="Image" thumbnailsrc="https://moxa-dam-verticals.sitecoresandbox.cloud/api/gateway/93075/thumbnail" />
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{C2122D10-2BCC-425B-B950-859F07B000E7}" />
+    <image mediaid="{1BCEA982-41B5-4929-BB98-14A3144E8084}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "baa0df6e-cefe-4e58-ac6b-f1c6ccb5af5b"
+  Value: "fc9aba65-6576-4bc2-b4d2-a424e2fac7fe"
 - ID: "fe61849e-05c9-4da7-ba34-5780f95d0866"
   Hint: Category
   Value: "{B7CFAA48-CA45-4C02-9AA8-7684808FC4BA}"
@@ -33,6 +33,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "17b75967-9b67-4eb9-bb35-bbe0228ca368"
       Hint: pageSummary
       Value: Heatwaves drive sharp increases in electricity demand, largely due to cooling systems and household appliances. This article explains five easy ways Texans can conserve energy during extreme heat, reduce household costs, and support grid reliability by shifting usage, adjusting thermostats, and making small changes that add up across millions of homes.
@@ -54,17 +57,17 @@ Languages:
       Value: Five Easy Ways to Conserve Energy During a Heatwave
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "55d8772d-d74c-4b4e-98c5-cbb143d5982d"
+      Value: "8e9a9df7-6268-471d-a567-c266bf076e7a"
     - ID: "9c8beb3d-e162-4540-bb7d-9504db078f44"
       Hint: Title
-      Value: Five Easy Ways to Conserve Energy During a Heatwave
+      Value: Elevate Machinery Performance With Reliable Connectivity 
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\mick.wingert@sitecore.com
+        sitecore\swati.gupta@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260605T072005Z
+      Value: 20260612T073234Z
     - ID: "e4df8bb9-c0d9-475d-92b4-dcb526bd6b38"
       Hint: metadataTitle
       Value: Five Easy Ways to Conserve Energy During a Heatwave
