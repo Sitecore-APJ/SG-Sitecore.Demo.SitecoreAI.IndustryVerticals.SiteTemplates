@@ -1,0 +1,63 @@
+﻿---
+ID: "c8573cb9-b357-4df4-819b-9cf0832acaeb"
+Parent: "ef8c1147-5c01-459d-b698-87a0f848382d"
+Template: "98e60957-0783-4a9a-85cc-77dad30e9711"
+Path: "/sitecore/content/industry-verticals/moxa/Home/How to Buy"
+SharedFields:
+- ID: "25f9b35b-0c2c-4f43-ae2f-1d30eb1f2b6b"
+  Hint: ogImage
+  Value: |
+    <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/d04b406b31ed40b782100946ff7140d7?v=6fd674b2" dam-id="sE2dHZIUQi6w3SNaLpIHfA" width="200" height="200" alt="gridwell-engineer-with-bill.png" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/70163/thumbnail" />
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 262
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{3869D374-3479-425C-8B54-A4CC3B719EAF}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0791753d-f487-4aa5-ba1f-e9bc63502793"
+Languages:
+- Language: en
+  Fields:
+  - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
+    Hint: __Unversioned revision
+    Value: "678eb3fb-3af2-4486-a4f5-23bc7a9dda1b"
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: How to Buy
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "13fe722e-a8c7-4432-a983-23fb28ffab05"
+      Hint: metadataKeywords
+      Value: Gridwell alerts, energy notifications, grid alerts, Texas power alerts, TXANS, EEA alerts, energy emergencies, grid reliability
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260112T105848Z
+    - ID: "32c603c2-c858-4138-8fcb-8e18a5ad8240"
+      Hint: metadataTitle
+      Value: Energy Alerts & Notifications | Gridwell
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: Alerts
+    - ID: "4ff91248-33ab-4254-b6f7-2618fd0aebae"
+      Hint: Title
+      Value: Alerts
+    - ID: "6b43d550-6d5f-46ce-ac84-3d9493c45bc6"
+      Hint: metadataDescription
+      Value: Gridwell provides timely energy alerts and notifications to help Texans stay informed during periods of grid stress, extreme weather, and system emergencies. This page explains the different types of alerts available, how they work, and how residents can subscribe to receive accurate, official updates directly from Gridwell.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "915454cb-9036-494a-b6df-d032bcfa8631"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d3886445-9ee0-46a0-ae5e-8857dd6b395f"
+      Hint: pageSummary
+      Value: The Gridwell Alerts page explains how Texans can stay informed about grid conditions through official notifications. Visitors can learn about advisory alerts, emergency alerts, and how proactive communication helps reduce uncertainty, improve conservation efforts, and support grid reliability during critical events.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260611T071951Z

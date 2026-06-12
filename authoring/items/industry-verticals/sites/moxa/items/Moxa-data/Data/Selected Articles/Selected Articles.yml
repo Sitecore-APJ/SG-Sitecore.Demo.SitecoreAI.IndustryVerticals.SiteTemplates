@@ -1,0 +1,49 @@
+﻿---
+ID: "470154f8-fa26-4459-91bb-6b585a79cf4f"
+Parent: "608906ea-06f1-4889-b0f4-2913b9349f93"
+Template: "30a718e4-b5b1-49df-aea6-ad761528b5c5"
+Path: "/sitecore/content/industry-verticals/moxa/Data/Selected Articles/Selected Articles"
+SharedFields:
+- ID: "a6a4a7d3-4017-4996-9264-27b1d3030273"
+  Hint: Articles
+  Value: |
+    {06F347A9-389B-486F-87BC-B64E5EEFE162}
+    {C14079CF-004E-40DD-8C58-63F306F0F24C}
+    {CE6AE4B0-F073-4D3E-B3A4-5105B477BEE3}
+    {7A8D064B-A653-46F5-9B37-9F3108E6E2BB}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "9d5daf4a-8ebd-4551-ac65-2f176689546f"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "173353d6-b07d-442c-b2f0-5b95c498f794"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p style="text-align:center;">Discover amazing products and articles from our latest stories&nbsp;</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260119T090219Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\jeral.sandeeptha@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jeral.sandeeptha@sitecore.com
+    - ID: "7e4e530b-eb83-4515-801c-4cc914d2605a"
+      Hint: Title
+      Value: Get Inspired
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2bc2dc2e-41bd-4064-834a-97709b914d55"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mick.wingert@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260605T071953Z

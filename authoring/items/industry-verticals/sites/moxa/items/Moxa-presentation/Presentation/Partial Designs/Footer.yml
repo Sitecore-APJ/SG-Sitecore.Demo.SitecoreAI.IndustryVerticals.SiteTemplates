@@ -1,0 +1,86 @@
+﻿---
+ID: "792a6983-8a75-4168-b80a-369efef8a7b6"
+Parent: "dfa3c138-b6b6-46ee-8a66-fd2b722fd4f7"
+Template: "fd2059fd-6043-4dfe-8c04-e2437ce87634"
+Path: "/sitecore/content/industry-verticals/moxa/Presentation/Partial Designs/Footer"
+SharedFields:
+- ID: "55faae90-3bba-4f7f-96fe-13c3f40055ff"
+  Hint: Signature
+  Value: footer
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{676A157B-47E4-49F2-A106-7DB5406B4ECA}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6fd7c0be-5060-4f4a-9638-3401ea0d555a"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{A2F3D5F6-0CB1-4C15-8396-433C48E973BD}"
+          p:before="*"
+          s:ds="4DD7BE83-D46F-46EB-8753-72B4AECE02CD"
+          s:id="{02654BA0-74AE-42A4-B384-BCA9B96ADF4B}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+          s:ph="headless-footer" />
+        <r
+          uid="{CCE9DC47-F92A-4B61-B63E-19A734C0C55A}"
+          p:after="r[@uid='{A2F3D5F6-0CB1-4C15-8396-433C48E973BD}']"
+          s:ds="FAF90A07-5BA5-4146-937C-1B31AE1F0B22"
+          s:id="{32E7FD88-4E5D-4AAB-A15F-61DCEBA1EE6F}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+          s:ph="/headless-footer/footer-list-fourth-1" />
+        <r
+          uid="{6FC4464F-A54D-4158-B6F3-3BD232E5127F}"
+          p:after="r[@uid='{CCE9DC47-F92A-4B61-B63E-19A734C0C55A}']"
+          s:ds="5BF9CBB1-4AC5-45E7-9DC4-1E24E827E533"
+          s:id="{4956263D-1195-4D6E-931B-800EA625FF6F}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BB2FCBCEE-DC2E-40E3-BE43-EC8E1A7B0B3C%7D&amp;Styles=%7C%7B932B44A4-03B3-4861-B85C-A68A3C9C71D2%7D%7C%7BDB5B07B5-EBC5-42B2-AE18-4BFC98B38FB6%7D&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-footer/footer-list-first-1" />
+        <r
+          uid="{7AA8F0E9-72D8-4F5B-AC8F-2EF72C6B1F03}"
+          p:after="r[@uid='{6FC4464F-A54D-4158-B6F3-3BD232E5127F}']"
+          s:ds="49B590C1-5269-4BF8-9FB6-3080A6AFE3B4"
+          s:id="{4956263D-1195-4D6E-931B-800EA625FF6F}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BB2FCBCEE-DC2E-40E3-BE43-EC8E1A7B0B3C%7D&amp;Styles=%7C%7B932B44A4-03B3-4861-B85C-A68A3C9C71D2%7D%7C%7BDB5B07B5-EBC5-42B2-AE18-4BFC98B38FB6%7D&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-footer/footer-list-second-1" />
+        <r
+          uid="{CF7EACFE-EEFA-4A28-BCB6-2D00B123950B}"
+          p:after="*[1=2]"
+          s:ds="E0246646-29DC-4759-AF13-408182D9A799"
+          s:id="{4956263D-1195-4D6E-931B-800EA625FF6F}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BB2FCBCEE-DC2E-40E3-BE43-EC8E1A7B0B3C%7D&amp;Styles=%7C%7B932B44A4-03B3-4861-B85C-A68A3C9C71D2%7D%7C%7BDB5B07B5-EBC5-42B2-AE18-4BFC98B38FB6%7D&amp;RenderingIdentifier&amp;CSSStyles"
+          s:ph="/headless-footer/footer-list-third-1" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260112T110104Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\neli.kostadinova@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\neli.kostadinova@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b450199-9e52-402d-88f6-e7052c381bff"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\mick.wingert@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260605T071955Z
