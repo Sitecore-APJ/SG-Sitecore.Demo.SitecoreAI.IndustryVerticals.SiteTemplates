@@ -15,6 +15,47 @@ SharedFields:
   Hint: __Shared revision
   Value: "71abdfcd-781d-47ae-b1f3-882aad5bc34e"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260119T172328Z
+    - ID: "35b07fa2-ce95-4459-8dd6-074203dda9a7"
+      Hint: FeatureDescription
+      Value: "Taipeh, Taiwan, 22. April 2026 — Moxa Inc., ein führendes Unternehmen für industrielle Kommunikation und Netzwerke, freut sich bekannt zu geben, dass die ioPAC 6500 Serie, eine RTU der nächsten Generation, den renommierten Red Dot Award: Product Design 2025 gewonnen hat. Die Auszeichnung würdigt das innovative Design der ioPAC 6500 Serie, das die Komplexität in industriellen Systemarchitekturen vereinfacht. Die Serie ist als Intelligent Integrated Node (IIN) positioniert und verfügt über ein modulares Hardware-Design, das außergewöhnliche Flexibilität für die Systemintegration und -bereitstellung bietet."
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "5f507c84-84f9-4033-81a2-90bca3d12606"
+      Hint: FeatureTitle
+      Value: "Moxas RTU der nächsten Generation gewinnt Red Dot Award: Product Design 2025"
+    - ID: "69536d16-4033-4ebf-9416-436f0f5a3cb6"
+      Hint: FeatureLink
+      Value: |
+        <link class="" anchor="#sign-up" title="" linktype="anchor" text="Registrieren" url="#sign-up" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "587de87c-bb5e-45ee-855e-b40d96d241ad"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260613T101310Z
 - Language: en
   Versions:
   - Version: 1
@@ -53,3 +94,44 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20260612T074607Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260119T172328Z
+    - ID: "35b07fa2-ce95-4459-8dd6-074203dda9a7"
+      Hint: FeatureDescription
+      Value: 台北，台湾，2026年4月22日——工业通信和网络领域的领导者Moxa公司欣然宣布，其下一代RTU产品ioPAC 6500系列荣获2025年红点奖：产品设计奖。该奖项表彰了ioPAC 6500系列在简化工业系统架构复杂性方面的创新设计。该系列定位为智能集成节点（IIN），并采用模块化硬件设计，为系统集成和部署提供了卓越的灵活性。
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "5f507c84-84f9-4033-81a2-90bca3d12606"
+      Hint: FeatureTitle
+      Value: Moxa下一代RTU荣获2025年红点奖：产品设计奖
+    - ID: "69536d16-4033-4ebf-9416-436f0f5a3cb6"
+      Hint: FeatureLink
+      Value: |
+        <link class="" anchor="#sign-up" title="" linktype="anchor" text="注册" url="#sign-up" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "66d50f3a-c068-462d-865e-934315fa7fc1"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260613T102349Z

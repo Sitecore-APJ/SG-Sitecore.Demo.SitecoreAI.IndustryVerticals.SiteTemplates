@@ -15,6 +15,47 @@ SharedFields:
   Hint: __Shared revision
   Value: "6c8bf532-120a-4edc-926f-c10b67168486"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260119T172353Z
+    - ID: "35b07fa2-ce95-4459-8dd6-074203dda9a7"
+      Hint: FeatureDescription
+      Value: "Da Rechenzentren zunehmend hochdichte KI-Workloads bewältigen, ist die Nachfrage nach ausgefeiltem Wärmemanagement und stabiler Stromversorgung auf ein beispielloses Niveau gestiegen. Moderne Einrichtungen erfordern eine nahtlose Harmonisierung von Flüssigkeitskühlungstelemetrie, Stromverteilungsschränken und Echtzeit-Überwachungssystemen, um einen 24/7-Betrieb und optimale Effizienz zu gewährleisten. Durch die Überbrückung der Lücke zwischen OT und IT hilft Moxa Betreibern, blinde Flecken in Stromversorgungsketten zu beseitigen, komplexe Kühlkreisläufe zu verwalten und ungenutzte Kapazitäten zurückzugewinnen. Mit strengen Industriestandards als Grundlage stellen wir sicher, dass Ihre Infrastruktur auch unter extremen thermischen Belastungen widerstandsfähig bleibt und eine zuverlässige Basis für die nächste Generation von Rechenzentren schafft. Erfahren Sie, wie unsere leistungsstarken DCI-Lösungen Ihre KI-fähigen Rechenzentren stärken können."
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "5f507c84-84f9-4033-81a2-90bca3d12606"
+      Hint: FeatureTitle
+      Value: "Sichern Sie Ihr DCI-Rückgrat mit bewährter industrieller Zuverlässigkeit"
+    - ID: "69536d16-4033-4ebf-9416-436f0f5a3cb6"
+      Hint: FeatureLink
+      Value: |
+        <link class="" anchor="#sign-up" title="" linktype="anchor" text="Anmelden" url="#sign-up" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8351ecd1-edd5-40a1-9a9b-990e633bf18e"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260613T101310Z
 - Language: en
   Versions:
   - Version: 1
@@ -53,3 +94,44 @@ Languages:
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20260612T074619Z
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260119T172353Z
+    - ID: "35b07fa2-ce95-4459-8dd6-074203dda9a7"
+      Hint: FeatureDescription
+      Value: 随着数据中心逐步转向处理高密度的人工智能工作负载，对先进的热管理和电力稳定性的需求达到了前所未有的水平。现代设施需要液冷遥测、电力分配柜和实时监控系统的无缝协作，以确保全天候正常运行和最佳效率。通过弥合OT和IT之间的差距，Moxa帮助运营商消除电力链中的盲点，管理复杂的冷却回路，并回收闲置容量。以严格的工业标准为基础，我们确保您的基础设施在极端热负载下保持弹性，为下一代数据中心创建可靠的基础。了解我们的高性能DCI解决方案如何助力您的AI就绪数据中心。
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "5f507c84-84f9-4033-81a2-90bca3d12606"
+      Hint: FeatureTitle
+      Value: 以经过验证的工业可靠性保障您的DCI骨干
+    - ID: "69536d16-4033-4ebf-9416-436f0f5a3cb6"
+      Hint: FeatureLink
+      Value: |
+        <link class="" anchor="#sign-up" title="" linktype="anchor" text="注册" url="#sign-up" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62fcd8f5-7f42-4f67-91c4-0fc9f72f6d9a"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260613T102349Z

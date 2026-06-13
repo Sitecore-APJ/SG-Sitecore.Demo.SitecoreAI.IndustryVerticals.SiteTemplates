@@ -9,16 +9,16 @@ SharedFields:
   Value: ef8c11475c01459db69887a0f848382d
 - ID: "4e9e2ae5-36db-4955-9af1-5a1934a27c7d"
   Hint: Language Embedding
-  Value: 0
+  Value: 
 - ID: "6dd8a774-2ce5-4c9e-be7f-1eaf65789956"
   Hint: ThumbnailsRootPath
   Value: "{A7369BF8-B0F8-464A-9F9C-6DBC9E5E3CCA}"
 - ID: "6e6da5b0-8d01-4514-b7dd-1940aff3e8cd"
   Hint: FieldLanguageFallback
-  Value: 0
+  Value: 
 - ID: "8c436235-b85d-4097-89cf-d5a4fa70cc0a"
   Hint: ItemLanguageFallback
-  Value: 0
+  Value: 1
 - ID: "8e0dd914-9afb-4d45-bf8b-7ff5d6e5337e"
   Hint: HostName
   Value: *
@@ -33,7 +33,7 @@ SharedFields:
   Value: *
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "01965dc5-1eea-48e6-a536-bba7a6be865d"
+  Value: "1b5230c7-aa20-4c8a-bdb6-ca1cb6cbb24c"
 - ID: "f57099a3-526a-49f2-aebd-635453e48875"
   Hint: RenderingHost
   Value: energy
@@ -55,11 +55,11 @@ Languages:
         sitecore\mick.wingert@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1170c794-b81c-44fc-a60b-338a40f96fa0"
+      Value: "39187766-e656-4c80-8465-36228ec60112"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\swati.gupta@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260612T062931Z
+      Value: 20260613T094555Z

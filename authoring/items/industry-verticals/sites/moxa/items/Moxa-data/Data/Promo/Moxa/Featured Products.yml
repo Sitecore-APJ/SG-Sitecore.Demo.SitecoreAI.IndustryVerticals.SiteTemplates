@@ -12,6 +12,51 @@ SharedFields:
   Hint: __Shared revision
   Value: "f7402884-07c0-402b-837c-b88cdc90d860"
 Languages:
+- Language: "de-DE"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260612T073447Z
+    - ID: "453ed40c-5232-4e90-b023-7a3cee2bcfe8"
+      Hint: PromoMoreInfo
+      Value: |
+        <link class="" target="" title="" linktype="external" text="Mehr erfahren" url="https://www.moxa.com/en" />
+    - ID: "4fc0c7b3-bcfb-4a9d-834d-59f6836e5fd6"
+      Hint: PromoDescription
+      Value: |
+        <div class="ck-content"><p>Die UC-8600A-Serie ist eine vielseitige, Arm-basierte Computerplattform, die für die Herausforderungen industrieller Anwendungen entwickelt wurde. Mit einer vielseitigen Schnittstellenausstattung und einem robusten Design mit großem Betriebstemperaturbereich ist sie ideal für die Datenerfassung und Edge-Computing in verteilten Umgebungen.</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "79332b7d-ea7f-47d7-a9c2-bfaae4806296"
+      Hint: PromoSubTitle
+      Value: Empfohlene Produkte  
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c287b180-ab8a-4929-bc9e-a9032ea277a4"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260613T101309Z
+    - ID: "f7e3056b-5e6e-4080-b2b7-84f76b2052fc"
+      Hint: PromoTitle
+      Value: "Optimieren Sie die Edge-Konnektivität mit der UC-8600A-Serie Arm-basierter Computer"
 - Language: en
   Versions:
   - Version: 1
@@ -54,3 +99,48 @@ Languages:
     - ID: "f7e3056b-5e6e-4080-b2b7-84f76b2052fc"
       Hint: PromoTitle
       Value: "Streamline Edge Connectivity With UC-8600A Series Arm-based Computers"
+- Language: "zh-CN"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260612T073447Z
+    - ID: "453ed40c-5232-4e90-b023-7a3cee2bcfe8"
+      Hint: PromoMoreInfo
+      Value: |
+        <link class="" target="" title="" linktype="external" text="了解更多" url="https://www.moxa.com/en" />
+    - ID: "4fc0c7b3-bcfb-4a9d-834d-59f6836e5fd6"
+      Hint: PromoDescription
+      Value: |
+        <div class="ck-content"><p>UC-8600A 系列是一款多功能的基于 Arm 的计算平台，专为应对工业应用的挑战而设计。凭借多样化的接口和坚固的结构以及宽广的工作温度范围，它是分布式环境中数据采集和边缘计算的理想选择。</p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "79332b7d-ea7f-47d7-a9c2-bfaae4806296"
+      Hint: PromoSubTitle
+      Value: 精选产品
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "becd5ae9-1ff5-4c45-b0ce-2e901333e54c"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260613T102349Z
+    - ID: "f7e3056b-5e6e-4080-b2b7-84f76b2052fc"
+      Hint: PromoTitle
+      Value: "简化边缘连接：UC-8600A 系列基于 Arm 的计算机"
