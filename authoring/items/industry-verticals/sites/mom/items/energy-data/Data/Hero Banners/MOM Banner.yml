@@ -1,0 +1,57 @@
+﻿---
+ID: "a0411e95-c524-4d27-b74c-d0c65a15e24e"
+Parent: "ba5f96a1-f55f-4d3e-9d86-4238147f85cf"
+Template: "ac18eef2-f134-4985-8b74-6ad16cca6577"
+Path: "/sitecore/content/industry-verticals/mom/Data/Hero Banners/MOM Banner"
+SharedFields:
+- ID: "00b71f70-411d-4ea1-a423-74ed20b60157"
+  Hint: Image
+  Value: |
+    <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/82423-HomePageHero-2000x800?v=0ded6471" dam-id="AZ_M4mI3QE2giovszkRlyA" width="2000" height="800" alt="An aerial view of Dallas, Texas.png" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/82423/thumbnail" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "e4252ed5-342d-4c75-98da-8bb196036b42"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "1dec177a-1a9b-41cf-a60c-d89f28fa41e8"
+      Hint: Description
+      Value: |
+        <div class="ck-content"><p>Understand the new salary thresholds and how they impact your eligibility and application process.&nbsp;</p></div>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260115T111502Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\tharuka.bandara@sitecore.com
+    - ID: "84a164f4-8b3e-45e1-a4ca-fa4c0de72666"
+      Hint: SecondaryCtaLink
+      Value: |
+        <link linktype="external" url="#" text="Calculate Eligibility"/>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "29345993-6c70-463f-aaa5-9755afa2fc1e"
+    - ID: "985b877b-bfee-473e-aada-0a9f156dfecc"
+      Hint: Title
+      Value: What's Changing for Employment Pass in 2027 
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260614T145959Z
+    - ID: "e3c72e5d-cbf1-4af8-8a73-dc4d3c8590f3"
+      Hint: CtaLink
+      Value: |
+        <link class="" querystring="" id="b13e8079-034f-48a5-9b12-9b28f64e1224" anchor="" target="" title="" linktype="internal" text="See What’s New" url="/industry-verticals/mom/Home/Workplace safety and health" />

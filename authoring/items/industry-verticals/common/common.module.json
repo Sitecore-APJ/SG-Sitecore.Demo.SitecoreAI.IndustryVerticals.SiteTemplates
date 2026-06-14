@@ -48,7 +48,7 @@
             "allowedPushOperations": "CreateOnly"
           },
           {
-            "path": "/gridwell",
+            "path": "/mom",
             "scope": "SingleItem",
             "allowedPushOperations": "CreateOnly"
           }
@@ -251,8 +251,8 @@
         ]
       },
       {
-        "name": "sites-gridwell",
-        "path": "/sitecore/content/industry-verticals/gridwell",
+        "name": "sites-mom",
+        "path": "/sitecore/content/industry-verticals/mom",
         "rules": [
           {
             "path": "/home",

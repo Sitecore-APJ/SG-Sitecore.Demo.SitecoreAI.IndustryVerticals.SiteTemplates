@@ -1,0 +1,56 @@
+﻿---
+ID: "692c0b40-9b3d-4f06-93e0-0661a54dd510"
+Parent: "83c12fa8-5dce-4d93-acd0-80a51fa1dd1f"
+Template: "08213afb-9cb4-4c1f-a5da-865b9a095601"
+Path: "/sitecore/content/industry-verticals/mom/Data/Promo/MOM Promo"
+SharedFields:
+- ID: "b441a09f-ddb2-41a8-84cc-2533686541f4"
+  Hint: PromoImageOne
+  Value: |
+    <Image src="https://sg-dam.sitecoresandbox.cloud/api/public/content/75141-HomepagePromoCTAs-1100x740?v=d0936c19" dam-id="cUWkbsx6QNuxugGEO7K06Q" width="1100" height="740" alt="Santarli-Our-Projects-MoM-Service-Centre.jpg" dam-content-type="Image" thumbnailsrc="https://sg-dam.sitecoresandbox.cloud/api/gateway/75141/thumbnail" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6cd43506-6e71-4ec5-8b0a-d943fed57550"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260114T081109Z
+    - ID: "453ed40c-5232-4e90-b023-7a3cee2bcfe8"
+      Hint: PromoMoreInfo
+      Value: |
+        <link class="" querystring="" id="e20aba1b-b2d5-4183-8397-5cf5b3f28250" anchor="" target="" title="" linktype="internal" text="Read More" url="/industry-verticals/mom/Home/Employment practices" />
+    - ID: "4fc0c7b3-bcfb-4a9d-834d-59f6836e5fd6"
+      Hint: PromoDescription
+      Value: |
+        <div class="ck-content"><p>The salary requirements for Employment Pass (EP) applications have been updated. The minimum qualifying salary has increased, and new salary thresholds now apply based on an applicant’s level of experience.<br /><br /><strong>Salary criteria based on experience</strong></p><p>Under the updated framework, salary requirements are more closely aligned with experience:</p><ul style="list-style-type:disc;"><li style="tab-stops:list 36.0pt;"><strong>Entry-level professionals</strong><br />Must meet the updated minimum salary of <strong>SGD 6,000</strong></li><li style="tab-stops:list 36.0pt;"><strong>Mid-level professionals</strong><br />Higher salary thresholds apply based on years of relevant experience&nbsp;</li><li style="tab-stops:list 36.0pt;"><p><strong>Senior professionals</strong><br />Significantly higher salary expectations reflecting leadership and expertise&nbsp;<br />&nbsp;</p><p><strong>How this affects your application</strong></p><p>If you are applying for an Employment Pass:</p></li><li style="tab-stops:list 36.0pt;">You must meet the <strong>updated salary threshold based on your experience level</strong></li><li style="tab-stops:list 36.0pt;">Applications will be assessed using the <strong>revised salary criteria</strong>&nbsp;</li><li style="tab-stops:list 36.0pt;"><p>Ensure all submitted information reflects the latest requirements&nbsp;</p><p><strong>How to apply</strong></p></li><li style="tab-stops:list 36.0pt;"><strong>Check your eligibility</strong><br />Review the updated salary criteria based on your experience</li><li style="tab-stops:list 36.0pt;"><strong>Prepare your documents</strong><br />Ensure your qualifications and employment history are accurate</li><li style="tab-stops:list 36.0pt;"><strong>Submit your application</strong><br />Apply through the official MOM portal</li><li style="tab-stops:list 36.0pt;"><strong>Application processing</strong><br />Applications will be assessed based on updated criteria&nbsp;</li></ul><p><span style="font-family:&quot;Aptos&quot;,sans-serif;font-size:12.0pt;line-height:115%;"><strong>Receive outcome</strong></span><br /><span style="font-family:&quot;Aptos&quot;,sans-serif;font-size:12.0pt;line-height:115%;">You will be notified once a decision has been made&nbsp;</span></p></div>
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\jeral.sandeeptha@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jeral.sandeeptha@sitecore.com
+    - ID: "79332b7d-ea7f-47d7-a9c2-bfaae4806296"
+      Hint: PromoSubTitle
+      Value: Employment Pass Salary Update
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "18502f41-ef4c-4306-8ab2-e90dd718069e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\swati.gupta@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260614T145959Z
+    - ID: "f7e3056b-5e6e-4080-b2b7-84f76b2052fc"
+      Hint: PromoTitle
+      Value: The Employment Pass (EP) salary criteria have been updated to reflect industry standards and experience levels more accurately. These changes affect employers hiring foreign professionals and individuals applying to work in Singapore under the EP. Key updates include revised minimum salaries based on the applicant's sector and professional experience. Employers are advised to review the new salary benchmarks promptly to ensure compliance and avoid delays in processing applications. To get started, refer to the updated guidelines and tools available on our website for a smooth application process.
