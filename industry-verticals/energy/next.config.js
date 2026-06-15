@@ -48,6 +48,11 @@ const nextConfig = {
         hostname: 'placehold.co',
         port: '',
       },
+	  {
+        protocol: 'https',
+        hostname: 'moxa-dam-verticals.sitecoresandbox.cloud',
+        port: '',
+      },
     ],
   },
 
