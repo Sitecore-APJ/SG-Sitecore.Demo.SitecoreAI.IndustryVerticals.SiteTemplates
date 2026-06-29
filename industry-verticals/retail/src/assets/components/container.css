@@ -1,6 +1,7 @@
 @utility container {
   margin-inline: auto;
   padding-inline: 1rem;
+  max-width: 1280px;
 }
 
 @layer components {
@@ -10,9 +11,9 @@
 
   /* bordered */
   .sxa-bordered {
-    @apply rounded-xl;
+    @apply rounded-sm;
     > .component-content {
-      @apply rounded-xl border p-6;
+      @apply border-border rounded-sm border p-6;
     }
   }
 }

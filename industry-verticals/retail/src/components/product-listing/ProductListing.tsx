@@ -106,8 +106,8 @@ export const Default = (props: ProductListingProps) => {
   return (
     <section className={`component product-listing ${props?.params.styles.trimEnd()}`} id={id}>
       {/* Sort and Filter */}
-      <div className="bg-background-accent">
-        <div className="container flex flex-col justify-between gap-5 py-5 sm:flex-row sm:items-center">
+      <div className="border-border bg-background-accent border-b">
+        <div className="container flex flex-col justify-between gap-4 py-4 text-sm sm:flex-row sm:items-center">
           <div>
             {t('product-listing-showing') || 'Showing'} {Math.min(products.length, startIndex + 1)}{' '}
             - {Math.min(endIndex, products.length)} {t('product-listing-of') || 'of'}{' '}

@@ -26,8 +26,8 @@ export const Default = (props: RelatedProductsProps): JSX.Element => {
 
   return (
     <section className={`component related-products ${styles}`} id={id || undefined}>
-      <div className="container flex flex-col items-center p-8 md:p-10">
-        <h2 className="mb-10 inline-block">
+      <div className="container flex flex-col items-center px-4 py-12 md:py-16">
+        <h2 className="font-heading mb-10 inline-block text-3xl font-medium lg:text-4xl">
           <Text field={props.fields?.Title} />
           {!hideAccentLine && <AccentLine className="mx-auto !h-4 w-[8ch]" />}
         </h2>

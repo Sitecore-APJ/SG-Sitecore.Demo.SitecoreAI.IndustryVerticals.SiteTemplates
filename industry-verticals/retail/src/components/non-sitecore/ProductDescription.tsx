@@ -19,7 +19,7 @@ export const ProductDescription = ({ product }: ProductDescriptionProps) => {
 
   return (
     <>
-      <h1 className="pt-3 text-4xl font-bold lg:pt-0">
+      <h1 className="font-heading pt-3 text-3xl font-medium lg:pt-0 lg:text-4xl">
         <ContentSdkText field={product.Title} />
       </h1>
 
@@ -32,7 +32,7 @@ export const ProductDescription = ({ product }: ProductDescriptionProps) => {
       {!!product?.Reviews?.length && (
         <div className="flex items-center space-x-3">
           <span className="text-foreground text-lg">{averageRating}</span>
-          <StarRating rating={averageRating} className="!text-accent" />
+          <StarRating rating={averageRating} className="!text-gold" />
           <div className="bg-foreground-muted h-7 w-px" />
           <span className="text-foreground-muted text-sm">
             {reviewCount} Customer Review{reviewCount !== 1 ? 's' : ''}

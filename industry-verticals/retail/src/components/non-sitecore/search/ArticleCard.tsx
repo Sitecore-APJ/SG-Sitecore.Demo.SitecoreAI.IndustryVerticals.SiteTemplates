@@ -25,9 +25,9 @@ const ArticleItemCard = ({ className = '', article }: ArticleItemCardProps) => {
     >
       <ArticleCard.Root
         key={article.id}
-        className={`group border-border hover:shadow-accent/20 relative rounded-md border shadow-sm hover:shadow-md hover:transition-all hover:duration-300 hover:ease-linear ${className}`}
+        className={`group border-border relative border transition-opacity hover:opacity-95 ${className}`}
       >
-        <div className="bg-background-surface h-50 w-full overflow-hidden rounded-t-md">
+        <div className="bg-background-accent h-50 w-full overflow-hidden">
           <Image
             src={validImageUrl}
             className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105 lg:h-full lg:w-full"
@@ -39,7 +39,7 @@ const ArticleItemCard = ({ className = '', article }: ArticleItemCardProps) => {
         </div>
         <div className="relative m-4 flex-col justify-between">
           <span className="text-foreground-light mt-4 text-xs font-light">{article.type}</span>
-          <ArticleCard.Title className="h-10 overflow-hidden text-base font-bold">
+          <ArticleCard.Title className="font-heading h-10 overflow-hidden text-base font-medium">
             {article.name || article.title}
           </ArticleCard.Title>
           <ArticleCard.Subtitle className="text-foreground-light mt-3 flex text-sm">

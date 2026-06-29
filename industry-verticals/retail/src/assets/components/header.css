@@ -1,0 +1,51 @@
+/* Oberoi-style header chrome */
+.component.header {
+  @apply bg-background border-border border-b;
+
+  .utility-bar {
+    @apply bg-navy text-background;
+
+    a,
+    button {
+      @apply text-background/85 hover:text-background text-xs tracking-wide transition-colors;
+    }
+  }
+
+  .header-main {
+    @apply py-4 lg:py-5;
+  }
+}
+
+.component.navigation {
+  .navigation-link {
+    @apply text-foreground hover:text-accent text-xs font-normal tracking-[0.12em] uppercase transition-colors;
+  }
+
+  .navigation-dropdown-trigger {
+    @apply text-foreground-muted;
+  }
+
+  /* Desktop nav inside header */
+  .component.header & {
+    @apply bg-transparent;
+
+    nav {
+      @apply bg-transparent;
+    }
+
+    [role='menubar'] {
+      @apply gap-x-6 py-0 text-sm xl:gap-x-10;
+    }
+
+    .navigation-link,
+    [role='menuitem'] > div > a {
+      @apply text-foreground hover:text-accent text-xs tracking-[0.12em] uppercase;
+    }
+  }
+}
+
+.component.navigation-icons {
+  [aria-label] {
+    @apply text-foreground hover:text-accent transition-colors;
+  }
+}

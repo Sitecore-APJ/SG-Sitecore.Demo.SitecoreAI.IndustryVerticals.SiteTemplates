@@ -75,13 +75,13 @@ export const Default = (props: CarouselProps) => {
   );
 
   return (
-    <section className={`${props.params.styles} py-20`} id={id ? id : undefined}>
+    <section className={`${props.params.styles} py-16 lg:py-24`} id={id ? id : undefined}>
       <div className={cn(containerAlignment, 'relative overflow-hidden')}>
         <div
           className={cn('flex', 'flex-col', flexDirectionClass, 'items-center', 'w-full', 'gap-10')}
         >
           <div className="w-full space-y-5 md:w-1/3">
-            <h2 className="inline-block max-w-md">
+            <h2 className="font-heading inline-block max-w-md text-3xl font-medium lg:text-4xl">
               <Text field={props.fields.Title} />
               {!hideAccentLine && <AccentLine className="w-full max-w-xs" />}
             </h2>
@@ -120,7 +120,7 @@ export const Default = (props: CarouselProps) => {
                         return (
                           <SwiperSlide key={article.id}>
                             <Link href={article.url}>
-                              <div className={`overflow-hidden rounded-lg`}>
+                              <div className="overflow-hidden">
                                 <ContentSdkImage
                                   field={article.fields.Image}
                                   className={cn(
@@ -198,7 +198,7 @@ export const Default = (props: CarouselProps) => {
                           {articles.map((article) => (
                             <SwiperSlide key={article.id}>
                               <Link href={article.url}>
-                                <div className="overflow-hidden rounded-lg">
+                                <div className="overflow-hidden">
                                   <ContentSdkImage
                                     field={article.fields.Image}
                                     className={`h-full w-full object-cover ${articles.length >= 3 ? 'aspect-4/5' : 'aspect-[3/1.8]'}`}

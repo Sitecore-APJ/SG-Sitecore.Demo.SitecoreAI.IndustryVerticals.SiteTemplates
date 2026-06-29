@@ -64,17 +64,15 @@ const HeroBannerCommon = ({
             <source src={fields.Video?.value?.src} type="video/webm" />
           </video>
         ) : (
-          <>
-            <ContentSdkImage
-              field={fields.Image}
-              className="h-full w-full object-cover md:object-bottom"
-              priority
-            />
-          </>
+          <ContentSdkImage
+            field={fields.Image}
+            className="h-full w-full object-cover md:object-center"
+            priority
+          />
         )}
-        {/* Gradient overlay to fade image/video at bottom */}
+        {/* Oberoi-style left gradient overlay for text legibility */}
         {!hideGradientOverlay && (
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent from-85% to-white"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
         )}
       </div>
 
@@ -93,34 +91,33 @@ export const Default = ({ params, fields, rendering }: HeroBannerProps) => {
 
   return (
     <HeroBannerCommon params={params} fields={fields} rendering={rendering}>
-      {/* Content Container */}
       <div className="relative w-full">
         <div className="container mx-auto px-4">
           <div
-            className={`flex min-h-238 w-full py-10 lg:w-1/2 lg:items-center ${reverseLayout ? 'lg:mr-auto' : 'lg:ml-auto'}`}
+            className={`flex min-h-200 w-full py-16 lg:min-h-238 lg:w-1/2 lg:items-center lg:py-20 ${reverseLayout ? 'lg:mr-auto' : 'lg:ml-0'}`}
           >
-            <div className="max-w-182">
+            <div className="max-w-xl">
               <div className={clsx({ shim: screenLayer })}>
-                {/* Title */}
-                <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] lg:text-left xl:text-[80px]">
+                <h1 className="text-background font-heading text-center text-4xl leading-tight font-medium tracking-tight uppercase md:text-5xl lg:text-left lg:text-6xl">
                   <ContentSdkText field={fields.Title} />
-                  {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch] lg:mx-0" />}
+                  {!hideAccentLine && <AccentLine className="mx-auto lg:mx-0" />}
                 </h1>
 
-                {/* Description */}
-                <div className="mt-7 text-xl md:text-2xl">
+                <div className="text-background/90 mt-6 text-base leading-relaxed md:text-lg">
                   <ContentSdkRichText
                     field={fields.Description}
-                    className="text-center lg:text-left"
+                    className="[&_p]:text-background/90 text-center lg:text-left"
                   />
                 </div>
 
-                {/* CTA Link or Placeholder */}
-                <div className="mt-6 flex w-full justify-center lg:justify-start">
+                <div className="mt-8 flex w-full justify-center lg:justify-start">
                   {withPlaceholder ? (
                     <Placeholder name={searchBarPlaceholderKey} rendering={rendering} />
                   ) : (
-                    <Link field={fields.CtaLink} className="arrow-btn" />
+                    <Link
+                      field={fields.CtaLink}
+                      className="bg-accent text-background hover:bg-accent-dark inline-flex items-center gap-2 rounded-sm px-6 py-3 text-sm tracking-[0.15em] uppercase transition-colors"
+                    />
                   )}
                 </div>
               </div>
@@ -142,30 +139,32 @@ export const TopContent = ({ params, fields, rendering }: HeroBannerProps) => {
 
   return (
     <HeroBannerCommon params={params} fields={fields} rendering={rendering}>
-      {/* Content Container */}
       <div className="relative w-full">
-        <div className="container mx-auto flex min-h-238 justify-center px-4">
+        <div className="container mx-auto flex min-h-200 justify-center px-4 lg:min-h-238">
           <div
-            className={`flex flex-col items-center py-10 lg:py-44 ${reverseLayout ? 'justify-end' : 'justify-start'}`}
+            className={`flex flex-col items-center py-16 lg:py-32 ${reverseLayout ? 'justify-end' : 'justify-start'}`}
           >
             <div className={clsx({ shim: screenLayer })}>
-              {/* Title */}
-              <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] xl:text-[80px]">
+              <h1 className="text-background font-heading text-center text-4xl leading-tight font-medium tracking-tight uppercase md:text-5xl lg:text-6xl">
                 <ContentSdkText field={fields.Title} />
-                {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch]" />}
+                {!hideAccentLine && <AccentLine className="mx-auto" />}
               </h1>
 
-              {/* Description */}
-              <div className="mt-7 text-xl md:text-2xl">
-                <ContentSdkRichText field={fields.Description} className="text-center" />
+              <div className="text-background/90 mt-6 text-base leading-relaxed md:text-lg">
+                <ContentSdkRichText
+                  field={fields.Description}
+                  className="[&_p]:text-background/90 text-center"
+                />
               </div>
 
-              {/* CTA Link or Placeholder */}
-              <div className="mt-6 flex w-full justify-center">
+              <div className="mt-8 flex w-full justify-center">
                 {withPlaceholder ? (
                   <Placeholder name={searchBarPlaceholderKey} rendering={rendering} />
                 ) : (
-                  <Link field={fields.CtaLink} className="arrow-btn" />
+                  <Link
+                    field={fields.CtaLink}
+                    className="bg-accent text-background hover:bg-accent-dark inline-flex items-center gap-2 rounded-sm px-6 py-3 text-sm tracking-[0.15em] uppercase transition-colors"
+                  />
                 )}
               </div>
             </div>

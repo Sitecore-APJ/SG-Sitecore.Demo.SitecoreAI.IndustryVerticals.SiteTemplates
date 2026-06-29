@@ -71,16 +71,16 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
                 title={fields?.Title?.value || ''}
                 description={fields?.ShortDescription?.value || ''}
                 mediaUrl={fields?.Image?.value?.src || ''}
-                className="col-span-12 size-fit p-3 shadow-xl md:p-4 lg:col-span-1 lg:flex-col"
+                className="border-border col-span-12 size-fit border p-3 md:p-4 lg:col-span-1 lg:flex-col"
               />
             )}
 
-            <div className="col-span-12 aspect-video w-full overflow-hidden rounded-lg lg:col-span-10 lg:col-start-2">
+            <div className="col-span-12 aspect-video w-full overflow-hidden lg:col-span-10 lg:col-start-2">
               <ContentSdkImage field={fields.Image} className="h-full w-full object-cover" />
             </div>
 
             <div className="col-span-12 mt-8 lg:col-span-8 lg:col-start-3">
-              <h2>
+              <h2 className="font-heading">
                 <ContentSdkText field={fields.Title} />
               </h2>
 

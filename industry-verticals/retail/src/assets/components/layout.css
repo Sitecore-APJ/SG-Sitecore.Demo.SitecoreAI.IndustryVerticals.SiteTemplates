@@ -42,23 +42,27 @@
 
 .container-dark-background {
   > .component-content {
-    @apply border-accent;
+    @apply border-navy;
   }
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-accent border-accent text-background;
+    @apply bg-navy border-navy text-background;
 
     * {
       @apply text-inherit;
     }
 
     .arrow-btn {
-      @apply border-b-background;
+      @apply text-accent hover:text-accent-dark border-b-0;
 
       &::after {
-        @apply bg-background;
+        @apply text-accent;
       }
+    }
+
+    .main-btn {
+      @apply bg-accent text-background;
     }
   }
 }
@@ -77,15 +81,15 @@
 /* Spacing */
 /* Using padding for the sides so it doesn't break the grid widths */
 .indent {
-  @apply px-12;
+  @apply px-8 lg:px-12;
 }
 
 .indent-top {
-  @apply mt-6;
+  @apply mt-8 lg:mt-12;
 }
 
 .indent-bottom {
-  @apply mb-6;
+  @apply mb-8 lg:mb-12;
 }
 
 /* Content alignment */
@@ -117,11 +121,11 @@
 }
 
 .container-dark-background .shim {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 50px;
+  background: rgba(26, 26, 61, 0.6);
+  padding: 40px;
 }
 
 .shim {
-  background: rgba(255, 255, 255, 0.4);
-  padding: 50px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
 }

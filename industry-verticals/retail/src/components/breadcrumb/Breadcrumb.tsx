@@ -76,15 +76,15 @@ export const Default = (props: BreadcrumbProps) => {
   return (
     <nav
       aria-label="breadcrumb"
-      className={`component breadcrumb bg-background-muted ${styles}`}
+      className={`component breadcrumb border-border bg-background border-b ${styles}`}
       id={id}
     >
-      <ol className="container flex items-center gap-4 overflow-auto py-4 lg:py-7">
+      <ol className="container flex items-center gap-3 overflow-auto py-3 text-xs lg:py-4">
         {homeAncestor && (
           <li key={homeAncestor.id} className="text-foreground-light flex items-center gap-4">
             <Link
               field={homeAncestor.url}
-              className="hover:text-foreground whitespace-nowrap transition-colors"
+              className="hover:text-accent text-foreground-light whitespace-nowrap transition-colors"
               title={getNavItemTitle(homeAncestor, false)}
             >
               <span className="hidden max-md:inline">
@@ -110,7 +110,7 @@ export const Default = (props: BreadcrumbProps) => {
           >
             <Link
               field={ancestor.url}
-              className="hover:text-foreground whitespace-nowrap transition-colors"
+              className="hover:text-accent text-foreground-light whitespace-nowrap transition-colors"
               title={getNavItemTitle(ancestor, false)}
             >
               {getNavItemTitle(ancestor)}
@@ -123,7 +123,7 @@ export const Default = (props: BreadcrumbProps) => {
           <li key={lastAncestor.id} className="text-foreground-light flex items-center gap-4">
             <Link
               field={lastAncestor.url}
-              className="hover:text-foreground whitespace-nowrap transition-colors"
+              className="hover:text-accent text-foreground-light whitespace-nowrap transition-colors"
               title={getNavItemTitle(lastAncestor, false)}
             >
               {getNavItemTitle(lastAncestor)}

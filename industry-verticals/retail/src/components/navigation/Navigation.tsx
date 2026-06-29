@@ -94,7 +94,7 @@ const NavigationListItem: React.FC<NavigationListItemProps> = ({
           field={getLinkField(fields)}
           editable={page.mode.isEditing}
           onClick={clickHandler}
-          className="hover:text-foreground-light whitespace-nowrap transition-colors"
+          className="navigation-link whitespace-nowrap"
         >
           {getLinkContent(fields, logoSrc)}
         </Link>
@@ -131,12 +131,12 @@ const NavigationListItem: React.FC<NavigationListItemProps> = ({
             isRootItem && 'lg:flex-row',
             hasDropdownMenu &&
               clsx(
-                'z-110 text-base max-lg:border-b max-lg:pb-4 max-lg:text-sm',
-                'lg:absolute lg:top-full lg:left-1/2 lg:-translate-x-1/2 lg:p-6 lg:transition-all lg:duration-300',
-                'lg:bg-background lg:rounded-xl lg:shadow-md',
+                'max-lg:border-border z-110 text-sm max-lg:border-b max-lg:pb-4',
+                'lg:absolute lg:top-full lg:left-1/2 lg:-translate-x-1/2 lg:p-4 lg:transition-all lg:duration-300',
+                'lg:bg-background lg:border-border lg:border lg:shadow-sm',
                 isActive
                   ? 'max-lg:flex'
-                  : 'max-lg:hidden lg:pointer-events-none lg:translate-y-2 lg:scale-95 lg:opacity-0'
+                  : 'max-lg:hidden lg:pointer-events-none lg:translate-y-2 lg:opacity-0'
               )
           )}
         >
@@ -236,7 +236,7 @@ export const Default = ({ params, fields }: NavigationProps) => {
         <ul
           role="menubar"
           className={clsx(
-            'container flex flex-col items-center justify-center gap-x-8 gap-y-4 py-6 text-lg lg:flex-row xl:gap-x-16',
+            'container flex flex-col items-center justify-center gap-x-8 gap-y-4 py-8 text-sm lg:flex-row xl:gap-x-12',
             isSimpleLayout && !hasLogoRootItem && 'lg:justify-end'
           )}
         >
