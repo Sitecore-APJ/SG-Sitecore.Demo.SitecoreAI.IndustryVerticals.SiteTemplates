@@ -47,10 +47,14 @@ export const Default = ({ params, fields }: ProductCarouselProps) => {
     <div className={`component all-products-carousel py-5 ${params.styles}`} id={id}>
       <div className="container flex flex-col items-center gap-10 text-center">
         {/* Category Filter */}
-        <div className="bg-border flex flex-wrap justify-center rounded-lg p-1 text-lg leading-8">
+        <div className="border-border bg-background-muted flex flex-wrap justify-center rounded-sm border p-1 text-base">
           {categories.map((category) => (
             <button
-              className={`!text-foreground rounded-lg px-8 py-2 ${selectedCategory === category ? 'bg-background' : ''}`}
+              className={`rounded-sm px-6 py-2 font-medium transition-colors ${
+                selectedCategory === category
+                  ? 'bg-primary text-background'
+                  : 'text-foreground hover:text-accent'
+              }`}
               onClick={() => setSelectedCategory(category)}
               key={category}
             >

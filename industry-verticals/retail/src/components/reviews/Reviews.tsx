@@ -39,19 +39,19 @@ export const Default = (props: ReviewsProps) => {
 
   return (
     <div className={`${styles}`} id={id}>
-      <div className="container py-20">
-        {/* Heading Section */}
+      <div className="container py-16 lg:py-20">
         <div className="text-center">
-          <p className="eyebrow pb-4">
+          <p className="eyebrow pb-3">
             <Text field={sectionEyebrow} />
           </p>
-          <div className="flex flex-col items-center justify-center gap-2">
-            <h2 className="inline-block font-bold max-lg:text-5xl" aria-label="section-title">
+          <div className="flex flex-col items-center justify-center gap-3">
+            <h2
+              className="text-accent inline-block text-2xl font-bold lg:text-3xl"
+              aria-label="section-title"
+            >
               <Text field={sectionTitle} />
             </h2>
-            <h2 className="inline-block font-bold max-lg:text-5xl" aria-label="accent-line">
-              {!hideAccentLine && <AccentLine className="w-full max-w-xs" />}
-            </h2>
+            {!hideAccentLine && <AccentLine className="mx-auto" />}
           </div>
         </div>
 

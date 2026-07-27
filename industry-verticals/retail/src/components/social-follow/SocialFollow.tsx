@@ -54,7 +54,10 @@ export const Default = (props: SocialFollowProps) => {
             {field?.value?.href && (
               <>
                 <FontAwesomeIcon icon={icon} className="text-foreground text-xl" />
-                <ContentSdkLink field={field} className="text-foreground hover:underline" />
+                <ContentSdkLink
+                  field={field}
+                  className="text-foreground-light hover:text-accent text-sm no-underline transition-colors"
+                />
               </>
             )}
           </div>

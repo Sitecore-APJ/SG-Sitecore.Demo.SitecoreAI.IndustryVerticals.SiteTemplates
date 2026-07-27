@@ -59,9 +59,9 @@ export const Default = (props: FeaturesProps) => {
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container grid grid-cols-1 py-20 lg:grid-cols-[1fr_2fr] lg:gap-10">
-        <div className="mb-20 lg:mb-0">
-          <h2 className="inline-block max-w-md font-bold max-lg:text-[42px]">
+      <div className="container grid grid-cols-1 py-16 lg:grid-cols-[1fr_2fr] lg:gap-12 lg:py-20">
+        <div className="mb-12 lg:mb-0">
+          <h2 className="text-accent inline-block max-w-md text-2xl font-bold lg:text-3xl">
             <Text field={featureSectionTitle.jsonValue} />
             {!hideAccentLine && <AccentLine className="w-full max-w-xs" />}
           </h2>
@@ -72,16 +72,15 @@ export const Default = (props: FeaturesProps) => {
             const description = item.featureDescription.jsonValue;
             const link = item.featureLink.jsonValue;
             return (
-              <div className="flex flex-col" key={index}>
-                {/* Title, Link and Description */}
-                <div className="mb-5 text-2xl font-bold">
+              <div className="border-border flex flex-col border-b pb-6" key={index}>
+                <div className="text-accent mb-3 text-lg font-bold">
                   <Text field={title} />
                 </div>
-                <div className="text-foreground mb-3.5 flex-auto leading-7">
+                <div className="text-foreground-light mb-4 flex-auto text-sm leading-relaxed">
                   <Text field={description} />
                 </div>
                 <div>
-                  <Link field={link} className="arrow-btn" />
+                  <Link field={link} className="arrow-btn text-sm" />
                 </div>
               </div>
             );
@@ -126,7 +125,7 @@ export const ThreeColGridCentered = (props: FeaturesProps) => {
           return (
             <div className="flex flex-col items-center justify-start 2xl:w-80" key={index}>
               {/* Image */}
-              <div className="bg-accent mb-7 flex h-20 w-20 items-center justify-center rounded-full">
+              <div className="bg-accent mb-6 flex h-16 w-16 items-center justify-center rounded-full">
                 <Image field={image} />
               </div>
               {/* Title and Description */}
@@ -158,19 +157,18 @@ export const NumberedGrid = (props: FeaturesProps) => {
           const description = item?.featureDescription.jsonValue;
           return (
             <div
-              className="group text-background hover:bg-accent cursor-pointer rounded-xl p-6"
+              className="group border-border hover:border-accent hover:bg-background-accent cursor-pointer rounded-sm border p-6 transition-colors"
               key={index}
             >
-              {/* Generated Number */}
-              <h1 className="group-hover:text-background text-background-muted-dark mb-2 text-7xl leading-24">
+              <h1 className="text-background-muted-dark group-hover:text-accent mb-2 text-5xl leading-none font-bold">
                 {generateIndexes(index)}
               </h1>
               {/* Title and Description */}
               <div>
-                <div className="text-accent group-hover:text-background mb-4 text-2xl leading-8 font-bold">
+                <div className="text-accent group-hover:text-primary mb-3 text-xl font-bold">
                   <Text field={title} />
                 </div>
-                <div className="text-background-muted-dark group-hover:text-background leading-7">
+                <div className="text-foreground-light text-sm leading-relaxed">
                   <Text field={description} />
                 </div>
               </div>
@@ -228,7 +226,7 @@ export const ImageCardGrid = (props: FeaturesProps) => {
           const image = item.featureImage.jsonValue;
           return (
             <div key={index}>
-              <div className="mb-7 aspect-4/3 w-full overflow-hidden rounded-lg bg-white">
+              <div className="border-border mb-6 aspect-4/3 w-full overflow-hidden rounded-sm border bg-white">
                 <Image field={image} className="h-full w-full object-cover" />
               </div>
 

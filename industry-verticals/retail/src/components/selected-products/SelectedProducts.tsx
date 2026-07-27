@@ -27,7 +27,7 @@ export const Default = (props: RelatedProductsProps): JSX.Element => {
   return (
     <section className={`component related-products ${styles}`} id={id || undefined}>
       <div className="container flex flex-col items-center p-8 md:p-10">
-        <h2 className="mb-10 inline-block">
+        <h2 className="text-accent mb-10 inline-block text-2xl font-bold">
           <Text field={props.fields?.Title} />
           {!hideAccentLine && <AccentLine className="mx-auto !h-4 w-[8ch]" />}
         </h2>
@@ -35,7 +35,7 @@ export const Default = (props: RelatedProductsProps): JSX.Element => {
         {/* Product Carousel */}
         <ProductCarousel products={props.fields.ProductsList} autoPlay={autoPlay} loop={loop} />
 
-        <Link field={props.fields.ProductsLink} className="arrow-btn" />
+        <Link field={props.fields.ProductsLink} className="outline-btn mt-8" />
       </div>
     </section>
   );

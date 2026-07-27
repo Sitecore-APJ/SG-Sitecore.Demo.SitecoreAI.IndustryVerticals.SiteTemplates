@@ -23,7 +23,7 @@ export const Default = (props: SubscribeBannerProps): JSX.Element => {
       <div className="container max-w-4xl md:max-w-5xl md:px-10">
         <div className="grid items-center gap-y-6 md:grid-cols-2 md:gap-x-12 md:gap-y-0">
           {/* Headline */}
-          <h2 className="text-foreground text-2xl leading-tight font-medium xl:text-3xl">
+          <h2 className="text-accent text-xl leading-tight font-bold xl:text-2xl">
             <Text field={props.fields?.Title} />
           </h2>
 
@@ -33,7 +33,7 @@ export const Default = (props: SubscribeBannerProps): JSX.Element => {
               {t('your_email_label') || 'your@email.com'}
             </label>
 
-            <div className="relative">
+            <div className="flex flex-col gap-3 sm:flex-row">
               <input
                 id="subscribe-email"
                 name="email"
@@ -42,13 +42,10 @@ export const Default = (props: SubscribeBannerProps): JSX.Element => {
                 autoComplete="email"
                 required
                 placeholder={t('your_email') || 'E.g. your@email.com'}
-                className="bg-background ring-foreground/5 text-foreground placeholder:text-foreground/70 h-12 w-full rounded-md ps-5 pe-32 ring-1 focus:ring-2 focus:outline-none md:h-14"
+                className="border-border text-foreground placeholder:text-foreground-muted focus:border-accent h-12 flex-1 rounded-sm border bg-white px-4 text-sm focus:outline-none md:h-12"
               />
 
-              <button
-                type="submit"
-                className="bg-accent group-[.container-dark-background]:bg-background-accent group-[.container-dark-background]:!text-foreground text-background absolute top-1/2 right-2 h-9 -translate-y-1/2 rounded-md px-4 text-sm font-semibold hover:opacity-90 focus-visible:ring-2 focus-visible:outline-none md:right-3 md:h-10 md:px-5"
-              >
+              <button type="submit" className="cta-btn shrink-0">
                 {t('button_text') || 'Subscribe'}
               </button>
             </div>
@@ -93,7 +90,7 @@ export const WithConsent = (props: SubscribeBannerProps): JSX.Element => {
 
           <button
             type="submit"
-            className="bg-accent group-[.container-dark-background]:bg-background-accent text-background group-[.container-dark-background]:!text-foreground mt-3 inline-flex h-12 w-full items-center justify-center rounded-sm font-semibold tracking-widest uppercase hover:opacity-90 md:h-12"
+            className="bg-primary text-background hover:bg-primary-dark mt-3 inline-flex h-12 w-full items-center justify-center rounded-sm text-sm font-semibold transition-colors md:h-12"
           >
             {t('button_text') || 'Subscribe'}
           </button>

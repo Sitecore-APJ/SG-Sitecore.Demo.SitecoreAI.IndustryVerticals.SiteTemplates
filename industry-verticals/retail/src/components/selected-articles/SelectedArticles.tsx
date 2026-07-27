@@ -75,13 +75,13 @@ export const Default = (props: CarouselProps) => {
   );
 
   return (
-    <section className={`${props.params.styles} py-20`} id={id ? id : undefined}>
+    <section className={`${props.params.styles} py-16 lg:py-20`} id={id ? id : undefined}>
       <div className={cn(containerAlignment, 'relative overflow-hidden')}>
         <div
-          className={cn('flex', 'flex-col', flexDirectionClass, 'items-center', 'w-full', 'gap-10')}
+          className={cn('flex', 'flex-col', flexDirectionClass, 'items-start', 'w-full', 'gap-10')}
         >
-          <div className="w-full space-y-5 md:w-1/3">
-            <h2 className="inline-block max-w-md">
+          <div className="w-full space-y-4 md:w-1/3">
+            <h2 className="text-accent inline-block max-w-md text-2xl font-bold lg:text-3xl">
               <Text field={props.fields.Title} />
               {!hideAccentLine && <AccentLine className="w-full max-w-xs" />}
             </h2>
@@ -90,7 +90,7 @@ export const Default = (props: CarouselProps) => {
               <ContentSdkRichText field={props.fields.Description} />
             </div>
 
-            <ContentSskLink field={props.fields.ExploreLink} className="arrow-btn" />
+            <ContentSskLink field={props.fields.ExploreLink} className="outline-btn" />
           </div>
 
           <div className={cn('w-full', 'md:w-2/3', 'lg:transform', translateClass)}>
@@ -120,7 +120,7 @@ export const Default = (props: CarouselProps) => {
                         return (
                           <SwiperSlide key={article.id}>
                             <Link href={article.url}>
-                              <div className={`overflow-hidden rounded-lg`}>
+                              <div className={`overflow-hidden rounded-sm`}>
                                 <ContentSdkImage
                                   field={article.fields.Image}
                                   className={cn(
@@ -133,10 +133,10 @@ export const Default = (props: CarouselProps) => {
                               {article.fields?.Title?.value && (
                                 <div className="absolute bottom-0 z-20 m-3 max-w-full xl:m-4">
                                   <div className="flex items-end">
-                                    <div className="bg-background/75 max-w-full space-y-1 overflow-hidden p-5 text-ellipsis">
-                                      <div className="flex items-center gap-1 overflow-hidden text-xs font-extralight text-ellipsis whitespace-nowrap">
-                                        <div className="h-[1px] w-7 bg-black"></div>
-                                        <div className="text-foreground/75">
+                                    <div className="bg-background/90 max-w-full space-y-1 overflow-hidden p-4 text-ellipsis">
+                                      <div className="flex items-center gap-1 overflow-hidden text-xs text-ellipsis whitespace-nowrap">
+                                        <div className="bg-accent h-[2px] w-6"></div>
+                                        <div className="text-accent text-xs font-semibold uppercase">
                                           <Text
                                             editable={false}
                                             field={article.fields?.Category?.fields?.Category}
@@ -149,7 +149,7 @@ export const Default = (props: CarouselProps) => {
                                         </h6>
                                       </div>
                                     </div>
-                                    <div className="bg-accent inline-block p-2">
+                                    <div className="bg-primary inline-block p-2">
                                       <ArrowRight
                                         size={16}
                                         strokeWidth={1}
@@ -198,7 +198,7 @@ export const Default = (props: CarouselProps) => {
                           {articles.map((article) => (
                             <SwiperSlide key={article.id}>
                               <Link href={article.url}>
-                                <div className="overflow-hidden rounded-lg">
+                                <div className="overflow-hidden rounded-sm">
                                   <ContentSdkImage
                                     field={article.fields.Image}
                                     className={`h-full w-full object-cover ${articles.length >= 3 ? 'aspect-4/5' : 'aspect-[3/1.8]'}`}

@@ -90,7 +90,7 @@ export const Default = (props: ArticleListingProps) => {
           {paginatedArticles.map((article) => (
             <article key={article.id} className="space-y-4">
               {/* Image */}
-              <div className="relative aspect-3/2 w-full overflow-hidden rounded-lg md:aspect-9/4">
+              <div className="relative aspect-3/2 w-full overflow-hidden rounded-sm md:aspect-9/4">
                 <ContentSdkImage
                   field={article.fields?.Image}
                   className="h-full w-full object-cover"
@@ -186,7 +186,7 @@ export const Default = (props: ArticleListingProps) => {
           <Placeholder name={searchBarPlaceholderKey} rendering={props.rendering} />
 
           {/* Categories */}
-          <div className="text-foreground mb-5 text-lg font-bold">
+          <div className="text-accent mb-5 text-base font-bold">
             {t('categories_text') || 'Categories'}
           </div>
           <ul className="text-foreground-muted space-y-4 text-sm">

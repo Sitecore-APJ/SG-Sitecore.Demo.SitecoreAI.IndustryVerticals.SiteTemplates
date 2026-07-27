@@ -18,18 +18,18 @@ export const Default = ({ params, fields, rendering }: SectionWrapperProps) => {
   const placeholderKey = `section-wrapper-content-${params.DynamicPlaceholderId}`;
 
   return (
-    <section className={`component section-wrapper pt-14 pb-10 ${styles}`} id={id}>
+    <section className={`component section-wrapper py-16 lg:py-20 ${styles}`} id={id}>
       <div className="container flex flex-col items-center">
-        <h2>
+        <h2 className="text-accent text-center text-2xl font-bold">
           <Text field={fields.Title} />
-          {!hideAccentLine && <AccentLine className="ml-auto !h-4 w-[8ch]" />}
+          {!hideAccentLine && <AccentLine className="mx-auto" />}
         </h2>
 
-        <div className="mt-5 mb-12 w-full">
+        <div className="mt-8 mb-10 w-full">
           <Placeholder name={placeholderKey} rendering={rendering} />
         </div>
 
-        <Link field={fields.Link} className="arrow-btn" />
+        <Link field={fields.Link} className="outline-btn" />
       </div>
     </section>
   );
