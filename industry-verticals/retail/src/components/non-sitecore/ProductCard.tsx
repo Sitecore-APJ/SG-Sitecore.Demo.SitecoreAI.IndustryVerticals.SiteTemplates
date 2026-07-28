@@ -1,8 +1,8 @@
 import { NextImage as ContentSdkImage, Text } from '@sitecore-content-sdk/nextjs';
-import StarRating from './StarRating';
 import Link from 'next/link';
 import { Product } from '@/types/products';
 import { useLocale } from '@/hooks/useLocaleOptions';
+import { Tag } from 'lucide-react';
 
 interface ProductCardProps {
   product: Partial<Product> & {
@@ -17,47 +17,56 @@ export const ProductCard = ({ product, url, className }: ProductCardProps) => {
   const formattedPrice =
     product.Price?.value && !isNaN(product.Price?.value)
       ? product.Price.value.toLocaleString(undefined, {
-          minimumFractionDigits: 0,
+          minimumFractionDigits: 2,
           maximumFractionDigits: 2,
         })
       : product.Price?.value;
 
+  const categoryName = product.Category?.fields?.CategoryName?.value;
+  const hasPromo = (product.Rating ?? 0) >= 4;
+
   return (
     <Link href={url} passHref>
-      <div
-        className={`flex min-h-123 w-full flex-col overflow-hidden rounded-2xl hover:drop-shadow-sm ${className}`}
-      >
+      <article className={`sentosa-card group flex h-full w-full flex-col ${className ?? ''}`}>
         {/* Product Image */}
-        <div className="bg-background-surface flex h-72 w-full items-center justify-center p-6">
+        <div className="relative aspect-[4/3] w-full overflow-hidden">
           <ContentSdkImage
             field={product.Image1}
-            className="max-h-full max-w-full object-contain"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             priority
           />
+          {categoryName && <span className="category-badge">{categoryName}</span>}
         </div>
 
         {/* Product Details */}
-        <div className="bg-background flex grow-1 flex-col items-start px-5 pt-3 pb-9 text-left">
-          <p className="!text-foreground-light">
-            <Text field={product.Category?.fields?.CategoryName} />
-          </p>
-
-          <h6 className="!text-foreground mt-1 line-clamp-2 font-semibold">
+        <div className="flex grow flex-col gap-3 px-4 pt-4 pb-5">
+          <h6 className="!text-foreground line-clamp-2 text-base leading-snug font-semibold">
             <Text field={product.Title} />
           </h6>
 
-          <StarRating
-            rating={product.Rating || 0}
-            showOnlyFilled
-            className="!text-accent mt-1 mb-5"
-          />
+          {categoryName && (
+            <p className="!text-foreground-muted text-sm">
+              <Text field={product.Category?.fields?.CategoryName} />
+            </p>
+          )}
 
-          <h6 className="!text-foreground mt-auto font-semibold">
-            <span className="mr-1 align-super text-sm">{currencySymbol} </span>
-            {formattedPrice}
-          </h6>
+          <div className="border-border border-t pt-3">
+            <div className="flex items-center justify-between gap-2">
+              <p className="!text-foreground text-base font-semibold">
+                <span className="text-foreground-muted mr-1 text-xs font-normal">From</span>
+                <span className="align-super text-xs">{currencySymbol}</span>
+                {formattedPrice}
+              </p>
+              {hasPromo && (
+                <span className="promo-badge">
+                  <Tag className="size-3" />
+                  Promo available
+                </span>
+              )}
+            </div>
+          </div>
         </div>
-      </div>
+      </article>
     </Link>
   );
 };

@@ -72,9 +72,9 @@ const HeroBannerCommon = ({
             />
           </>
         )}
-        {/* Gradient overlay to fade image/video at bottom */}
+        {/* Gradient overlay — Sentosa dark bottom fade for legible white text */}
         {!hideGradientOverlay && (
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent from-85% to-white"></div>
+          <div className="from-foreground/80 via-foreground/30 absolute inset-0 bg-gradient-to-t to-transparent"></div>
         )}
       </div>
 
@@ -97,30 +97,32 @@ export const Default = ({ params, fields, rendering }: HeroBannerProps) => {
       <div className="relative w-full">
         <div className="container mx-auto px-4">
           <div
-            className={`flex min-h-238 w-full py-10 lg:w-1/2 lg:items-center ${reverseLayout ? 'lg:mr-auto' : 'lg:ml-auto'}`}
+            className={`flex min-h-120 w-full items-end py-16 lg:min-h-150 lg:w-1/2 lg:items-center lg:py-20 ${reverseLayout ? 'lg:mr-auto' : 'lg:ml-0'}`}
           >
-            <div className="max-w-182">
+            <div className="max-w-xl">
               <div className={clsx({ shim: screenLayer })}>
                 {/* Title */}
-                <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] lg:text-left xl:text-[80px]">
+                <h1 className="text-background text-left text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
                   <ContentSdkText field={fields.Title} />
-                  {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch] lg:mx-0" />}
+                  {!hideAccentLine && (
+                    <AccentLine className="!bg-accent mx-0 mt-4 !h-1.5 w-20 lg:mx-0" />
+                  )}
                 </h1>
 
                 {/* Description */}
-                <div className="mt-7 text-xl md:text-2xl">
+                <div className="text-background/90 mt-5 text-lg md:text-xl">
                   <ContentSdkRichText
                     field={fields.Description}
-                    className="text-center lg:text-left"
+                    className="[&_p]:text-background/90 text-left"
                   />
                 </div>
 
                 {/* CTA Link or Placeholder */}
-                <div className="mt-6 flex w-full justify-center lg:justify-start">
+                <div className="mt-8 flex w-full justify-start">
                   {withPlaceholder ? (
                     <Placeholder name={searchBarPlaceholderKey} rendering={rendering} />
                   ) : (
-                    <Link field={fields.CtaLink} className="arrow-btn" />
+                    <Link field={fields.CtaLink} className="main-btn !w-auto !px-10" />
                   )}
                 </div>
               </div>
@@ -144,28 +146,31 @@ export const TopContent = ({ params, fields, rendering }: HeroBannerProps) => {
     <HeroBannerCommon params={params} fields={fields} rendering={rendering}>
       {/* Content Container */}
       <div className="relative w-full">
-        <div className="container mx-auto flex min-h-238 justify-center px-4">
+        <div className="container mx-auto flex min-h-120 items-end justify-center px-4 lg:min-h-150">
           <div
-            className={`flex flex-col items-center py-10 lg:py-44 ${reverseLayout ? 'justify-end' : 'justify-start'}`}
+            className={`flex w-full max-w-3xl flex-col py-16 lg:py-24 ${reverseLayout ? 'justify-end' : 'justify-start'}`}
           >
-            <div className={clsx({ shim: screenLayer })}>
+            <div className={clsx({ shim: screenLayer }, 'text-center')}>
               {/* Title */}
-              <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] xl:text-[80px]">
+              <h1 className="text-background text-4xl leading-tight font-bold md:text-5xl lg:text-6xl">
                 <ContentSdkText field={fields.Title} />
-                {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch]" />}
+                {!hideAccentLine && <AccentLine className="!bg-accent mx-auto mt-4 !h-1.5 w-20" />}
               </h1>
 
               {/* Description */}
-              <div className="mt-7 text-xl md:text-2xl">
-                <ContentSdkRichText field={fields.Description} className="text-center" />
+              <div className="text-background/90 mt-5 text-lg md:text-xl">
+                <ContentSdkRichText
+                  field={fields.Description}
+                  className="[&_p]:text-background/90"
+                />
               </div>
 
               {/* CTA Link or Placeholder */}
-              <div className="mt-6 flex w-full justify-center">
+              <div className="mt-8 flex w-full justify-center">
                 {withPlaceholder ? (
                   <Placeholder name={searchBarPlaceholderKey} rendering={rendering} />
                 ) : (
-                  <Link field={fields.CtaLink} className="arrow-btn" />
+                  <Link field={fields.CtaLink} className="main-btn !w-auto !px-10" />
                 )}
               </div>
             </div>

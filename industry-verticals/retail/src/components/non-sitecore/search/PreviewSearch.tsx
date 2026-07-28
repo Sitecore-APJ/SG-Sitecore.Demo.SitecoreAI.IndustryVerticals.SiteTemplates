@@ -105,7 +105,7 @@ export const PreviewSearchComponent = ({
       <form ref={formRef} onSubmit={handleSubmit} className="flex-1">
         <PreviewSearch.Input
           name="query"
-          className="focus:ring-accent border-border w-full rounded-md border px-3 py-2 text-base focus:border-transparent focus:ring-2 focus:outline-none sm:px-4 sm:py-3 sm:text-lg"
+          className="border-border focus:ring-secondary w-full rounded-full border px-4 py-2.5 text-base focus:ring-2 focus:outline-none sm:px-5 sm:py-3 sm:text-lg"
           onChange={keyphraseHandler}
           autoComplete="off"
           placeholder="Search content, products..."

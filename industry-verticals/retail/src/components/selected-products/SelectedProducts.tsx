@@ -25,17 +25,17 @@ export const Default = (props: RelatedProductsProps): JSX.Element => {
   const loop = isParamEnabled(props.params.Loop);
 
   return (
-    <section className={`component related-products ${styles}`} id={id || undefined}>
-      <div className="container flex flex-col items-center p-8 md:p-10">
-        <h2 className="mb-10 inline-block">
-          <Text field={props.fields?.Title} />
-          {!hideAccentLine && <AccentLine className="mx-auto !h-4 w-[8ch]" />}
-        </h2>
+    <section className={`component related-products py-12 lg:py-16 ${styles}`} id={id || undefined}>
+      <div className="container">
+        <div className="section-heading-row">
+          <h2 className="text-2xl font-bold lg:text-3xl">
+            <Text field={props.fields?.Title} />
+            {!hideAccentLine && <AccentLine className="mt-2" />}
+          </h2>
+          <Link field={props.fields.ProductsLink} className="arrow-btn shrink-0" />
+        </div>
 
-        {/* Product Carousel */}
         <ProductCarousel products={props.fields.ProductsList} autoPlay={autoPlay} loop={loop} />
-
-        <Link field={props.fields.ProductsLink} className="arrow-btn" />
       </div>
     </section>
   );

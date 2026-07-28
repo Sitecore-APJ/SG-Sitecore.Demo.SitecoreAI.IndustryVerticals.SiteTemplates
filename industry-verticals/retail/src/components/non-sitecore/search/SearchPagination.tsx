@@ -14,6 +14,8 @@ const SearchPagination = ({ currentPage, totalPages }: SearchPaginationProps) =>
 
   if (totalPages <= 1) return null;
 
+  const pillBase = 'rounded-full px-4 py-2 text-sm font-medium md:px-5 md:py-2.5';
+
   return (
     <Pagination.Root
       currentPage={currentPage}
@@ -28,7 +30,7 @@ const SearchPagination = ({ currentPage, totalPages }: SearchPaginationProps) =>
     >
       <Pagination.PrevPage
         onClick={(e) => e.preventDefault()}
-        className="bg-background-accent rounded-md px-3 py-2 data-[current=true]:hidden md:px-4 md:py-3"
+        className={`bg-background-muted text-foreground hover:text-secondary ${pillBase} data-[current=true]:hidden`}
       >
         <span className="md:hidden">
           <ChevronLeft size={16} />
@@ -47,8 +49,10 @@ const SearchPagination = ({ currentPage, totalPages }: SearchPaginationProps) =>
                 aria-label={`Page ${page}`}
                 page={page as number}
                 onClick={(e) => e.preventDefault()}
-                className={`mx-1 rounded-md px-3 py-2 md:px-4 md:py-3 ${
-                  page === currentPage ? 'bg-accent text-background' : 'bg-background-accent'
+                className={`mx-1 ${pillBase} ${
+                  page === currentPage
+                    ? 'main-btn !w-auto !py-2 !shadow-none'
+                    : 'bg-background-muted text-foreground hover:text-secondary'
                 }`}
               >
                 {page}
@@ -63,7 +67,7 @@ const SearchPagination = ({ currentPage, totalPages }: SearchPaginationProps) =>
       </Pagination.Pages>
       <Pagination.NextPage
         onClick={(e) => e.preventDefault()}
-        className="bg-background-accent rounded-md px-3 py-2 data-[current=true]:hidden md:px-4 md:py-3"
+        className={`bg-background-muted text-foreground hover:text-secondary ${pillBase} data-[current=true]:hidden`}
       >
         <span className="md:hidden">
           <ChevronRight size={16} />

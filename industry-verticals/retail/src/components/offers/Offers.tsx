@@ -43,14 +43,14 @@ export const Default = (props: OfferProps) => {
   }
 
   return (
-    <div className={`component offers ${styles}`} id={id}>
-      <div className="mx-auto flex w-full max-w-3xl items-center justify-center gap-5 p-2">
+    <div className={`component offers bg-background-accent ${styles}`} id={id}>
+      <div className="mx-auto flex w-full max-w-4xl items-center justify-center gap-4 px-4 py-3">
         <button
-          className={`swiper-btn-prev-${uid}`}
+          className={`text-foreground hover:text-secondary swiper-btn-prev-${uid} transition-colors`}
           name="previous-offer"
           aria-label="Previous offer"
         >
-          <ChevronLeft />
+          <ChevronLeft className="size-5" />
         </button>
 
         <Swiper
@@ -83,8 +83,12 @@ export const Default = (props: OfferProps) => {
           ))}
         </Swiper>
 
-        <button className={`swiper-btn-next-${uid}`} name="next-offer" aria-label="Next offer">
-          <ChevronRight />
+        <button
+          className={`text-foreground hover:text-secondary swiper-btn-next-${uid} transition-colors`}
+          name="next-offer"
+          aria-label="Next offer"
+        >
+          <ChevronRight className="size-5" />
         </button>
       </div>
     </div>

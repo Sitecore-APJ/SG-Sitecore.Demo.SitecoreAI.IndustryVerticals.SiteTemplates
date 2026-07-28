@@ -126,13 +126,19 @@ export const ThreeColGridCentered = (props: FeaturesProps) => {
           return (
             <div className="flex flex-col items-center justify-start 2xl:w-80" key={index}>
               {/* Image */}
-              <div className="bg-accent mb-7 flex h-20 w-20 items-center justify-center rounded-full">
+              <div
+                className="bg-accent mb-7 flex h-20 w-20 items-center justify-center rounded-full"
+                style={{
+                  background:
+                    'linear-gradient(135deg, var(--color-accent-start), var(--color-accent-end))',
+                }}
+              >
                 <Image field={image} />
               </div>
               {/* Title and Description */}
               <div className="flex flex-col items-center justify-center">
                 <div className="mb-2 leading-0.5">
-                  <Text tag="h5" className="text-accent" field={title} />
+                  <Text tag="h5" className="text-secondary" field={title} />
                 </div>
                 <div className="text-background-muted-light text-center">
                   <Text field={description} />
@@ -158,7 +164,7 @@ export const NumberedGrid = (props: FeaturesProps) => {
           const description = item?.featureDescription.jsonValue;
           return (
             <div
-              className="group text-background hover:bg-accent cursor-pointer rounded-xl p-6"
+              className="group text-foreground hover:bg-foreground border-border cursor-pointer rounded-2xl border p-6 transition-colors hover:text-white"
               key={index}
             >
               {/* Generated Number */}
@@ -167,7 +173,7 @@ export const NumberedGrid = (props: FeaturesProps) => {
               </h1>
               {/* Title and Description */}
               <div>
-                <div className="text-accent group-hover:text-background mb-4 text-2xl leading-8 font-bold">
+                <div className="text-secondary group-hover:text-background mb-4 text-xl leading-8 font-bold">
                   <Text field={title} />
                 </div>
                 <div className="text-background-muted-dark group-hover:text-background leading-7">
@@ -228,7 +234,7 @@ export const ImageCardGrid = (props: FeaturesProps) => {
           const image = item.featureImage.jsonValue;
           return (
             <div key={index}>
-              <div className="mb-7 aspect-4/3 w-full overflow-hidden rounded-lg bg-white">
+              <div className="mb-7 aspect-4/3 w-full overflow-hidden rounded-2xl">
                 <Image field={image} className="h-full w-full object-cover" />
               </div>
 

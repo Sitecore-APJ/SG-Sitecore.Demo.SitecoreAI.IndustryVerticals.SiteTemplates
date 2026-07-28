@@ -36,29 +36,30 @@
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-background-accent border-background-accent;
+    @apply border-background-accent bg-background-accent;
   }
 }
 
 .container-dark-background {
   > .component-content {
-    @apply border-accent;
+    @apply border-foreground;
   }
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-accent border-accent text-background;
+    @apply border-foreground bg-foreground text-background;
 
     * {
       @apply text-inherit;
     }
 
     .arrow-btn {
-      @apply border-b-background;
+      @apply text-background hover:text-secondary;
+    }
 
-      &::after {
-        @apply bg-background;
-      }
+    .main-btn {
+      @apply text-foreground;
+      background: linear-gradient(135deg, var(--color-accent-start), var(--color-accent-end));
     }
   }
 }
@@ -70,7 +71,7 @@
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-background-muted border-background-muted;
+    @apply border-background-muted bg-background-muted;
   }
 }
 
@@ -117,11 +118,13 @@
 }
 
 .container-dark-background .shim {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 50px;
+  background: rgba(0, 43, 69, 0.55);
+  padding: 2.5rem;
+  border-radius: 1rem;
 }
 
 .shim {
-  background: rgba(255, 255, 255, 0.4);
-  padding: 50px;
+  background: rgba(0, 43, 69, 0.35);
+  padding: 2.5rem;
+  border-radius: 1rem;
 }

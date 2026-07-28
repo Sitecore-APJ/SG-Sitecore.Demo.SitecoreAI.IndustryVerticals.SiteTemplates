@@ -17,7 +17,7 @@ export const Pagination = ({
   currentPage,
   setCurrentPage,
   windowSize = 3,
-  paginationButtonClasses = 'px-3 py-2 md:px-4 md:py-3 rounded-md',
+  paginationButtonClasses = 'px-4 py-2 md:px-5 md:py-2.5 rounded-full text-sm font-medium',
 }: PaginationProps) => {
   const { totalPages, startPage, endPage, visiblePages } = usePagination({
     totalItems,
@@ -38,7 +38,7 @@ export const Pagination = ({
       {currentPage > 1 && (
         <button
           onClick={() => handlePageChange(currentPage - 1)}
-          className={`${paginationButtonClasses} bg-background-accent`}
+          className={`${paginationButtonClasses} bg-background-muted text-foreground hover:text-secondary`}
         >
           <span className="md:hidden">
             <ChevronLeft size={16} />
@@ -52,7 +52,9 @@ export const Pagination = ({
           <button
             onClick={() => handlePageChange(1)}
             className={`${paginationButtonClasses} ${
-              currentPage === 1 ? 'bg-accent text-background' : 'bg-background-accent'
+              currentPage === 1
+                ? 'main-btn !w-auto !py-2 !shadow-none'
+                : 'bg-background-muted text-foreground'
             }`}
           >
             1
@@ -66,7 +68,9 @@ export const Pagination = ({
           key={page}
           onClick={() => handlePageChange(page)}
           className={`${paginationButtonClasses} ${
-            page === currentPage ? 'bg-accent text-background' : 'bg-background-accent'
+            page === currentPage
+              ? 'main-btn !w-auto !py-2 !shadow-none'
+              : 'bg-background-muted text-foreground hover:text-secondary'
           }`}
         >
           {page}
@@ -79,7 +83,9 @@ export const Pagination = ({
           <button
             onClick={() => handlePageChange(totalPages)}
             className={`${paginationButtonClasses} ${
-              currentPage === totalPages ? 'bg-accent text-background' : 'bg-background-accent'
+              currentPage === totalPages
+                ? 'main-btn !w-auto !py-2 !shadow-none'
+                : 'bg-background-muted text-foreground'
             }`}
           >
             {totalPages}
@@ -90,7 +96,7 @@ export const Pagination = ({
       {currentPage < totalPages && (
         <button
           onClick={() => handlePageChange(currentPage + 1)}
-          className={`${paginationButtonClasses} bg-background-accent`}
+          className={`${paginationButtonClasses} bg-background-muted text-foreground hover:text-secondary`}
         >
           <span className="md:hidden">
             <ChevronRight size={16} />

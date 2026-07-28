@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Sentosa sticky header */
+.component.header {
+  @apply border-border sticky top-0 z-50 border-b bg-white/95 shadow-sm backdrop-blur-md;
+}
+
 .xa-variable {
   border: 0px;
   padding: 1px;

@@ -42,12 +42,12 @@ export const Default = (props: SubscribeBannerProps): JSX.Element => {
                 autoComplete="email"
                 required
                 placeholder={t('your_email') || 'E.g. your@email.com'}
-                className="bg-background ring-foreground/5 text-foreground placeholder:text-foreground/70 h-12 w-full rounded-md ps-5 pe-32 ring-1 focus:ring-2 focus:outline-none md:h-14"
+                className="border-border text-foreground placeholder:text-foreground-muted focus:border-secondary focus:ring-secondary/20 h-12 w-full rounded-full border bg-white ps-5 pe-32 focus:ring-2 focus:outline-none md:h-14"
               />
 
               <button
                 type="submit"
-                className="bg-accent group-[.container-dark-background]:bg-background-accent group-[.container-dark-background]:!text-foreground text-background absolute top-1/2 right-2 h-9 -translate-y-1/2 rounded-md px-4 text-sm font-semibold hover:opacity-90 focus-visible:ring-2 focus-visible:outline-none md:right-3 md:h-10 md:px-5"
+                className="main-btn !absolute top-1/2 right-2 !w-auto -translate-y-1/2 !px-6 !py-2.5 text-sm md:right-3"
               >
                 {t('button_text') || 'Subscribe'}
               </button>
@@ -88,13 +88,10 @@ export const WithConsent = (props: SubscribeBannerProps): JSX.Element => {
             autoComplete="email"
             required
             placeholder={t('enter_email') || 'Enter your email'}
-            className="bg-background text-foreground placeholder:text-foreground/70 ring-foreground/5 h-12 w-full rounded-sm ps-5 pe-5 ring-1 focus:ring-2 focus:outline-none md:h-14"
+            className="border-border text-foreground placeholder:text-foreground-muted focus:border-secondary focus:ring-secondary/20 h-12 w-full rounded-full border bg-white ps-5 pe-5 focus:ring-2 focus:outline-none md:h-14"
           />
 
-          <button
-            type="submit"
-            className="bg-accent group-[.container-dark-background]:bg-background-accent text-background group-[.container-dark-background]:!text-foreground mt-3 inline-flex h-12 w-full items-center justify-center rounded-sm font-semibold tracking-widest uppercase hover:opacity-90 md:h-12"
-          >
+          <button type="submit" className="main-btn mt-3 !w-full">
             {t('button_text') || 'Subscribe'}
           </button>
 
@@ -104,7 +101,7 @@ export const WithConsent = (props: SubscribeBannerProps): JSX.Element => {
               <input
                 id="subscribe-consent"
                 type="checkbox"
-                className="border-foreground/30 bg-background accent-accent mt-1 size-4 rounded-sm border"
+                className="border-foreground/30 bg-background accent-accent mt-1 size-4 rounded-md border"
                 required
               />
               <label htmlFor="subscribe-consent" className="text-foreground/70 text-sm leading-6">
