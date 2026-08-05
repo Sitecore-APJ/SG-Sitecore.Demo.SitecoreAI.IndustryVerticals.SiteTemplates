@@ -10,7 +10,6 @@ import {
   RichText as ContentSdkRichText,
   Text,
 } from '@sitecore-content-sdk/nextjs';
-import AccentLine from '@/assets/icons/accent-line/AccentLine';
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -18,7 +17,7 @@ import { useRef, useState } from 'react';
 import { Article } from '@/types/article';
 import Link from 'next/link';
 import { cn } from '@/shadcn/lib/utils';
-import { CommonStyles, LayoutStyles } from '@/types/styleFlags';
+import { LayoutStyles } from '@/types/styleFlags';
 
 interface Fields {
   Title: Field<string>;
@@ -41,7 +40,6 @@ export const Default = (props: CarouselProps) => {
   const isReversed = props?.params?.styles?.includes(LayoutStyles.Reversed);
   const swiperFirstRef = useRef<SwiperClass | null>(null);
   const swiperSecondRef = useRef<SwiperClass | null>(null);
-  const hideAccentLine = props.params.styles?.includes(CommonStyles.HideAccentLine);
 
   const handleNext = () => {
     if (currentIndex < articles.length - 1) {
@@ -81,9 +79,8 @@ export const Default = (props: CarouselProps) => {
           className={cn('flex', 'flex-col', flexDirectionClass, 'items-center', 'w-full', 'gap-10')}
         >
           <div className="w-full space-y-5 md:w-1/3">
-            <h2 className="inline-block max-w-md">
+            <h2 className="section-heading inline-block max-w-md text-left">
               <Text field={props.fields.Title} />
-              {!hideAccentLine && <AccentLine className="w-full max-w-xs" />}
             </h2>
 
             <div className="max-w-md">
@@ -120,7 +117,7 @@ export const Default = (props: CarouselProps) => {
                         return (
                           <SwiperSlide key={article.id}>
                             <Link href={article.url}>
-                              <div className={`overflow-hidden rounded-lg`}>
+                              <div className={`overflow-hidden rounded-2xl`}>
                                 <ContentSdkImage
                                   field={article.fields.Image}
                                   className={cn(

@@ -30,20 +30,30 @@
   @apply border-r;
 }
 
+/* Singtel text link with arrow */
 .arrow-btn {
-  @apply border-b-accent text-accent inline-flex items-center justify-start gap-3 border-b leading-8;
+  @apply text-link inline-flex items-center justify-start gap-2 text-base font-semibold no-underline transition-colors hover:underline;
 
   &::after {
-    @apply bg-accent inline-block h-3 w-11 mask-[url('./images/arrow.svg')] bg-contain bg-no-repeat mask-contain mask-center mask-no-repeat content-[''];
+    @apply bg-link inline-block h-3 w-6 mask-[url('./images/arrow.svg')] bg-contain bg-no-repeat mask-contain mask-center mask-no-repeat content-[''];
+  }
+}
+
+/* Singtel pill CTA button */
+.main-btn {
+  @apply bg-accent text-background hover:bg-accent-dark inline-flex w-full items-center justify-center rounded-full px-8 py-3.5 text-center text-base font-semibold transition-colors;
+
+  &[disabled] {
+    @apply pointer-events-none opacity-60;
   }
 }
 
 .carousel-btn {
-  @apply text-foreground! bg-background z-10 size-12 content-center rounded-full shadow-md;
+  @apply text-foreground! bg-background z-10 size-10 content-center rounded-full border border-border;
 }
 
 .surface-btn {
-  @apply bg-background-surface text-accent flex size-6 items-center justify-center rounded font-bold transition-shadow hover:shadow-md;
+  @apply bg-background-surface text-foreground flex size-6 items-center justify-center rounded-full font-bold transition-colors hover:bg-background-muted;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
@@ -55,13 +65,26 @@
 }
 
 .action-btn {
-  @apply text-accent hover:text-accent/80 hover:border-accent/80 border-accent flex h-10 items-center gap-3 border-b bg-transparent text-lg font-semibold;
+  @apply text-accent hover:text-accent-dark border-accent flex h-10 items-center gap-3 border-b bg-transparent text-base font-semibold;
 }
 
-.main-btn {
-  @apply bg-accent text-background hover:bg-accent/95 flex w-full items-center justify-center rounded-md p-3 text-center text-lg font-semibold transition-all hover:shadow-md;
+/* Singtel service category card */
+.service-card {
+  @apply relative flex min-h-48 flex-col overflow-hidden rounded-2xl p-6 transition-transform hover:scale-[1.02] md:min-h-56;
+}
 
-  &[disabled] {
-    @apply pointer-events-none opacity-60;
-  }
+.service-card-rose {
+  @apply bg-card-rose text-foreground;
+}
+
+.service-card-red {
+  @apply bg-card-red text-background;
+}
+
+.service-card-charcoal {
+  @apply bg-card-charcoal text-background;
+}
+
+.service-card-yellow {
+  @apply bg-card-yellow text-foreground;
 }

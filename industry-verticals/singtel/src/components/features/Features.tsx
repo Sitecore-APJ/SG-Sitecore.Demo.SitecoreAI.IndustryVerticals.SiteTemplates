@@ -8,8 +8,7 @@ import {
   Text,
 } from '@sitecore-content-sdk/nextjs';
 import React from 'react';
-import AccentLine from '@/assets/icons/accent-line/AccentLine';
-import { CommonStyles } from '@/types/styleFlags';
+import clsx from 'clsx';
 
 interface Fields {
   data: {
@@ -40,8 +39,14 @@ type FeatureWrapperProps = {
   children: React.ReactNode;
 };
 
+const CARD_VARIANTS = [
+  'service-card-rose',
+  'service-card-red',
+  'service-card-charcoal',
+  'service-card-yellow',
+];
+
 const FeatureWrapper = (wrapperProps: FeatureWrapperProps) => {
-  // rendering item id
   const id = wrapperProps.props.params.RenderingIdentifier;
 
   return (
@@ -52,32 +57,28 @@ const FeatureWrapper = (wrapperProps: FeatureWrapperProps) => {
 };
 
 export const Default = (props: FeaturesProps) => {
-  // results of the graphql
   const results = props.fields.data.datasource.children.results;
-  const hideAccentLine = props.params.styles?.includes(CommonStyles.HideAccentLine);
   const featureSectionTitle = props.fields.data.datasource.title;
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container grid grid-cols-1 py-20 lg:grid-cols-[1fr_2fr] lg:gap-10">
-        <div className="mb-20 lg:mb-0">
-          <h2 className="inline-block max-w-md font-bold max-lg:text-[42px]">
+      <div className="container grid grid-cols-1 gap-12 py-16 lg:grid-cols-[1fr_2fr] lg:gap-16 lg:py-20">
+        <div className="lg:mb-0">
+          <h2 className="section-heading inline-block max-w-md text-left lg:text-left">
             <Text field={featureSectionTitle.jsonValue} />
-            {!hideAccentLine && <AccentLine className="w-full max-w-xs" />}
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
           {results.map((item, index) => {
             const title = item.featureTitle.jsonValue;
             const description = item.featureDescription.jsonValue;
             const link = item.featureLink.jsonValue;
             return (
-              <div className="flex flex-col" key={index}>
-                {/* Title, Link and Description */}
-                <div className="mb-5 text-2xl font-bold">
+              <div className="flex flex-col gap-4" key={index}>
+                <div className="font-body text-xl font-bold">
                   <Text field={title} />
                 </div>
-                <div className="text-foreground mb-3.5 flex-auto leading-7">
+                <div className="text-foreground-light flex-auto leading-relaxed">
                   <Text field={description} />
                 </div>
                 <div>
@@ -93,17 +94,18 @@ export const Default = (props: FeaturesProps) => {
 };
 
 export const ImageGrid = (props: FeaturesProps) => {
-  // results of the graphql
   const results = props.fields.data.datasource.children.results;
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container grid grid-cols-1 gap-4 py-9 md:grid-cols-2 lg:grid-cols-5">
+      <div className="container grid grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:grid-cols-5">
         {results.map((item, index) => {
           const imageField = item?.featureImage.jsonValue;
           return (
-            <div className="flex items-center justify-center py-9 lg:py-2" key={index}>
-              {imageField && <Image field={imageField} className="max-h-20 object-contain" />}
+            <div className="flex items-center justify-center py-4" key={index}>
+              {imageField && (
+                <Image field={imageField} className="max-h-16 object-contain opacity-80" />
+              )}
             </div>
           );
         })}
@@ -113,28 +115,25 @@ export const ImageGrid = (props: FeaturesProps) => {
 };
 
 export const ThreeColGridCentered = (props: FeaturesProps) => {
-  // results of the graphql
   const results = props.fields.data.datasource.children.results;
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container flex flex-col flex-wrap justify-evenly gap-20 md:flex-row lg:gap-20">
+      <div className="container flex flex-col flex-wrap justify-evenly gap-12 py-16 md:flex-row lg:gap-16">
         {results.map((item, index) => {
           const title = item.featureTitle.jsonValue;
           const description = item.featureDescription.jsonValue;
           const image = item.featureImage.jsonValue;
           return (
-            <div className="flex flex-col items-center justify-start 2xl:w-80" key={index}>
-              {/* Image */}
-              <div className="bg-accent mb-7 flex h-20 w-20 items-center justify-center rounded-full">
+            <div className="flex max-w-xs flex-col items-center justify-start" key={index}>
+              <div className="bg-accent mb-6 flex h-16 w-16 items-center justify-center rounded-full">
                 <Image field={image} />
               </div>
-              {/* Title and Description */}
-              <div className="flex flex-col items-center justify-center">
-                <div className="mb-2 leading-0.5">
-                  <Text tag="h5" className="text-accent" field={title} />
+              <div className="flex flex-col items-center justify-center text-center">
+                <div className="mb-2">
+                  <Text tag="h5" className="font-body font-bold" field={title} />
                 </div>
-                <div className="text-background-muted-light text-center">
+                <div className="text-foreground-light">
                   <Text field={description} />
                 </div>
               </div>
@@ -147,30 +146,27 @@ export const ThreeColGridCentered = (props: FeaturesProps) => {
 };
 
 export const NumberedGrid = (props: FeaturesProps) => {
-  // results of the graphql
   const results = props.fields.data.datasource.children.results;
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container grid grid-cols-1 gap-4 py-24 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container grid grid-cols-1 gap-6 py-16 md:grid-cols-2 lg:grid-cols-3">
         {results.map((item, index) => {
           const title = item?.featureTitle.jsonValue;
           const description = item?.featureDescription.jsonValue;
           return (
             <div
-              className="group text-background hover:bg-accent cursor-pointer rounded-xl p-6"
+              className="group hover:bg-accent border-border bg-background cursor-pointer rounded-2xl border p-6 transition-colors"
               key={index}
             >
-              {/* Generated Number */}
-              <h1 className="group-hover:text-background text-background-muted-dark mb-2 text-7xl leading-24">
+              <h1 className="text-foreground-muted group-hover:text-background mb-3 text-6xl leading-none font-bold">
                 {generateIndexes(index)}
               </h1>
-              {/* Title and Description */}
               <div>
-                <div className="text-accent group-hover:text-background mb-4 text-2xl leading-8 font-bold">
+                <div className="text-accent group-hover:text-background mb-3 text-xl font-bold">
                   <Text field={title} />
                 </div>
-                <div className="text-background-muted-dark group-hover:text-background leading-7">
+                <div className="text-foreground-light group-hover:text-background/90 leading-relaxed">
                   <Text field={description} />
                 </div>
               </div>
@@ -183,28 +179,25 @@ export const NumberedGrid = (props: FeaturesProps) => {
 };
 
 export const FourColGrid = (props: FeaturesProps) => {
-  // results of the graphql
   const results = props.fields.data.datasource.children.results;
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container grid grid-cols-1 gap-20 py-24 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+      <div className="container grid grid-cols-1 gap-10 py-16 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         {results.map((item, index) => {
           const title = item.featureTitle.jsonValue;
           const description = item.featureDescription.jsonValue;
           const image = item.featureImage.jsonValue;
           return (
-            <div className="grid grid-cols-[1fr_2fr] gap-2.5" key={index}>
-              {/* Image */}
-              <div className="flex items-center justify-center rounded-full">
-                <Image field={image} />
+            <div className="flex gap-4" key={index}>
+              <div className="flex shrink-0 items-start justify-center">
+                <Image field={image} className="size-12 object-contain" />
               </div>
-              {/* Title and Description */}
               <div className="flex flex-col justify-center">
-                <div className="text-xl leading-9 font-bold">
+                <div className="font-body text-lg font-bold">
                   <Text className="text-foreground" field={title} />
                 </div>
-                <div className="text-background-muted-light leading-8">
+                <div className="text-foreground-light mt-1 text-sm leading-relaxed">
                   <Text field={description} />
                 </div>
               </div>
@@ -218,30 +211,46 @@ export const FourColGrid = (props: FeaturesProps) => {
 
 export const ImageCardGrid = (props: FeaturesProps) => {
   const results = props.fields.data.datasource.children.results;
+  const featureSectionTitle = props.fields.data.datasource.title;
 
   return (
     <FeatureWrapper props={props}>
-      <div className="outline-non container grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        {results.map((item, index) => {
-          const title = item.featureTitle.jsonValue;
-          const description = item.featureDescription.jsonValue;
-          const image = item.featureImage.jsonValue;
-          return (
-            <div key={index}>
-              <div className="mb-7 aspect-4/3 w-full overflow-hidden rounded-lg bg-white">
-                <Image field={image} className="h-full w-full object-cover" />
+      <div className="container py-16 lg:py-20">
+        <h2 className="section-heading mb-10 lg:mb-14">
+          <Text field={featureSectionTitle.jsonValue} />
+        </h2>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {results.map((item, index) => {
+            const title = item.featureTitle.jsonValue;
+            const description = item.featureDescription.jsonValue;
+            const image = item.featureImage.jsonValue;
+            const cardVariant = CARD_VARIANTS[index % CARD_VARIANTS.length];
+            const isDarkCard =
+              cardVariant === 'service-card-red' || cardVariant === 'service-card-charcoal';
+
+            return (
+              <div key={index} className={clsx('service-card', cardVariant)}>
+                <h3 className="font-body z-10 text-xl font-bold">
+                  <Text field={title} />
+                </h3>
+                <p
+                  className={clsx(
+                    'z-10 mt-2 text-sm leading-relaxed',
+                    isDarkCard ? 'text-background/80' : 'text-foreground-light'
+                  )}
+                >
+                  <Text field={description} />
+                </p>
+                <div className="absolute right-0 bottom-0 h-2/3 w-2/3">
+                  <Image
+                    field={image}
+                    className="h-full w-full object-contain object-bottom-right"
+                  />
+                </div>
               </div>
-
-              <h6>
-                <Text field={title} />
-              </h6>
-
-              <p className="text-foreground-muted mt-1 text-lg">
-                <Text field={description} />
-              </p>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </FeatureWrapper>
   );

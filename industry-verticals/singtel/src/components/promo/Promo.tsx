@@ -11,9 +11,8 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
 import clsx from 'clsx';
-import AccentLine from '@/assets/icons/accent-line/AccentLine';
 import { Quote } from '@/assets/icons/quote/Quote';
-import { CommonStyles, LayoutStyles, PromoFlags } from '@/types/styleFlags';
+import { LayoutStyles, PromoFlags } from '@/types/styleFlags';
 
 interface Fields {
   PromoImageOne: ImageField;
@@ -40,24 +39,21 @@ export type PromoProps = ComponentProps & {
 const isShadowClassActive = (val: boolean) => (val ? 'shadow-2xl' : '');
 
 export const PromoContent = ({ ...props }) => {
-  const isAccentLineVisible = !props?.params?.styles?.includes(CommonStyles.HideAccentLine);
-
   return (
     <div className="space-y-5">
       <div className="eyebrow">
         <Text field={props.fields.PromoSubTitle} />
       </div>
 
-      <h2 className="inline-block max-w-md">
+      <h2 className="section-heading inline-block max-w-lg text-left">
         <Text field={props.fields.PromoTitle} />
-        {isAccentLineVisible && <AccentLine className="w-full max-w-xs" />}
       </h2>
 
       <div className="max-w-lg text-lg">
         <ContentSdkRichText field={props.fields.PromoDescription} />
       </div>
 
-      <Link field={props.fields.PromoMoreInfo} className="arrow-btn" />
+      <Link field={props.fields.PromoMoreInfo} className="main-btn !w-auto" />
     </div>
   );
 };

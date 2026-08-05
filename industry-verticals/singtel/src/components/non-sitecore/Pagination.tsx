@@ -17,7 +17,7 @@ export const Pagination = ({
   currentPage,
   setCurrentPage,
   windowSize = 3,
-  paginationButtonClasses = 'px-3 py-2 md:px-4 md:py-3 rounded-md',
+  paginationButtonClasses = 'px-4 py-2 md:px-5 md:py-2.5 rounded-full text-sm font-medium',
 }: PaginationProps) => {
   const { totalPages, startPage, endPage, visiblePages } = usePagination({
     totalItems,

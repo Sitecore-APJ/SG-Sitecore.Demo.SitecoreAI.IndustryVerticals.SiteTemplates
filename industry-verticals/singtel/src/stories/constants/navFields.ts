@@ -27,65 +27,65 @@ export const navRoot = {
 
 export const topLevelPages = [
   {
-    ...createNavItem('Furniture'),
+    ...createNavItem('Mobile'),
     Styles: ['level1', 'item0', 'odd', 'first'],
   },
   {
-    ...createNavItem('Decor'),
+    ...createNavItem('Broadband'),
     Styles: ['level1', 'item1', 'even'],
   },
   {
-    ...createNavItem('About us'),
+    ...createNavItem('TV'),
     Styles: ['level1', 'item1', 'even'],
     Children: [
       {
-        ...createNavItem('Our story'),
+        ...createNavItem('Entertainment'),
         Styles: ['level2', 'item0', 'odd', 'first'],
       },
       {
-        ...createNavItem('Our team'),
+        ...createNavItem('Sports'),
         Styles: ['level2', 'item1', 'even'],
       },
       {
-        ...createNavItem('Careers'),
+        ...createNavItem('Add-ons'),
         Styles: ['level2', 'item2', 'odd', 'last'],
       },
     ],
   },
   {
-    ...createNavItem('Contact'),
+    ...createNavItem('Support'),
     Styles: ['level1', 'submenu', 'item2', 'odd', 'last'],
   },
 ];
 
 export const flatTopLevelPages = [
   {
-    ...createNavItem('Furniture'),
+    ...createNavItem('Mobile'),
     Styles: ['level0', 'item0', 'odd', 'first', 'flat-level1'],
   },
   {
-    ...createNavItem('Decor'),
+    ...createNavItem('Broadband'),
     Styles: ['level0', 'item1', 'even', 'flat-level1'],
   },
   {
-    ...createNavItem('About us'),
+    ...createNavItem('TV'),
     Styles: ['level0', 'item1', 'even', 'flat-level1'],
   },
   {
-    ...createNavItem('Our story'),
+    ...createNavItem('Entertainment'),
     Styles: ['level0', 'item0', 'odd', 'first', 'flat-level2'],
   },
   {
-    ...createNavItem('Our team'),
+    ...createNavItem('Sports'),
     Styles: ['level0', 'item1', 'even', 'flat-level2'],
   },
   {
-    ...createNavItem('Careers'),
+    ...createNavItem('Add-ons'),
     Styles: ['level0', 'item2', 'odd', 'last', 'flat-level2'],
   },
 
   {
-    ...createNavItem('Contact'),
+    ...createNavItem('Support'),
     Styles: ['level0', 'submenu', 'item2', 'odd', 'last', 'flat-level1'],
   },
 ];

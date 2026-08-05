@@ -42,23 +42,27 @@
 
 .container-dark-background {
   > .component-content {
-    @apply border-accent;
+    @apply border-accent-dark;
   }
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-accent border-accent text-background;
+    @apply bg-background-muted-dark border-background-muted-dark text-background;
 
     * {
       @apply text-inherit;
     }
 
     .arrow-btn {
-      @apply border-b-background;
+      @apply text-background border-b-background;
 
       &::after {
         @apply bg-background;
       }
+    }
+
+    .main-btn {
+      @apply bg-background text-foreground hover:bg-background/90;
     }
   }
 }
@@ -117,11 +121,13 @@
 }
 
 .container-dark-background .shim {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 50px;
+  background: rgba(45, 51, 58, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .shim {
-  background: rgba(255, 255, 255, 0.4);
-  padding: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 1rem;
 }
