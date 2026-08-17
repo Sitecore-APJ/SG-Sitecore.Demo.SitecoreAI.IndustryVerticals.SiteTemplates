@@ -55,6 +55,7 @@
       "runCommand": "next:start"
     }
   },
+  
   "deployItems": {
     "modules": ["Project.IndustryVerticals"]
   },
