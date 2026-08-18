@@ -22,7 +22,7 @@ export const ProductTabs = ({ product, isPageEditing, rendering }: ProductTabsPr
   );
 
   const tabBase = 'border-b-2 pb-2 transition text-md sm:text-xl';
-  const tabActive = 'border-accent text-accent';
+  const tabActive = 'border-primary text-primary';
   const tabInactive = 'text-foreground-light border-transparent';
 
   return (

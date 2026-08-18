@@ -1,0 +1,28 @@
+.component.header {
+  @apply bg-primary text-white;
+}
+
+.component.header .header-utility {
+  @apply bg-primary-dark;
+}
+
+.component.header .header-main {
+  @apply relative z-20;
+}
+
+.component.header .navigation-mobile-trigger span {
+  @apply bg-white;
+}
+
+.footer a {
+  @apply text-white/80 transition-colors hover:text-white;
+}
+
+.footer .link-list h1,
+.footer .link-list h2,
+.footer .link-list h3,
+.footer .link-list h4,
+.footer .link-list h5,
+.footer .link-list h6 {
+  @apply text-white;
+}

@@ -56,7 +56,7 @@ export default function LanguageSwitcher(props: LanguageSwitcherProps) {
         <SelectTrigger
           id="language-select"
           aria-label={`Current Language: ${selectedLocale}`}
-          className="border-0 shadow-none [&>svg]:hidden [.component.header_&]:px-1"
+          className="border-0 shadow-none [&>svg]:hidden [.component.header_&]:px-1 [.component.header_&]:text-white [.component.header_&]:[&_svg]:text-white"
         >
           <div className="flex items-center gap-2">
             <Globe className="size-5" />

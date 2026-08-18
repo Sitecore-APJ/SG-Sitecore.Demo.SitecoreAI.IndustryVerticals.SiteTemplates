@@ -11,7 +11,7 @@
 .highlighted-left,
 .highlighted-right {
   > div {
-    @apply border-accent! my-6 p-6;
+    @apply border-primary! my-6 p-6;
   }
 }
 .highlighted-top > div {
@@ -31,19 +31,27 @@
 }
 
 .arrow-btn {
-  @apply border-b-accent text-accent inline-flex items-center justify-start gap-3 border-b leading-8;
+  @apply text-primary hover:text-primary-dark inline-flex items-center justify-start gap-2 text-base font-semibold no-underline transition-colors;
 
   &::after {
-    @apply bg-accent inline-block h-3 w-11 mask-[url('./images/arrow.svg')] bg-contain bg-no-repeat mask-contain mask-center mask-no-repeat content-[''];
+    @apply bg-primary inline-block h-3 w-5 mask-[url('./images/arrow.svg')] bg-contain bg-no-repeat mask-contain mask-center mask-no-repeat content-[''];
+  }
+}
+
+.arrow-btn-on-dark {
+  @apply inline-flex items-center justify-start gap-2 text-base font-semibold text-white no-underline transition-opacity hover:opacity-80;
+
+  &::after {
+    @apply inline-block h-3 w-5 bg-white mask-[url('./images/arrow.svg')] bg-contain bg-no-repeat mask-contain mask-center mask-no-repeat content-[''];
   }
 }
 
 .carousel-btn {
-  @apply text-foreground! bg-background z-10 size-12 content-center rounded-full shadow-md;
+  @apply text-primary! bg-background z-10 size-11 content-center rounded-full shadow-md;
 }
 
 .surface-btn {
-  @apply bg-background-surface text-accent flex size-6 items-center justify-center rounded font-bold transition-shadow hover:shadow-md;
+  @apply bg-background-surface text-primary flex size-6 items-center justify-center rounded-full font-bold transition-shadow hover:shadow-md;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
@@ -55,13 +63,33 @@
 }
 
 .action-btn {
-  @apply text-accent hover:text-accent/80 hover:border-accent/80 border-accent flex h-10 items-center gap-3 border-b bg-transparent text-lg font-semibold;
+  @apply text-primary hover:text-primary-dark flex h-10 items-center gap-3 bg-transparent text-lg font-semibold;
 }
 
 .main-btn {
-  @apply bg-accent text-background hover:bg-accent/95 flex w-full items-center justify-center rounded-md p-3 text-center text-lg font-semibold transition-all hover:shadow-md;
+  @apply bg-accent text-background hover:bg-accent-hover flex w-full items-center justify-center rounded-full p-3 text-center text-base font-semibold transition-all hover:shadow-md;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
   }
+}
+
+.login-btn {
+  @apply bg-accent hover:bg-accent-hover inline-flex items-center justify-center rounded-full px-5 py-1.5 text-sm font-semibold text-white transition-colors;
+}
+
+.segment-tab {
+  @apply inline-flex items-center justify-center rounded-full px-4 py-1.5 text-sm font-semibold transition-colors;
+}
+
+.segment-tab-active {
+  @apply bg-accent text-white;
+}
+
+.segment-tab-inactive {
+  @apply bg-primary-dark hover:bg-primary-deep text-white;
+}
+
+.promo-tag {
+  @apply bg-accent inline-flex items-center rounded-md px-2 py-1 text-[10px] font-bold tracking-wide text-white uppercase;
 }

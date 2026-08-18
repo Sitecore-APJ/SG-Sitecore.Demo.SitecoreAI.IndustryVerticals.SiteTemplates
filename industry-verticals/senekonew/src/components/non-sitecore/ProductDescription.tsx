@@ -24,7 +24,7 @@ export const ProductDescription = ({ product }: ProductDescriptionProps) => {
       </h1>
 
       {(product?.Price?.value || isPageEditing) && (
-        <p className="text-xl">
+        <p className="text-accent text-xl font-bold">
           {currency} <ContentSdkText field={product.Price} />
         </p>
       )}

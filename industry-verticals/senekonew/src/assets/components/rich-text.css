@@ -55,7 +55,7 @@
       @apply relative list-none;
 
       &:before {
-        @apply absolute top-0.5 -left-4.5 w-4 font-[FontAwesome] text-sm content-['\f046'];
+        @apply text-primary absolute top-0.5 -left-4.5 w-4 font-[FontAwesome] text-sm content-['\f046'];
       }
     }
   }

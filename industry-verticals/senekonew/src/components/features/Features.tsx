@@ -59,9 +59,9 @@ export const Default = (props: FeaturesProps) => {
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container grid grid-cols-1 py-20 lg:grid-cols-[1fr_2fr] lg:gap-10">
-        <div className="mb-20 lg:mb-0">
-          <h2 className="inline-block max-w-md font-bold max-lg:text-[42px]">
+      <div className="container grid grid-cols-1 py-12 lg:grid-cols-[1fr_2fr] lg:gap-10 lg:py-16">
+        <div className="mb-10 lg:mb-0">
+          <h2 className="inline-block max-w-md font-bold">
             <Text field={featureSectionTitle.jsonValue} />
             {!hideAccentLine && <AccentLine className="w-full max-w-xs" />}
           </h2>
@@ -118,29 +118,31 @@ export const ThreeColGridCentered = (props: FeaturesProps) => {
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container flex flex-col flex-wrap justify-evenly gap-20 md:flex-row lg:gap-20">
-        {results.map((item, index) => {
-          const title = item.featureTitle.jsonValue;
-          const description = item.featureDescription.jsonValue;
-          const image = item.featureImage.jsonValue;
-          return (
-            <div className="flex flex-col items-center justify-start 2xl:w-80" key={index}>
-              {/* Image */}
-              <div className="bg-accent mb-7 flex h-20 w-20 items-center justify-center rounded-full">
-                <Image field={image} />
-              </div>
-              {/* Title and Description */}
-              <div className="flex flex-col items-center justify-center">
-                <div className="mb-2 leading-0.5">
-                  <Text tag="h5" className="text-accent" field={title} />
+      <div className="bg-background-muted">
+        <div className="container flex flex-col flex-wrap justify-evenly gap-8 py-8 md:flex-row md:gap-6 lg:gap-10 lg:py-10">
+          {results.map((item, index) => {
+            const title = item.featureTitle.jsonValue;
+            const description = item.featureDescription.jsonValue;
+            const image = item.featureImage.jsonValue;
+            return (
+              <div className="flex flex-col items-center justify-start 2xl:w-80" key={index}>
+                {/* Image */}
+                <div className="bg-primary mb-7 flex h-16 w-16 items-center justify-center rounded-full shadow-sm md:h-20 md:w-20">
+                  <Image field={image} />
                 </div>
-                <div className="text-background-muted-light text-center">
-                  <Text field={description} />
+                {/* Title and Description */}
+                <div className="flex flex-col items-center justify-center">
+                  <div className="mb-2 leading-0.5">
+                    <Text tag="h5" className="text-primary" field={title} />
+                  </div>
+                  <div className="text-background-muted-light text-center">
+                    <Text field={description} />
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </FeatureWrapper>
   );
@@ -158,19 +160,19 @@ export const NumberedGrid = (props: FeaturesProps) => {
           const description = item?.featureDescription.jsonValue;
           return (
             <div
-              className="group text-background hover:bg-accent cursor-pointer rounded-xl p-6"
+              className="group hover:bg-primary border-border bg-background cursor-pointer rounded-2xl border p-6 shadow-sm transition-colors"
               key={index}
             >
               {/* Generated Number */}
-              <h1 className="group-hover:text-background text-background-muted-dark mb-2 text-7xl leading-24">
+              <h1 className="text-primary group-hover:text-background mb-2 text-6xl leading-none font-extrabold">
                 {generateIndexes(index)}
               </h1>
               {/* Title and Description */}
               <div>
-                <div className="text-accent group-hover:text-background mb-4 text-2xl leading-8 font-bold">
+                <div className="text-foreground group-hover:text-background mb-4 text-2xl leading-8 font-bold">
                   <Text field={title} />
                 </div>
-                <div className="text-background-muted-dark group-hover:text-background leading-7">
+                <div className="text-foreground-light group-hover:text-background/90 leading-7">
                   <Text field={description} />
                 </div>
               </div>
@@ -188,29 +190,31 @@ export const FourColGrid = (props: FeaturesProps) => {
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container grid grid-cols-1 gap-20 py-24 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
-        {results.map((item, index) => {
-          const title = item.featureTitle.jsonValue;
-          const description = item.featureDescription.jsonValue;
-          const image = item.featureImage.jsonValue;
-          return (
-            <div className="grid grid-cols-[1fr_2fr] gap-2.5" key={index}>
-              {/* Image */}
-              <div className="flex items-center justify-center rounded-full">
-                <Image field={image} />
-              </div>
-              {/* Title and Description */}
-              <div className="flex flex-col justify-center">
-                <div className="text-xl leading-9 font-bold">
-                  <Text className="text-foreground" field={title} />
+      <div className="bg-background-muted">
+        <div className="container grid grid-cols-1 gap-8 py-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-6 lg:py-10">
+          {results.map((item, index) => {
+            const title = item.featureTitle.jsonValue;
+            const description = item.featureDescription.jsonValue;
+            const image = item.featureImage.jsonValue;
+            return (
+              <div className="flex items-center gap-4" key={index}>
+                {/* Image */}
+                <div className="bg-background flex size-14 shrink-0 items-center justify-center rounded-full shadow-sm">
+                  <Image field={image} />
                 </div>
-                <div className="text-background-muted-light leading-8">
-                  <Text field={description} />
+                {/* Title and Description */}
+                <div className="flex flex-col justify-center">
+                  <div className="text-base leading-6 font-bold">
+                    <Text className="text-foreground" field={title} />
+                  </div>
+                  <div className="text-foreground-light text-sm leading-6">
+                    <Text field={description} />
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </FeatureWrapper>
   );
@@ -221,24 +225,29 @@ export const ImageCardGrid = (props: FeaturesProps) => {
 
   return (
     <FeatureWrapper props={props}>
-      <div className="outline-non container grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
         {results.map((item, index) => {
           const title = item.featureTitle.jsonValue;
           const description = item.featureDescription.jsonValue;
           const image = item.featureImage.jsonValue;
           return (
-            <div key={index}>
-              <div className="mb-7 aspect-4/3 w-full overflow-hidden rounded-lg bg-white">
+            <div
+              key={index}
+              className="border-border bg-background overflow-hidden rounded-2xl border shadow-sm transition-shadow hover:shadow-md"
+            >
+              <div className="bg-background-surface aspect-4/3 w-full overflow-hidden">
                 <Image field={image} className="h-full w-full object-cover" />
               </div>
 
-              <h6>
-                <Text field={title} />
-              </h6>
+              <div className="p-5">
+                <h6>
+                  <Text field={title} />
+                </h6>
 
-              <p className="text-foreground-muted mt-1 text-lg">
-                <Text field={description} />
-              </p>
+                <p className="text-foreground-light mt-2 text-base">
+                  <Text field={description} />
+                </p>
+              </div>
             </div>
           );
         })}

@@ -75,7 +75,7 @@ export const Default = (props: CarouselProps) => {
   );
 
   return (
-    <section className={`${props.params.styles} py-20`} id={id ? id : undefined}>
+    <section className={`${props.params.styles} py-12 md:py-16`} id={id ? id : undefined}>
       <div className={cn(containerAlignment, 'relative overflow-hidden')}>
         <div
           className={cn('flex', 'flex-col', flexDirectionClass, 'items-center', 'w-full', 'gap-10')}
@@ -149,7 +149,7 @@ export const Default = (props: CarouselProps) => {
                                         </h6>
                                       </div>
                                     </div>
-                                    <div className="bg-accent inline-block p-2">
+                                    <div className="bg-accent inline-block rounded-r-md p-2">
                                       <ArrowRight
                                         size={16}
                                         strokeWidth={1}
@@ -213,7 +213,7 @@ export const Default = (props: CarouselProps) => {
                         <div className="inline-flex flex-row items-center gap-5">
                           <div className="flex items-center">
                             <button
-                              className={`swiper-btn-prev text-accent ${
+                              className={`swiper-btn-prev text-primary ${
                                 currentIndex === 0 && 'article-carousel-btn-disabled'
                               }`}
                               disabled={currentIndex === 0}
@@ -228,7 +228,7 @@ export const Default = (props: CarouselProps) => {
                           <div className="flex items-center">
                             <button
                               disabled={currentIndex === articles.length - 1}
-                              className={`swiper-btn-prev text-accent ${
+                              className={`swiper-btn-prev text-primary ${
                                 currentIndex === articles.length - 1 &&
                                 'article-carousel-btn-disabled'
                               }`}

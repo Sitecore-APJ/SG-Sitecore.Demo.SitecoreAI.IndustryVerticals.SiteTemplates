@@ -39,7 +39,7 @@ export const Default = (props: ReviewsProps) => {
 
   return (
     <div className={`${styles}`} id={id}>
-      <div className="container py-20">
+      <div className="container py-12 md:py-16">
         {/* Heading Section */}
         <div className="text-center">
           <p className="eyebrow pb-4">

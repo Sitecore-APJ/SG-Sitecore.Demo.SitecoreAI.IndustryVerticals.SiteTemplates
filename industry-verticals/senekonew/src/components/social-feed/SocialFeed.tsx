@@ -33,7 +33,7 @@ interface GridImageProps extends HTMLAttributes<HTMLDivElement> {
 
 export const GridImage = ({ image, className, ...rest }: GridImageProps) => {
   return (
-    <div className={`group relative overflow-hidden ${className}`} {...rest}>
+    <div className={`group relative overflow-hidden rounded-xl ${className}`} {...rest}>
       <ContentSdkImage
         field={image}
         className="image-cover transition-transform duration-1000 ease-in-out group-hover:scale-110"
@@ -63,7 +63,7 @@ export const Default = (props: PromoProps): JSX.Element => {
   } = props.fields;
 
   return (
-    <section className={`${props.params.styles} py-20 max-md:space-y-8`} id={id}>
+    <section className={`${props.params.styles} py-12 max-md:space-y-8 md:py-16`} id={id}>
       <div className="container space-y-4 text-center">
         <p className="eyebrow">
           <Text field={Eyebrow} />

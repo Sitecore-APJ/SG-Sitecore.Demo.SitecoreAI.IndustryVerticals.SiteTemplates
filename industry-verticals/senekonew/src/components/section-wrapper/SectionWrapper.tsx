@@ -18,7 +18,7 @@ export const Default = ({ params, fields, rendering }: SectionWrapperProps) => {
   const placeholderKey = `section-wrapper-content-${params.DynamicPlaceholderId}`;
 
   return (
-    <section className={`component section-wrapper pt-14 pb-10 ${styles}`} id={id}>
+    <section className={`component section-wrapper pt-10 pb-8 ${styles}`} id={id}>
       <div className="container flex flex-col items-center">
         <h2>
           <Text field={fields.Title} />

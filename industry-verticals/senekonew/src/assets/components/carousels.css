@@ -1,5 +1,5 @@
 .article-carousel-pagination .swiper-pagination-bullet {
-  @apply relative m-1 h-4 w-4 rounded-full bg-gray-400;
+  @apply relative m-1 h-2.5 w-2.5 rounded-full bg-white/40;
 }
 
 .article-carousel-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {

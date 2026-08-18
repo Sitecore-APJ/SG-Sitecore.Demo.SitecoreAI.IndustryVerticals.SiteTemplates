@@ -25,7 +25,7 @@ export const ProductCard = ({ product, url, className }: ProductCardProps) => {
   return (
     <Link href={url} passHref>
       <div
-        className={`flex min-h-123 w-full flex-col overflow-hidden rounded-2xl hover:drop-shadow-sm ${className}`}
+        className={`border-border bg-background flex min-h-123 w-full flex-col overflow-hidden rounded-2xl border shadow-sm transition-shadow hover:shadow-lg ${className}`}
       >
         {/* Product Image */}
         <div className="bg-background-surface flex h-72 w-full items-center justify-center p-6">
@@ -37,8 +37,8 @@ export const ProductCard = ({ product, url, className }: ProductCardProps) => {
         </div>
 
         {/* Product Details */}
-        <div className="bg-background flex grow-1 flex-col items-start px-5 pt-3 pb-9 text-left">
-          <p className="!text-foreground-light">
+        <div className="bg-background flex grow-1 flex-col items-start px-5 pt-3 pb-7 text-left">
+          <p className="!text-foreground-muted text-sm">
             <Text field={product.Category?.fields?.CategoryName} />
           </p>
 
@@ -52,7 +52,7 @@ export const ProductCard = ({ product, url, className }: ProductCardProps) => {
             className="!text-accent mt-1 mb-5"
           />
 
-          <h6 className="!text-foreground mt-auto font-semibold">
+          <h6 className="!text-accent mt-auto font-bold">
             <span className="mr-1 align-super text-sm">{currencySymbol} </span>
             {formattedPrice}
           </h6>

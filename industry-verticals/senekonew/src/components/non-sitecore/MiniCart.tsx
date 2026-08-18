@@ -84,7 +84,7 @@ export const MiniCart = ({
                   <X className="size-4" strokeWidth={3} />
                 </button>
               </div>
-              <div className="bg-background-surface size-19 rounded-sm p-2">
+              <div className="bg-background-surface size-19 rounded-lg p-2">
                 <ContentSdkImage field={item.product.Image1} className="image-contain" />
               </div>
               <div>

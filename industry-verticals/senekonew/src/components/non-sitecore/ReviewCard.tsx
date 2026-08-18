@@ -26,7 +26,7 @@ const ReviewCard = (props: ReviewCardProps) => {
         <ContentSdkImage className="image-cover rounded-2xl" field={props.fields.ReviewImage} />
       </div>
       <div className="px-5">
-        <div className="bg-background relative -top-15 flex min-h-70 flex-col items-center justify-between rounded-2xl p-8 text-center shadow-xl">
+        <div className="bg-background border-border relative -top-15 flex min-h-70 flex-col items-center justify-between rounded-2xl border p-8 text-center shadow-lg">
           {/* Image */}
           <div className="bg-background absolute -top-10 flex h-[66px] w-[66px] items-center justify-center rounded-full">
             {props.fields.Avatar.value?.src || props.isPageEditing ? (
