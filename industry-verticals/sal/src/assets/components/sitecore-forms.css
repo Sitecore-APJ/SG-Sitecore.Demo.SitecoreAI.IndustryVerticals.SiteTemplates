@@ -15,7 +15,7 @@
 }
 
 .form-select-option.form-select-option.form-select-option {
-  @apply text-foreground hover:bg-accent aria-selected:bg-foreground/9 cursor-pointer text-sm hover:border-0;
+  @apply text-foreground hover:bg-accent hover:text-background aria-selected:bg-foreground/9 cursor-pointer text-sm hover:border-0;
 }
 
 .submit-button.submit-button.submit-button {

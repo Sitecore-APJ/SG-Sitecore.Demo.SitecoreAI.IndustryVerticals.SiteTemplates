@@ -29,7 +29,7 @@ export const Default = (props: RelatedProductsProps): JSX.Element => {
       <div className="container flex flex-col items-center p-8 md:p-10">
         <h2 className="mb-10 inline-block">
           <Text field={props.fields?.Title} />
-          {!hideAccentLine && <AccentLine className="mx-auto !h-4 w-[8ch]" />}
+          {!hideAccentLine && <AccentLine className="mx-auto !h-2 w-[8ch]" />}
         </h2>
 
         {/* Product Carousel */}

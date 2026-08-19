@@ -13,12 +13,18 @@ import { JSX } from 'react';
 const ServerError = (): JSX.Element => (
   <>
     <Head>
-      <title>500: Server Error</title>
+      <title>Server Error | Singapore Academy of Law</title>
     </Head>
-    <div style={{ padding: 10 }}>
-      <h1>500 Internal Server Error</h1>
-      <p>There is a problem with the resource you are looking for, and it cannot be displayed.</p>
-      <a href="/">Go to the Home page</a>
+    <div className="bg-background text-foreground flex min-h-screen flex-col items-center justify-center px-6 py-20 text-center">
+      <p className="eyebrow mb-4">Error 500</p>
+      <h1 className="max-w-xl">Something went wrong</h1>
+      <span className="bg-accent mx-auto mt-4 block h-2 w-24" aria-hidden="true" />
+      <p className="mt-6 max-w-md">
+        There is a problem with the resource you are looking for, and it cannot be displayed.
+      </p>
+      <a href="/" className="main-btn mt-8 w-auto px-8">
+        Go to the Home page
+      </a>
     </div>
   </>
 );

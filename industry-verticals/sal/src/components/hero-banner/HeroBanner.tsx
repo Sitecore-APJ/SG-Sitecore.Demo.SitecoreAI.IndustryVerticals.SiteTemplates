@@ -72,9 +72,9 @@ const HeroBannerCommon = ({
             />
           </>
         )}
-        {/* Gradient overlay to fade image/video at bottom */}
+        {/* Dark overlay for white headline contrast, matching SAL photography treatment */}
         {!hideGradientOverlay && (
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent from-85% to-white"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/20"></div>
         )}
       </div>
 
@@ -97,18 +97,18 @@ export const Default = ({ params, fields, rendering }: HeroBannerProps) => {
       <div className="relative w-full">
         <div className="container mx-auto px-4">
           <div
-            className={`flex min-h-238 w-full py-10 lg:w-1/2 lg:items-center ${reverseLayout ? 'lg:mr-auto' : 'lg:ml-auto'}`}
+            className={`flex min-h-[70vh] w-full py-16 lg:min-h-[85vh] lg:w-2/3 lg:items-center lg:py-24 ${reverseLayout ? 'lg:ml-auto' : 'lg:mr-auto'}`}
           >
-            <div className="max-w-182">
+            <div className="max-w-4xl">
               <div className={clsx({ shim: screenLayer })}>
                 {/* Title */}
-                <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] lg:text-left xl:text-[80px]">
+                <h1 className="text-center text-4xl leading-[1.05] font-bold tracking-[-0.02em] text-white md:text-6xl lg:text-left xl:text-[5.5rem] xl:leading-[0.98]">
                   <ContentSdkText field={fields.Title} />
-                  {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch] lg:mx-0" />}
+                  {!hideAccentLine && <AccentLine className="mx-auto !h-2.5 w-[9ch] lg:mx-0" />}
                 </h1>
 
                 {/* Description */}
-                <div className="mt-7 text-xl md:text-2xl">
+                <div className="mt-7 text-lg text-white/90 md:text-xl">
                   <ContentSdkRichText
                     field={fields.Description}
                     className="text-center lg:text-left"
@@ -120,7 +120,10 @@ export const Default = ({ params, fields, rendering }: HeroBannerProps) => {
                   {withPlaceholder ? (
                     <Placeholder name={searchBarPlaceholderKey} rendering={rendering} />
                   ) : (
-                    <Link field={fields.CtaLink} className="arrow-btn" />
+                    <Link
+                      field={fields.CtaLink}
+                      className="arrow-btn !border-b-white !text-white after:!bg-white hover:!border-b-white/80 hover:!text-white/80"
+                    />
                   )}
                 </div>
               </div>
@@ -144,19 +147,19 @@ export const TopContent = ({ params, fields, rendering }: HeroBannerProps) => {
     <HeroBannerCommon params={params} fields={fields} rendering={rendering}>
       {/* Content Container */}
       <div className="relative w-full">
-        <div className="container mx-auto flex min-h-238 justify-center px-4">
+        <div className="container mx-auto flex min-h-[70vh] justify-center px-4 lg:min-h-[85vh]">
           <div
-            className={`flex flex-col items-center py-10 lg:py-44 ${reverseLayout ? 'justify-end' : 'justify-start'}`}
+            className={`flex flex-col items-center py-16 lg:py-44 ${reverseLayout ? 'justify-end' : 'justify-start'}`}
           >
             <div className={clsx({ shim: screenLayer })}>
               {/* Title */}
-              <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] xl:text-[80px]">
+              <h1 className="text-center text-4xl leading-[1.05] font-bold tracking-[-0.02em] text-white md:text-6xl xl:text-[5.5rem] xl:leading-[0.98]">
                 <ContentSdkText field={fields.Title} />
-                {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch]" />}
+                {!hideAccentLine && <AccentLine className="mx-auto !h-2.5 w-[9ch]" />}
               </h1>
 
               {/* Description */}
-              <div className="mt-7 text-xl md:text-2xl">
+              <div className="mt-7 text-lg text-white/90 md:text-xl">
                 <ContentSdkRichText field={fields.Description} className="text-center" />
               </div>
 
@@ -165,7 +168,10 @@ export const TopContent = ({ params, fields, rendering }: HeroBannerProps) => {
                 {withPlaceholder ? (
                   <Placeholder name={searchBarPlaceholderKey} rendering={rendering} />
                 ) : (
-                  <Link field={fields.CtaLink} className="arrow-btn" />
+                  <Link
+                    field={fields.CtaLink}
+                    className="arrow-btn !border-b-white !text-white after:!bg-white hover:!border-b-white/80 hover:!text-white/80"
+                  />
                 )}
               </div>
             </div>

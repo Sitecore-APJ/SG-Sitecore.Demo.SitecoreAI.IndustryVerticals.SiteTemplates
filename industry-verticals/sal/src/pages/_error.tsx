@@ -12,16 +12,20 @@ interface ErrorPageProps {
 const ErrorPage: NextPage<ErrorPageProps> = ({ statusCode }) => (
   <>
     <Head>
-      <title>Error</title>
+      <title>Error | Singapore Academy of Law</title>
     </Head>
-    <div style={{ padding: 10 }}>
-      <h1>An error occurred</h1>
-      <p>
+    <div className="bg-background text-foreground flex min-h-screen flex-col items-center justify-center px-6 py-20 text-center">
+      <p className="eyebrow mb-4">Error {statusCode || ''}</p>
+      <h1 className="max-w-xl">An error occurred</h1>
+      <span className="bg-accent mx-auto mt-4 block h-2 w-24" aria-hidden="true" />
+      <p className="mt-6 max-w-md">
         {statusCode
           ? `A server-side ${statusCode} error occurred.`
           : 'A client-side error occurred.'}
       </p>
-      <a href="/">Go to the Home page</a>
+      <a href="/" className="main-btn mt-8 w-auto px-8">
+        Go to the Home page
+      </a>
     </div>
   </>
 );

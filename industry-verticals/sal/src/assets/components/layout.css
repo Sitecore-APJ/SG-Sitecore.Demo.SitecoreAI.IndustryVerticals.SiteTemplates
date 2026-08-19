@@ -42,19 +42,19 @@
 
 .container-dark-background {
   > .component-content {
-    @apply border-accent;
+    @apply border-background-dark;
   }
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-accent border-accent text-background;
+    @apply bg-background-dark border-background-dark text-background;
 
     * {
       @apply text-inherit;
     }
 
     .arrow-btn {
-      @apply border-b-background;
+      @apply border-b-background text-background;
 
       &::after {
         @apply bg-background;
@@ -117,11 +117,28 @@
 }
 
 .container-dark-background .shim {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(11, 18, 32, 0.45);
   padding: 50px;
 }
 
 .shim {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(11, 18, 32, 0.35);
   padding: 50px;
+}
+
+.component.header {
+  @apply border-border/60 bg-background sticky top-0 z-200 border-b;
+}
+
+.component.navigation nav > ul[role='menubar'] > li > div > a {
+  @apply text-[13px] font-bold tracking-[0.04em] uppercase lg:text-[15px];
+}
+
+.component.navigation ul[role='menu'] a {
+  @apply text-sm font-normal tracking-normal normal-case;
+}
+
+.component.header img,
+.component.navigation img {
+  @apply h-9 w-auto max-w-48 object-contain lg:h-11;
 }

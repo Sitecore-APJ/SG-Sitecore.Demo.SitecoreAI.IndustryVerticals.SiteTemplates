@@ -24,18 +24,23 @@ const IconDropdown = ({
   icon,
   label,
   children,
+  triggerClassName,
 }: {
   icon: JSX.Element;
   label: string;
+  triggerClassName?: string;
 } & React.PropsWithChildren) => (
   <Popover>
     <PopoverTrigger
-      className="text-foreground hover:text-accent data-[state=open]:text-accent transition-colors"
+      className={
+        triggerClassName ||
+        'text-foreground hover:text-accent data-[state=open]:text-accent transition-colors'
+      }
       aria-label={label}
     >
       {icon}
     </PopoverTrigger>
-    <PopoverContent className="flex w-xl flex-col">
+    <PopoverContent className="flex w-xl flex-col rounded-sm">
       <PopoverClose className="surface-btn !text-foreground shrink-0 self-end">
         <X className="size-4" />
       </PopoverClose>
@@ -63,16 +68,26 @@ export const Default = (props: NavigationIconsProps): JSX.Element => {
   return (
     <>
       <div className={`component navigation-icons ${props?.params?.styles?.trimEnd()}`} id={id}>
-        <div className="flex items-center gap-3 p-4 lg:gap-5 [.component.header_&]:justify-end [.component.header_&]:px-0">
+        <div className="flex items-center gap-2 p-4 lg:gap-3 [.component.header_&]:justify-end [.component.header_&]:px-0">
           <button
             onClick={() => setIsSearchOpen(!isSearchOpen)}
             className="hover:text-accent text-foreground p-2 transition-colors"
+            aria-label={t('search') || 'Search'}
           >
             <Search className="size-5" />
           </button>
 
           {showAccountIcon && (
-            <IconDropdown icon={<User className="size-5" />} label="Account">
+            <IconDropdown
+              icon={
+                <>
+                  <User className="size-3.5" />
+                  <span className="max-md:hidden">{t('member-login') || 'Member Login'}</span>
+                </>
+              }
+              label={t('member-login') || 'Member Login'}
+              triggerClassName="member-login-btn"
+            >
               <p>{t('account-empty') || 'You are not logged in.'}</p>
             </IconDropdown>
           )}
