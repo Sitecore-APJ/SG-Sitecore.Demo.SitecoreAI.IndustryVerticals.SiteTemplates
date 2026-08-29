@@ -27,6 +27,6 @@
 
 .component.image.image-logo {
   img {
-    @apply h-auto min-w-36;
+    @apply h-auto max-h-12 w-auto min-w-36 object-contain;
   }
 }

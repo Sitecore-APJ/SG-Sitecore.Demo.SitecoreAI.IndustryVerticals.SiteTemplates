@@ -66,7 +66,7 @@ const ListItem = ({
     <li className={classNames}>
       <div className="field-link flex items-center space-x-3">
         {iconField?.value && <ContentSdkImage field={iconField} className="icon h-5 w-5" />}
-        <div className="text-accent-midlight">{IconComponent && <IconComponent size={20} />}</div>
+        <div className="text-accent">{IconComponent && <IconComponent size={20} />}</div>
         <ContentSdkLink field={field} />
       </div>
     </li>

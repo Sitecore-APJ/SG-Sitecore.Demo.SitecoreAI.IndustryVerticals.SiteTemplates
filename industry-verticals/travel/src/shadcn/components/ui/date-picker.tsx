@@ -44,7 +44,7 @@ export function DatePicker({
         <button
           type="button"
           className={cn(
-            'border-border text-foreground placeholder:text-foreground-muted hover:bg-background-muted relative w-full rounded-md border bg-transparent py-1.5 pr-3 text-left text-xs leading-normal transition-all duration-200 ease-in-out focus:outline-none',
+            'border-border text-foreground placeholder:text-foreground-muted hover:border-accent relative w-full rounded-full border bg-transparent py-2 pr-3 text-left text-xs leading-normal transition-all duration-200 ease-in-out focus:outline-none',
             showIcon ? 'pl-9' : 'pl-3',
             !selected && 'text-foreground-muted',
             inputClassName

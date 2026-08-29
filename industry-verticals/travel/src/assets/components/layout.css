@@ -42,12 +42,12 @@
 
 .container-dark-background {
   > .component-content {
-    @apply border-accent;
+    @apply border-foreground;
   }
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-accent border-accent text-background;
+    @apply bg-foreground border-foreground text-background;
 
     * {
       @apply text-inherit;
@@ -69,15 +69,15 @@
 /* Spacing */
 /* Using padding for the sides so it doesn't break the grid widths */
 .indent {
-  @apply px-12;
+  @apply px-8 lg:px-16;
 }
 
 .indent-top {
-  @apply mt-6;
+  @apply mt-8 lg:mt-12;
 }
 
 .indent-bottom {
-  @apply mb-6;
+  @apply mb-8 lg:mb-12;
 }
 
 /* Content alignment */

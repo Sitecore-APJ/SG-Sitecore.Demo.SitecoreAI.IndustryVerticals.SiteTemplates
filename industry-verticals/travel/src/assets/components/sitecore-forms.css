@@ -1,5 +1,5 @@
 .global-input-wrapper.global-input-wrapper.global-input-wrapper {
-  @apply border-border focus-within:border-accent rounded-none border-0 border-b-2 focus-within:!outline-none;
+  @apply border-border focus-within:border-accent bg-background rounded-full border px-4 focus-within:!outline-none;
 }
 
 .global-checkbox-element.global-checkbox-element.global-checkbox-element {
@@ -15,7 +15,7 @@
 }
 
 .form-select-option.form-select-option.form-select-option {
-  @apply text-foreground hover:bg-accent aria-selected:bg-foreground/9 cursor-pointer text-sm hover:border-0;
+  @apply text-foreground hover:bg-background-accent aria-selected:bg-foreground/9 cursor-pointer text-sm hover:border-0;
 }
 
 .submit-button.submit-button.submit-button {

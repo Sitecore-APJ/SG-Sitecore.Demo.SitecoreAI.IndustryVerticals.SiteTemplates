@@ -94,10 +94,10 @@ export const Default = (props: ArticleListingProps) => {
   };
 
   return (
-    <section className={`bg-background-muted py-8 ${sxaStyles}`} id={id}>
+    <section className={`bg-background py-8 ${sxaStyles}`} id={id}>
       <div className="container mx-auto px-4">
         {/* Category Filter */}
-        <div className="mx-auto mb-16 flex flex-wrap justify-center gap-2">
+        <div className="mx-auto mb-12 flex flex-wrap justify-start gap-2">
           <button
             onClick={() => setSelectedCategory(null)}
             className={`simple-btn ${!selectedCategory ? 'inverted' : ''}`}
@@ -118,7 +118,7 @@ export const Default = (props: ArticleListingProps) => {
         {!hideTitleSection && (
           <div className="mb-10">
             <h2 className="mb-2">{t('title') || 'Popular Articles'}</h2>
-            <p className="text-foreground-light text-xl">
+            <p className="text-foreground-light text-base lg:text-lg">
               {t('description') || 'Fresh travel inspiration and tips'}
             </p>
           </div>
@@ -126,7 +126,7 @@ export const Default = (props: ArticleListingProps) => {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {paginatedArticles.map((article, index) => (
-            <div className="info-card flex h-full flex-col overflow-hidden p-0!" key={index}>
+            <div className="nia-card flex h-full flex-col overflow-hidden" key={index}>
               {/* upper section */}
               <div className="group relative">
                 <ContentSdkImage
@@ -136,7 +136,7 @@ export const Default = (props: ArticleListingProps) => {
                   className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 {article?.fields?.Category?.fields?.Category && (
-                  <p className="bg-accent absolute top-4 left-4 z-10 max-w-max rounded px-2 py-1 text-xs text-white">
+                  <p className="bg-accent absolute top-4 left-4 z-10 max-w-max rounded-full px-3 py-1 text-xs text-white">
                     <ContentSdkText field={article?.fields?.Category?.fields?.Category} />
                   </p>
                 )}
@@ -144,7 +144,7 @@ export const Default = (props: ArticleListingProps) => {
               <div className="flex flex-1 flex-col gap-2 p-6">
                 {/* content section */}
                 <div className="">
-                  <div className="mb-3 flex items-center space-x-4 text-sm text-gray-500">
+                  <div className="text-foreground-muted mb-3 flex items-center space-x-4 text-sm">
                     {article?.fields?.Author?.fields?.AuthorName && (
                       <div className="flex items-center space-x-1">
                         <User className="h-3 w-3" />

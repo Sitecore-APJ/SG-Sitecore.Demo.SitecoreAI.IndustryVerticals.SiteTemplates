@@ -36,7 +36,7 @@ const FilterDropdown = ({
         <button
           ref={triggerRef}
           type="button"
-          className={`border-border inline-flex h-9 w-full items-center justify-between gap-2 rounded-md border bg-transparent px-4 py-1 text-xs whitespace-nowrap shadow-xs focus:outline-none ${
+          className={`border-border inline-flex h-10 w-full items-center justify-between gap-2 rounded-full border bg-transparent px-4 py-1 text-xs whitespace-nowrap focus:outline-none ${
             selectedValues?.length > 0 ? 'text-foreground' : 'text-foreground-muted'
           }`}
         >

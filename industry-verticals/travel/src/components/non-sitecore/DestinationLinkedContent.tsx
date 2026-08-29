@@ -75,7 +75,7 @@ export const DestinationLinkedContent = ({ destination }: { destination: Destina
                 <Bed />
                 <Text field={h.fields.Title} />
               </h5>
-              <p className="self-start rounded-md border px-2 py-1 text-xs font-bold">
+              <p className="self-start rounded-full border px-3 py-1 text-xs font-bold">
                 <Text field={h.fields.PriceRange} />
               </p>
             </div>

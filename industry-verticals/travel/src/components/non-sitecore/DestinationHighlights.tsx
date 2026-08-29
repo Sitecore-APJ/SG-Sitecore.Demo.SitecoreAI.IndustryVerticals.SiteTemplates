@@ -15,10 +15,10 @@ export const DestinationHighlights = ({
       <div className="grid gap-4 lg:grid-cols-2">
         {highlights.map((h) => (
           <div className="" key={h.id}>
-            <div className="flex h-full flex-col overflow-hidden rounded-lg border shadow-sm">
+            <div className="nia-card flex h-full flex-col overflow-hidden">
               <div className="bg-background-accent relative h-48">
                 <Image field={h.fields.Image} className="h-full w-full object-cover" />
-                <span className="bg-accent absolute top-3 left-3 z-2 rounded-sm px-2 py-1 text-xs font-semibold text-white">
+                <span className="bg-accent absolute top-3 left-3 z-2 rounded-full px-3 py-1 text-xs font-semibold text-white">
                   <Text field={h.fields.Label} />
                 </span>
               </div>

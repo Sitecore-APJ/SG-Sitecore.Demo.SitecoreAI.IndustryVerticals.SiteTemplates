@@ -31,7 +31,7 @@
 }
 
 .main-btn {
-  @apply bg-accent text-background hover:bg-accent/95 flex items-center justify-center rounded-md p-3 text-center text-lg font-semibold transition-all hover:shadow-md;
+  @apply bg-foreground text-background hover:bg-accent flex items-center justify-center rounded-full px-6 py-3 text-center text-base font-semibold transition-all duration-200;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
@@ -39,11 +39,7 @@
 }
 
 .btn-primary {
-  @apply bg-foreground text-background block w-full rounded-md px-6 py-3 text-center text-sm font-semibold transition-all duration-300;
-
-  &:hover {
-    @apply opacity-90;
-  }
+  @apply bg-foreground text-background hover:bg-accent block w-full rounded-full px-6 py-3 text-center text-sm font-semibold transition-all duration-200;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
@@ -51,10 +47,10 @@
 }
 
 .btn-accent {
-  @apply bg-accent text-background block w-full rounded-md px-6 py-3 text-center text-sm font-semibold transition-all duration-300;
-  @apply group-[.container-dark-background]:bg-background group-[.container-dark-background]:text-foreground!;
+  @apply bg-foreground text-background hover:bg-accent block w-full rounded-full px-6 py-3 text-center text-sm font-semibold transition-all duration-200;
+  @apply group-[.container-dark-background]:bg-background group-[.container-dark-background]:text-foreground group-[.container-dark-background]:hover:bg-accent group-[.container-dark-background]:hover:text-background!;
   &:hover {
-    @apply opacity-90;
+    @apply opacity-100;
   }
 
   &[disabled] {
@@ -63,10 +59,10 @@
 }
 
 .btn-outline {
-  @apply bg-background text-foreground block w-full rounded-md border px-6 py-3 text-center text-sm font-semibold transition-all duration-300;
+  @apply bg-background text-foreground hover:border-accent hover:text-accent block w-full rounded-full border px-6 py-3 text-center text-sm font-semibold transition-all duration-200;
 
   &:hover {
-    @apply shadow-sm;
+    @apply shadow-card-soft;
   }
 
   &[disabled] {
@@ -75,10 +71,10 @@
 }
 
 .simple-btn {
-  @apply bg-background-muted flex items-center gap-2 rounded-md border px-2 py-1 text-sm font-semibold shadow-sm transition-all;
+  @apply bg-background text-foreground flex items-center gap-2 rounded-full border px-3 py-1.5 text-sm font-medium shadow-none transition-all duration-200;
 
   &:hover {
-    @apply shadow-md;
+    @apply border-accent text-accent shadow-card-soft;
   }
 
   &[disabled] {
@@ -90,12 +86,12 @@
   }
 
   &.inverted {
-    @apply bg-foreground text-background hover:bg-foreground/90;
+    @apply bg-foreground text-background border-foreground hover:bg-accent hover:border-accent hover:text-background;
   }
 }
 
 .info-card {
-  @apply bg-background space-y-4 rounded-lg border p-6 text-sm shadow-sm;
+  @apply bg-background shadow-card space-y-4 rounded-xl border-0 p-6 text-sm;
 
   .info-card-title {
     @apply mb-6 flex items-center gap-2 text-base;
@@ -104,4 +100,21 @@
       @apply text-accent size-4;
     }
   }
+}
+
+.cta-link {
+  @apply text-accent hover:text-accent-dark inline-flex items-center gap-1 text-sm font-medium no-underline transition-colors duration-200 hover:no-underline;
+
+  svg {
+    @apply size-4;
+  }
+}
+
+.nia-card {
+  @apply bg-background shadow-card hover:shadow-card-hover overflow-hidden rounded-xl border-0 transition-shadow duration-300;
+}
+
+.hero-banner .item-finder input,
+.hero-banner .article-search input {
+  @apply bg-background shadow-card rounded-full border-0;
 }

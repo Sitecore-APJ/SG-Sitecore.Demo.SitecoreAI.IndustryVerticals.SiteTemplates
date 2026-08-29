@@ -59,11 +59,11 @@ export const Default = (props: DealsProps) => {
   return (
     <DealWrapper props={props}>
       <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 font-bold">
+        <div className="mb-10 max-w-xl text-left lg:mb-12">
+          <h2 className="mb-3 font-bold">
             <Text field={mainTitle.jsonValue} />
           </h2>
-          <p className="text-foreground-light text-xl">
+          <p className="text-foreground-light text-base lg:text-lg">
             <Text field={mainDescription.jsonValue} />
           </p>
         </div>
@@ -84,23 +84,20 @@ export const Default = (props: DealsProps) => {
 
             return (
               (hasContent || isPageEditing) && (
-                <div
-                  key={index}
-                  className="border-accent-light flex flex-col rounded-lg border-2 transition-colors"
-                >
-                  <div className="flex min-h-24 items-start justify-between gap-6 p-4">
+                <div key={index} className="nia-card flex flex-col">
+                  <div className="flex min-h-24 items-start justify-between gap-6 p-5">
                     <h3 className="flex-1 text-xl font-bold">
                       <Text field={title} />
                     </h3>
 
                     {(offer?.value || isPageEditing) && (
-                      <span className="bg-danger text-background self-start rounded px-2 py-1 text-base font-semibold">
+                      <span className="bg-accent text-background self-start rounded-full px-3 py-1 text-sm font-semibold">
                         <Text field={offer} />
                       </span>
                     )}
                   </div>
 
-                  <div className="flex flex-1 flex-col p-4 pt-0">
+                  <div className="flex flex-1 flex-col p-5 pt-0">
                     <p className="mb-4">
                       <Text field={description} />
                     </p>
@@ -109,7 +106,7 @@ export const Default = (props: DealsProps) => {
                       <Text field={validity} />
                     </p>
 
-                    <div className="bg-foreground text-background mt-auto w-full rounded-md py-2 text-center transition hover:opacity-90">
+                    <div className="bg-foreground text-background hover:bg-accent mt-auto w-full rounded-full py-2.5 text-center transition-colors">
                       <Link field={link} />
                     </div>
                   </div>

@@ -92,7 +92,7 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
           <div className="mb-6">
             {/* Title Section */}
             <div>
-              <p className="bg-foreground mb-4 inline-block min-w-fit rounded-md px-2 py-1 text-xs text-white">
+              <p className="bg-accent mb-4 inline-block min-w-fit rounded-full px-3 py-1 text-xs text-white">
                 <ContentSdkText field={fields.Category?.fields?.Category} />
               </p>
               <h1 className="text-foreground mb-4 text-3xl font-bold md:text-4xl">
@@ -166,7 +166,7 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
 
           {/* Article Content */}
           <div className="prose prose-lg mb-12 max-w-none">
-            <div className="space-y-6 leading-relaxed text-gray-700">
+            <div className="text-foreground-light space-y-6 leading-relaxed">
               <ContentSdkRichText field={fields?.Content} />
             </div>
           </div>

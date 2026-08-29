@@ -128,20 +128,22 @@ const DestinationListingInner = (props: DestinationListingProps) => {
     <>
       <div
         className={`relative inset-0 z-0 w-full ${
-          showGradientBackground ? 'from-accent-dark to-accent bg-linear-to-r' : 'bg-accent'
+          showGradientBackground
+            ? 'from-background-accent to-background bg-linear-to-b'
+            : 'bg-background-muted'
         }`}
       >
-        <div className="container mx-auto flex flex-col items-center justify-center px-4 py-16">
-          <h1 className="text-background text-center">
+        <div className="container mx-auto flex flex-col items-start justify-center px-4 py-16 lg:py-24">
+          <h1 className="text-foreground text-left">
             {t('destinations_hero_title') || 'Explore Amazing Destinations'}
           </h1>
-          <div className="text-background/80 mt-4 text-center text-xl">
+          <div className="text-foreground-light mt-4 max-w-2xl text-left text-lg lg:text-xl">
             {t('destinations_hero_description') ||
               'Discover your next adventure from our curated collection of world-class destinations'}
           </div>
 
-          <div className="mt-8 w-full max-w-5xl px-4">
-            <div className="component item-finder destination-search bg-background mx-auto max-w-4xl rounded-lg p-6 shadow-lg">
+          <div className="mt-8 w-full max-w-5xl">
+            <div className="component item-finder destination-search bg-background shadow-card mx-auto w-full rounded-xl p-5 lg:p-6">
               <form>
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-[2fr_1fr_1fr_1fr]">
                   <div className="relative">
@@ -155,7 +157,7 @@ const DestinationListingInner = (props: DestinationListingProps) => {
                         onKeyphraseChange({ keyphrase: e.target.value });
                         onPageNumberChange({ page: 1 });
                       }}
-                      className="text-foreground placeholder:text-foreground-muted focus:outline-accent-gray/60 h-9 w-full rounded-md border bg-transparent py-1 pr-6 pl-10 text-xs shadow-xs placeholder:text-xs focus:outline-3"
+                      className="text-foreground placeholder:text-foreground-muted focus:border-accent h-10 w-full rounded-full border bg-transparent py-1 pr-6 pl-10 text-xs placeholder:text-xs focus:outline-none"
                     />
                   </div>
                   <FilterDropdown
@@ -204,7 +206,7 @@ const DestinationListingInner = (props: DestinationListingProps) => {
         {!hideTitleSection && (
           <div className="mb-2">
             <h2 className="mb-2">{t('destinations_sub_title') || 'Popular Destinations'}</h2>
-            <p className="text-foreground-light text-xl">
+            <p className="text-foreground-light text-base lg:text-lg">
               {t('destinations_short_description') || ''}
             </p>
           </div>

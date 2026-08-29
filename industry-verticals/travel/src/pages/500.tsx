@@ -15,10 +15,14 @@ const ServerError = (): JSX.Element => (
     <Head>
       <title>500: Server Error</title>
     </Head>
-    <div style={{ padding: 10 }}>
+    <div className="text-foreground mx-auto max-w-lg px-6 py-20 text-center">
       <h1>500 Internal Server Error</h1>
-      <p>There is a problem with the resource you are looking for, and it cannot be displayed.</p>
-      <a href="/">Go to the Home page</a>
+      <p className="mt-3">
+        There is a problem with the resource you are looking for, and it cannot be displayed.
+      </p>
+      <a href="/" className="cta-link mt-6 inline-flex justify-center">
+        Go to the Home page
+      </a>
     </div>
   </>
 );

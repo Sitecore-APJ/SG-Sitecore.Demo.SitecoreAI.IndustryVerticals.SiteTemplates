@@ -2,14 +2,34 @@
   @apply flex items-center justify-items-start gap-x-6 *:w-auto *:basis-auto;
 }
 
+.component.header {
+  @apply bg-background sticky top-0 z-50;
+}
+
 .drawer-heading {
   @apply mt-7 mb-18 text-2xl;
 }
 
 .navigation-item {
-  @apply text-foreground hover:text-accent transition-colors hover:no-underline! lg:whitespace-nowrap;
+  @apply text-foreground hover:text-accent text-[0.9375rem] font-medium transition-colors hover:no-underline! lg:whitespace-nowrap;
 }
 
 .navigation-item-primary {
   @apply font-medium in-[.drawer-content]:text-xl;
+}
+
+.header-search-trigger {
+  @apply text-foreground hover:border-accent hover:text-accent flex size-10 items-center justify-center rounded-full border border-transparent transition-colors;
+}
+
+.header-locale {
+  @apply text-foreground hover:border-accent inline-flex h-9 items-center rounded-full border px-3.5 text-sm font-medium transition-colors;
+}
+
+.header-utilities {
+  a,
+  button,
+  select {
+    @apply text-foreground hover:border-accent inline-flex h-9 items-center rounded-full border px-3.5 text-sm font-medium no-underline transition-colors;
+  }
 }

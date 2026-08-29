@@ -17,7 +17,7 @@ export const Pagination = ({
   currentPage,
   setCurrentPage,
   windowSize = 3,
-  paginationButtonClasses = 'px-3 py-2 md:px-4 md:py-3 rounded-md',
+  paginationButtonClasses = 'px-3 py-2 md:px-4 md:py-3 rounded-full',
 }: PaginationProps) => {
   const { totalPages, startPage, endPage, visiblePages } = usePagination({
     totalItems,
@@ -52,7 +52,7 @@ export const Pagination = ({
           <button
             onClick={() => handlePageChange(1)}
             className={`${paginationButtonClasses} ${
-              currentPage === 1 ? 'bg-accent text-background' : 'bg-background-accent'
+              currentPage === 1 ? 'bg-foreground text-background' : 'bg-background-accent'
             }`}
           >
             1
@@ -66,7 +66,7 @@ export const Pagination = ({
           key={page}
           onClick={() => handlePageChange(page)}
           className={`${paginationButtonClasses} ${
-            page === currentPage ? 'bg-accent text-background' : 'bg-background-accent'
+            page === currentPage ? 'bg-foreground text-background' : 'bg-background-accent'
           }`}
         >
           {page}
@@ -79,7 +79,7 @@ export const Pagination = ({
           <button
             onClick={() => handlePageChange(totalPages)}
             className={`${paginationButtonClasses} ${
-              currentPage === totalPages ? 'bg-accent text-background' : 'bg-background-accent'
+              currentPage === totalPages ? 'bg-foreground text-background' : 'bg-background-accent'
             }`}
           >
             {totalPages}

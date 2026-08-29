@@ -30,7 +30,7 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
   } = destination;
 
   return (
-    <div className="group overflow-hidden rounded-xl shadow-sm transition-shadow hover:shadow-xl">
+    <div className="nia-card group">
       {/* Image */}
       <div className="relative">
         {image && (
@@ -45,14 +45,14 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
 
         {/* Label Badge */}
         {label && (
-          <div className="bg-accent text-background absolute top-4 left-4 rounded px-2 py-1 text-xs font-semibold">
+          <div className="bg-accent text-background absolute top-4 left-4 rounded-full px-3 py-1 text-xs font-semibold">
             {label}
           </div>
         )}
 
         {/* Rating */}
         {rating > 0 && (
-          <div className="bg-background/90 absolute top-4 right-4 flex items-center gap-1 rounded-md px-2 py-1">
+          <div className="bg-background/90 absolute top-4 right-4 flex items-center gap-1 rounded-full px-2 py-1">
             <Star className="inline size-4 fill-yellow-400 text-yellow-400" />
             <span className="text-sm font-medium">{rating.toFixed(1)}</span>
           </div>
@@ -65,7 +65,7 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
         </div>
 
         {/* Price */}
-        <div className="bg-background text-foreground absolute right-4 bottom-4 rounded-md border px-2 py-0.5 font-bold">
+        <div className="bg-background text-foreground absolute right-4 bottom-4 rounded-full border px-3 py-0.5 font-bold">
           {price}
         </div>
       </div>
@@ -141,13 +141,13 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
 
         {/* Action Buttons */}
         <div className="flex space-x-2 text-sm 2xl:text-base">
-          <button className="bg-foreground text-background hover:bg-foreground/90 flex-1 rounded-md py-2 font-semibold transition-colors">
+          <button className="bg-foreground text-background hover:bg-accent flex-1 rounded-full py-2.5 font-semibold transition-colors">
             {t('book_flight') || 'Book Flight'}
           </button>
 
           <Link
             href={url}
-            className="hover:bg-accent-light/20 flex-1 rounded-md border py-2 text-center font-semibold transition-colors"
+            className="hover:border-accent hover:text-accent flex-1 rounded-full border py-2.5 text-center font-semibold no-underline transition-colors"
           >
             {t('learn_more') || 'Learn More'}
           </Link>

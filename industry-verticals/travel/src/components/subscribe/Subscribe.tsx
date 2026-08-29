@@ -44,10 +44,10 @@ export const Default = (props: SubscribeBannerProps): JSX.Element => {
                 autoComplete="email"
                 required
                 placeholder={t('your_email') || 'Your email address'}
-                className="bg-background ring-foreground/20 focus:ring-foreground/40 !text-foreground placeholder:text-foreground/70 h-9 w-full rounded-md ps-5 ring-1 focus:ring-2 focus:outline-none md:h-10"
+                className="bg-background border-border focus:border-accent focus:ring-accent/30 !text-foreground placeholder:text-foreground-muted h-11 w-full rounded-full border ps-5 focus:ring-2 focus:outline-none"
               />
 
-              <button type="submit" className="btn-accent">
+              <button type="submit" className="btn-accent w-auto! shrink-0 px-6">
                 {t('button_text') || 'Subscribe'}
               </button>
             </div>

@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+#header {
+  background-color: var(--color-background);
+}
+
 .xa-variable {
   border: 0px;
   padding: 1px;

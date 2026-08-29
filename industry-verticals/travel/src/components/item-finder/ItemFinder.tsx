@@ -58,7 +58,7 @@ export const Default = ({ params, fields }: ItemFinderProps): JSX.Element => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t('search_articles_placeholder') || 'Search articles...'}
-              className="border-border bg-background text-foreground placeholder:text-foreground-muted focus:border-accent w-full rounded-lg border px-12 py-3 text-base transition-all duration-200 ease-in-out focus:outline-none"
+              className="border-border bg-background text-foreground placeholder:text-foreground-muted focus:border-accent focus:ring-accent/20 shadow-card w-full rounded-full border px-12 py-3.5 text-base transition-all duration-200 ease-in-out focus:ring-2 focus:outline-none"
             />
           </div>
         </form>
@@ -147,7 +147,7 @@ export const Medium = ({ params, fields }: ItemFinderProps): JSX.Element => {
         <DropdownMenuTrigger asChild>
           <button
             type="button"
-            className={`border-border inline-flex h-9 w-auto items-center gap-2 rounded-md border bg-transparent px-4 py-1 text-xs whitespace-nowrap shadow-xs focus:outline-none ${
+            className={`border-border inline-flex h-10 w-auto items-center gap-2 rounded-full border bg-transparent px-4 py-1 text-xs whitespace-nowrap focus:outline-none ${
               isPlaceholder ? 'text-foreground-muted' : 'text-foreground'
             }`}
           >
@@ -173,7 +173,7 @@ export const Medium = ({ params, fields }: ItemFinderProps): JSX.Element => {
 
   return (
     <div
-      className={`component item-finder destination-search bg-background mx-auto max-w-4xl rounded-lg p-6 shadow-lg ${styles || ''}`}
+      className={`component item-finder destination-search bg-background shadow-card mx-auto max-w-4xl rounded-xl p-6 ${styles || ''}`}
       id={id || undefined}
     >
       {isPageEditing && !fields && (
@@ -192,7 +192,7 @@ export const Medium = ({ params, fields }: ItemFinderProps): JSX.Element => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={t('search_destinations_placeholder') || 'Search destinations...'}
-                className="text-foreground placeholder:text-foreground-muted focus:outline-accent-gray/60 h-9 w-full rounded-md border bg-transparent py-1 pr-6 pl-10 text-xs shadow-xs placeholder:text-xs focus:outline-3"
+                className="text-foreground placeholder:text-foreground-muted focus:border-accent focus:ring-accent/20 h-10 w-full rounded-full border bg-transparent py-1 pr-6 pl-10 text-xs placeholder:text-xs focus:ring-2 focus:outline-none"
               />
             </div>
 
@@ -284,18 +284,18 @@ export const Large = ({ params, fields }: ItemFinderProps): JSX.Element => {
       )}
       {(!isPageEditing || fields) && (
         <form onSubmit={handleSubmit} className="w-full">
-          <div className="bg-background w-full max-w-full rounded-xl pt-11 pr-6 pb-11 pl-6 shadow-xl">
+          <div className="bg-background shadow-card w-full max-w-full rounded-xl p-6 lg:p-10">
             {/* Trip Type Selection */}
-            <div className="mb-6 flex gap-4">
+            <div className="mb-6 flex flex-wrap gap-3">
               {tripTypeOptions.map((option) => (
                 <button
                   key={option.value}
                   type="button"
                   onClick={() => setTripType(option.value)}
-                  className={`border-border cursor-pointer rounded-md border px-2.5 py-1.5 text-xs font-semibold transition-all ${
+                  className={`cursor-pointer rounded-full border px-4 py-1.5 text-xs font-semibold transition-all ${
                     tripType === option.value
-                      ? 'bg-foreground text-background border-foreground shadow-sm'
-                      : 'text-foreground-muted hover:bg-background-muted hover:border-foreground-muted bg-transparent'
+                      ? 'bg-foreground text-background border-foreground'
+                      : 'text-foreground-muted hover:border-accent hover:text-accent border-border bg-transparent'
                   }`}
                 >
                   {t(option.dictKey) || option.defaultLabel}
@@ -319,7 +319,7 @@ export const Large = ({ params, fields }: ItemFinderProps): JSX.Element => {
                     value={from}
                     onChange={(e) => setFrom(e.target.value)}
                     placeholder={t('departure_city_placeholder') || 'Departure city'}
-                    className="border-border text-foreground placeholder:text-foreground-muted/80 focus:outline-accent-gray/60 w-full rounded-md border bg-transparent py-1.5 pr-3 pl-9 text-sm leading-normal font-semibold placeholder:text-xs focus:outline-3"
+                    className="border-border text-foreground placeholder:text-foreground-muted/80 focus:border-accent w-full rounded-full border bg-transparent py-2 pr-3 pl-9 text-sm leading-normal font-medium placeholder:text-xs focus:outline-none"
                   />
                 </div>
               </div>
@@ -338,7 +338,7 @@ export const Large = ({ params, fields }: ItemFinderProps): JSX.Element => {
                     value={to}
                     onChange={(e) => setTo(e.target.value)}
                     placeholder={t('destination_city_placeholder') || 'Destination city'}
-                    className="border-border text-foreground placeholder:text-foreground-muted/80 focus:outline-accent-gray/60 w-full rounded-md border bg-transparent py-1.5 pr-3 pl-9 text-sm leading-normal font-semibold placeholder:text-xs focus:outline-3"
+                    className="border-border text-foreground placeholder:text-foreground-muted/80 focus:border-accent w-full rounded-full border bg-transparent py-2 pr-3 pl-9 text-sm leading-normal font-medium placeholder:text-xs focus:outline-none"
                   />
                 </div>
               </div>
@@ -393,7 +393,7 @@ export const Large = ({ params, fields }: ItemFinderProps): JSX.Element => {
                   <button
                     type="button"
                     onClick={() => setShowPassengerDropdown(!showPassengerDropdown)}
-                    className="border-border text-foreground placeholder:text-foreground-muted w-full truncate rounded-md border bg-transparent py-1.5 pr-8 pl-10 text-left text-xs leading-normal transition-all duration-200 ease-in-out placeholder:text-xs focus:bg-transparent focus:outline-none"
+                    className="border-border text-foreground placeholder:text-foreground-muted w-full truncate rounded-full border bg-transparent py-2 pr-8 pl-10 text-left text-xs leading-normal transition-all duration-200 ease-in-out placeholder:text-xs focus:bg-transparent focus:outline-none"
                   >
                     {passengerOptions.find((opt) => opt.value === passengers)?.label ||
                       t('1adult') ||
@@ -440,7 +440,7 @@ export const Large = ({ params, fields }: ItemFinderProps): JSX.Element => {
             <div className="mt-6">
               <button
                 type="submit"
-                className="bg-accent text-background hover:bg-accent-dark focus:ring-accent flex items-center gap-2 rounded-md px-4 py-2.5 text-sm font-semibold shadow-md transition-all hover:shadow-lg focus:ring-2 focus:ring-offset-2 focus:outline-none"
+                className="bg-foreground text-background hover:bg-accent focus:ring-accent flex items-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold transition-all focus:ring-2 focus:ring-offset-2 focus:outline-none"
               >
                 <Plane size={16} />
                 <span>{t('search_button_text') || 'Search'}</span>

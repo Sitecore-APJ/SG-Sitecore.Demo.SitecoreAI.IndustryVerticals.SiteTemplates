@@ -1,30 +1,31 @@
 @theme {
-  --color-foreground: #101828;
-  --color-foreground-light: #364153;
-  --color-foreground-muted: #4a5565;
+  /* Noida International Airport palette — navy type, teal accent, airy neutrals */
+  --color-foreground: #003057;
+  --color-foreground-light: #586d81;
+  --color-foreground-muted: #848d96;
 
-  --color-background: #fff;
-  --color-background-accent: #eff6ff;
-  --color-background-muted: #f9fafb;
-  --color-background-surface: #f5f5f5;
-  --color-background-hover: #ececec;
+  --color-background: #ffffff;
+  --color-background-accent: #edf3f9;
+  --color-background-muted: #fbfbfb;
+  --color-background-surface: #edf3f9;
+  --color-background-hover: #edf3f9;
 
-  --color-accent: #155dfc;
-  --color-accent-light: #bedbff;
-  --color-accent-midlight: #51a2ff;
-  --color-accent-dark: #193cb8;
-  --color-accent-gray: #99a1af;
+  --color-accent: #05afe6;
+  --color-accent-light: #cfddeb;
+  --color-accent-midlight: #05afe6;
+  --color-accent-dark: #003057;
+  --color-accent-gray: #aab6c1;
 
-  --color-success: #2ec1ac;
-  --color-danger: #e7000b;
+  --color-success: #008736;
+  --color-danger: #df021b;
 
-  --color-border: #e5e5e5;
-  --color-label: #364153;
+  --color-border: #cfddeb;
+  --color-label: #586d81;
 
-  --font-heading: 'Open Sans', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
+  --font-heading: 'Outfit', 'Segoe UI', sans-serif;
+  --font-body: 'Outfit', 'Segoe UI', sans-serif;
 
-  --radius-base: 0.5rem;
+  --radius-base: 0.375rem;
 
   /*
   This does not show in the theme editor
@@ -33,9 +34,15 @@
   --radius-xs: calc(var(--radius-base) * 0.25);
   --radius-sm: calc(var(--radius-base) * 0.5);
   --radius-md: var(--radius-base);
-  --radius-lg: calc(var(--radius-base) * 1.5);
-  --radius-xl: calc(var(--radius-base) * 2);
-  --radius-2xl: calc(var(--radius-base) * 3);
-  --radius-3xl: calc(var(--radius-base) * 4);
-  --radius-4xl: calc(var(--radius-base) * 5);
+  --radius-lg: calc(var(--radius-base) * 2);
+  --radius-xl: calc(var(--radius-base) * 3.2);
+  --radius-2xl: calc(var(--radius-base) * 4);
+  --radius-3xl: calc(var(--radius-base) * 8);
+  --radius-4xl: calc(var(--radius-base) * 12.8);
+
+  --shadow-card: 0 2px 16px rgba(25, 26, 28, 0.08), 0 1px 2px rgba(25, 26, 28, 0.16);
+  --shadow-card-hover:
+    0 6px 32px rgba(25, 26, 28, 0.08), 0 4px 16px rgba(25, 26, 28, 0.08),
+    0 1px 4px rgba(25, 26, 28, 0.24);
+  --shadow-card-soft: 0 4px 32px rgba(25, 26, 28, 0.04);
 }

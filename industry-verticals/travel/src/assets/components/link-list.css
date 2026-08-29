@@ -5,27 +5,41 @@
   h4,
   h5,
   h6 {
-    @apply text-accent mb-4.5 text-lg;
+    @apply text-foreground mb-4.5 text-base font-semibold;
   }
 
   ul {
-    @apply text-accent-gray flex flex-row flex-wrap gap-2;
+    @apply text-foreground-light flex flex-row flex-wrap gap-2;
+  }
+
+  a {
+    @apply text-foreground-light hover:text-accent no-underline transition-colors;
   }
 
   a:hover {
-    @apply underline;
+    @apply no-underline;
   }
 }
 
 /* list vertical */
 .link-list.list-vertical {
   ul {
-    @apply flex-col;
+    @apply flex-col gap-2.5;
   }
 }
 
 .link-list.hide-title {
   h3 {
     @apply hidden;
+  }
+}
+
+.component.footer .link-list {
+  h3 {
+    @apply text-foreground text-sm font-semibold tracking-wide uppercase;
+  }
+
+  a {
+    @apply text-foreground-light text-sm;
   }
 }

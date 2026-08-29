@@ -25,8 +25,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
   }, [pathname, searchParams]);
 
   return (
-    <div className={`component header bg-background border-b ${styles}`} id={id}>
-      <div className="container flex items-center gap-4 py-4 lg:gap-6">
+    <div className={`component header bg-background ${styles}`} id={id}>
+      <div className="container flex min-h-16 items-center gap-4 py-4 lg:min-h-20 lg:gap-8 lg:py-5">
         <div className="header-block *:shrink max-lg:w-full max-lg:justify-between lg:shrink-0">
           <Placeholder name={`header-left-${DynamicPlaceholderId}`} rendering={props.rendering} />
         </div>
@@ -37,12 +37,13 @@ export const Default = (props: HeaderProps): JSX.Element => {
         {/* Search Button */}
         <button
           onClick={() => setIsSearchOpen(!isSearchOpen)}
-          className="text-gray-700 transition-colors hover:text-blue-600"
+          className="header-search-trigger"
+          aria-label="Search"
         >
           <Search className="size-5" />
         </button>
 
-        <div className="header-block hidden! lg:flex! lg:shrink-0">
+        <div className="header-block header-utilities hidden! lg:flex! lg:shrink-0">
           <Placeholder name={`header-right-${DynamicPlaceholderId}`} rendering={props.rendering} />
         </div>
 
@@ -53,13 +54,13 @@ export const Default = (props: HeaderProps): JSX.Element => {
               <button
                 type="button"
                 aria-label="Open menu"
-                className="text-foreground hover:text-foreground-light p-2 transition-colors"
+                className="text-foreground hover:text-accent p-2 transition-colors"
               >
                 <Menu className="h-6 w-6" />
               </button>
             </DrawerTrigger>
 
-            <DrawerContent className="bg-background-accent w-xl! max-w-full! p-5">
+            <DrawerContent className="bg-background w-xl! max-w-full! p-5">
               <div className="flex h-full flex-col">
                 <div className="mb-14 flex items-center justify-between self-end">
                   <DrawerClose asChild>
@@ -88,8 +89,8 @@ export const Default = (props: HeaderProps): JSX.Element => {
       </div>
 
       {isSearchOpen && (
-        <div className="border-border bg-background absolute top-full right-0 left-0 z-50 border-b shadow-lg">
-          <div className="mx-auto max-w-7xl px-4 py-4">
+        <div className="border-border bg-background shadow-card absolute top-full right-0 left-0 z-50 border-b">
+          <div className="mx-auto max-w-7xl px-4 py-5 lg:px-10">
             <div className="flex items-center gap-2">
               <PreviewSearch
                 rfkId={PREVIEW_WIDGET_ID}

@@ -63,16 +63,19 @@ const Footer = (props: FooterProps): JSX.Element => {
   ];
 
   return (
-    <div className={`bg-foreground py-12 text-white ${sxaStyles}`} id={id}>
+    <div
+      className={`component footer bg-background-muted text-foreground pt-16 pb-0 ${sxaStyles}`}
+      id={id}
+    >
       <div className="container mx-auto">
         {/* content section */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* footer content data */}
           <div>
-            <div className="mb-4 flex max-w-40 space-x-2">
-              <ContentSdkImage field={props.fields.Logo} />
+            <div className="mb-5 flex max-w-44 space-x-2">
+              <ContentSdkImage field={props.fields.Logo} className="h-auto w-full object-contain" />
             </div>
-            <div className="**:text-accent-gray mb-4">
+            <div className="text-foreground-light mb-6 text-sm leading-relaxed">
               <RichText field={props.fields.Description} />
             </div>
             <Placeholder name={phKeyFour} rendering={props.rendering} />
@@ -81,31 +84,32 @@ const Footer = (props: FooterProps): JSX.Element => {
           {/* footer link lists */}
           {sections.map(({ key, title, content }) => (
             <div key={key}>
-              <div className="mb-4 text-lg font-semibold">{title}</div>
+              <div className="text-foreground mb-4 text-sm font-semibold tracking-wide uppercase">
+                {title}
+              </div>
               <div>{content}</div>
             </div>
           ))}
         </div>
+      </div>
 
-        {/* seperator */}
-        <hr className="bg-foreground-light my-8" />
-
-        {/* copyright section */}
-        <div className="flex flex-col items-center justify-between md:flex-row">
-          <p className="text-accent-gray text-sm">
+      {/* copyright section */}
+      <div className="border-border bg-background-accent mt-12 border-t py-5">
+        <div className="container mx-auto flex flex-col items-center justify-between gap-4 md:flex-row">
+          <p className="text-foreground-muted text-sm">
             <ContentSdkText field={props.fields.CopyrightText} />
           </p>
-          <div className="mt-4 flex justify-between gap-6 md:mt-0">
+          <div className="flex flex-wrap justify-center gap-6">
             <ContentSdkLink
-              className="text-accent-gray text-sm hover:text-white"
+              className="text-foreground-muted hover:text-accent text-sm no-underline"
               field={props.fields.PolicyText}
             />
             <ContentSdkLink
-              className="text-accent-gray text-sm hover:text-white"
+              className="text-foreground-muted hover:text-accent text-sm no-underline"
               field={props.fields.TermsText}
             />
             <ContentSdkLink
-              className="text-accent-gray text-sm hover:text-white"
+              className="text-foreground-muted hover:text-accent text-sm no-underline"
               field={props.fields.CookiesText}
             />
           </div>

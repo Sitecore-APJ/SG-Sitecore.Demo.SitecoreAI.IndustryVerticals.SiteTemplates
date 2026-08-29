@@ -21,7 +21,7 @@ interface HeroBannerProps extends ComponentProps {
   fields: Fields;
 }
 
-// Centered variant - Centered content with gradient overlay and search bar
+// Default variant — left-aligned editorial hero on a light/navy wash
 export const Default = ({ params, fields, rendering }: HeroBannerProps) => {
   const { page } = useSitecore();
   const { styles, RenderingIdentifier: id } = params;
@@ -41,28 +41,23 @@ export const Default = ({ params, fields, rendering }: HeroBannerProps) => {
 
   return (
     <div className={`component hero-banner ${styles} relative flex items-center`} id={id}>
-      {/* Gradient Overlay */}
       {showGradientBackground ? (
-        <div className="from-accent-dark to-accent absolute inset-0 z-0 bg-linear-to-r"></div>
+        <div className="from-background-accent to-background absolute inset-0 z-0 bg-linear-to-b"></div>
       ) : (
-        <div className="bg-accent absolute inset-0 z-0"></div>
+        <div className="bg-background-muted absolute inset-0 z-0"></div>
       )}
 
-      {/* Content Container */}
       <div className="relative z-10 w-full">
-        <div className="container mx-auto flex flex-col items-center justify-center px-4 py-16">
-          {/* Title */}
-          <h1 className="text-background text-center">
+        <div className="container mx-auto flex flex-col items-start justify-center px-4 py-16 lg:py-24">
+          <h1 className="text-foreground max-w-3xl text-left">
             <ContentSdkText field={fields.Title} />
           </h1>
 
-          {/* Description/Tagline */}
-          <div className="text-background/80 mt-4 text-center text-xl">
-            <ContentSdkRichText field={fields.Description} className="text-center" />
+          <div className="text-foreground-light mt-4 max-w-2xl text-left text-lg lg:text-xl">
+            <ContentSdkRichText field={fields.Description} className="text-left" />
           </div>
 
-          {/* Search Bar Placeholder */}
-          <div className="mt-8 w-full max-w-5xl px-4">
+          <div className="mt-8 w-full max-w-xl">
             <Placeholder name={searchBarPlaceholderKey} rendering={rendering} />
           </div>
         </div>
@@ -71,7 +66,7 @@ export const Default = ({ params, fields, rendering }: HeroBannerProps) => {
   );
 };
 
-// CenteredLarge variant - Centered content with large form area
+// CenteredLarge variant — photo hero with navy type and pill search, matching NIA
 export const CenteredLarge = ({ params, fields, rendering }: HeroBannerProps) => {
   const { page } = useSitecore();
   const { styles, RenderingIdentifier: id } = params;
@@ -89,8 +84,10 @@ export const CenteredLarge = ({ params, fields, rendering }: HeroBannerProps) =>
   }
 
   return (
-    <div className={`component hero-banner ${styles} relative flex items-center`} id={id}>
-      {/* Background Media */}
+    <div
+      className={`component hero-banner ${styles} relative flex min-h-[28rem] items-end lg:min-h-[36rem]`}
+      id={id}
+    >
       <div className="absolute inset-0 z-0">
         {!isPageEditing && fields?.Video?.value?.src ? (
           <video
@@ -106,23 +103,20 @@ export const CenteredLarge = ({ params, fields, rendering }: HeroBannerProps) =>
         ) : (
           <ContentSdkImage field={fields.Image} className="h-full w-full object-cover" priority />
         )}
+        <div className="from-background/80 via-background/20 absolute inset-0 bg-linear-to-t to-transparent"></div>
       </div>
 
-      {/* Content Container */}
       <div className="relative z-10 w-full">
-        <div className="container mx-auto flex flex-col items-center justify-center px-4 py-16">
-          {/* Title */}
-          <h1 className="text-background text-center">
+        <div className="container mx-auto flex flex-col items-start justify-end px-4 pt-20 pb-10 lg:pt-28 lg:pb-14">
+          <h1 className="text-foreground max-w-4xl text-left drop-shadow-sm">
             <ContentSdkText field={fields.Title} />
           </h1>
 
-          {/* Description/Tagline */}
-          <div className="text-background/80 mt-4 text-center text-xl">
-            <ContentSdkRichText field={fields.Description} className="text-center" />
+          <div className="text-foreground-light mt-3 max-w-2xl text-left text-lg lg:text-xl">
+            <ContentSdkRichText field={fields.Description} className="text-left" />
           </div>
 
-          {/* Flight Search Form Placeholder */}
-          <div className="mt-8 w-full max-w-5xl px-4">
+          <div className="mt-8 w-full max-w-xl">
             <Placeholder name={flightSearchPlaceholderKey} rendering={rendering} />
           </div>
         </div>

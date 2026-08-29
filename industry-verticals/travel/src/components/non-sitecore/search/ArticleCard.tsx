@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { DEFAULT_IMG_URL } from '@/constants/search';
 import { EntityModel } from '@sitecore-search/react';
-import { ArrowRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { useI18n } from 'next-localization';
 
 type ArticleItemCardProps = {
@@ -23,10 +23,7 @@ const ArticleItemCard = ({ className = '', article }: ArticleItemCardProps) => {
       className="focus:outline-accent"
       aria-label={article.name || article.title}
     >
-      <ArticleCard.Root
-        key={article.id}
-        className={`group border-border hover:shadow-accent/20 relative rounded-md border shadow-sm hover:shadow-md hover:transition-all hover:duration-300 hover:ease-linear ${className}`}
-      >
+      <ArticleCard.Root key={article.id} className={`nia-card group relative ${className}`}>
         <div className="bg-background-surface h-50 w-full overflow-hidden rounded-t-md">
           <Image
             src={validImageUrl}
@@ -44,8 +41,8 @@ const ArticleItemCard = ({ className = '', article }: ArticleItemCardProps) => {
             {article.name || article.title}
           </ArticleCard.Title>
           <ArticleCard.Subtitle className="text-foreground-light mt-3 flex text-sm">
-            <div className="text-foreground-muted group-hover:text-accent right-0 flex items-center gap-1 text-sm font-medium transition-colors">
-              {t('view') || 'View'} <ArrowRight className="size-3" />
+            <div className="text-accent right-0 flex items-center gap-1 text-sm font-medium transition-colors">
+              {t('view') || 'View'} <ChevronRight className="size-4" />
             </div>
           </ArticleCard.Subtitle>
         </div>

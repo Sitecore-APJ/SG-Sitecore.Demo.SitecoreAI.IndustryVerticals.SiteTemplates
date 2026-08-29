@@ -15,7 +15,7 @@ import { useI18n } from 'next-localization';
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter, faYoutube, faPinterestP } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link_a258c208ba01265ca0aa9c7abae745cc7141aa63 from 'next/link';
-import { ArrowRight, Share2, ArrowLeft, ChevronLeft, ChevronRight, Phone, Plane, Bed, Camera, Navigation, CalendarDays, Clock, MapPin, Star, Thermometer, LoaderCircle, Check, ChevronDown, X, Search, Users, Menu, Heart, Calendar, User } from 'lucide-react';
+import { ChevronRight, Share2, ArrowLeft, ChevronLeft, Phone, Plane, Bed, Camera, Navigation, CalendarDays, Clock, MapPin, Star, Thermometer, LoaderCircle, Check, ChevronDown, X, Search, Users, Menu, Heart, Calendar, User } from 'lucide-react';
 import * as LucidIcons from 'lucide-react';
 import { LayoutStyles, PromoFlags, HeroBannerStyles, TitleSectionFlags } from '@/types/styleFlags';
 import { newsDateFormatter } from '@/helpers/dateHelper';
@@ -134,11 +134,10 @@ const importMap = [
   {
     module: 'lucide-react',
     exports: [
-      { name: 'ArrowRight', value: ArrowRight },
+      { name: 'ChevronRight', value: ChevronRight },
       { name: 'Share2', value: Share2 },
       { name: 'ArrowLeft', value: ArrowLeft },
       { name: 'ChevronLeft', value: ChevronLeft },
-      { name: 'ChevronRight', value: ChevronRight },
       { name: 'Phone', value: Phone },
       { name: 'Plane', value: Plane },
       { name: 'Bed', value: Bed },

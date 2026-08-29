@@ -27,7 +27,7 @@ export const Author = (props: AuthorProps) => {
   const { t } = useI18n();
 
   return (
-    <div className="border-border bg-background container mx-auto rounded-xl border px-4 py-8 shadow-sm">
+    <div className="bg-background nia-card container mx-auto px-4 py-8">
       <div className="mx-auto max-w-4xl">
         <div className="p-6">
           <div className="flex items-start space-x-4">

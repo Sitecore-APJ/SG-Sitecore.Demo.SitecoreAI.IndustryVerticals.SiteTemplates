@@ -110,7 +110,7 @@ const NavigationListItem: React.FC<NavigationListItemProps> = ({
               </button>
             </DrawerTrigger>
 
-            <DrawerContent className="bg-background-accent flex flex-col p-5 max-lg:w-xl! max-lg:max-w-full!">
+            <DrawerContent className="bg-background flex flex-col p-5 max-lg:w-xl! max-lg:max-w-full!">
               <DrawerClose asChild className="hidden self-end lg:block">
                 <button aria-label="Close submenu">
                   <X className="size-5" />
