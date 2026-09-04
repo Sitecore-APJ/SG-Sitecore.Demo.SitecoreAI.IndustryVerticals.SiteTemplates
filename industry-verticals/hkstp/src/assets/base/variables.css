@@ -1,0 +1,44 @@
+@theme {
+  /* HKSTP brand — matched to https://www.hkstp.org/en/ */
+  --color-foreground: #1f1f1f;
+  --color-foreground-light: #505050;
+  --color-foreground-muted: #bababa;
+
+  --color-background: #fff;
+  --color-background-accent: #fff4eb;
+  --color-background-muted: #f5f5f5;
+  --color-background-muted-light: #7a7a7a;
+  --color-background-muted-dark: #333333;
+  --color-background-surface: #fafafa;
+
+  /* Primary brand orange (Enquiry CTA, announcements) */
+  --color-accent: #ff6e10;
+  /* Secondary brand blue (tags, logo accents, directory CTAs) */
+  --color-accent-secondary: #035ce1;
+  --color-accent-dark: #e55f08;
+
+  --color-success: #2ec1ac;
+  --color-danger: #e97171;
+
+  --color-border: #eaeaea;
+
+  --font-heading: 'Montserrat', 'Microsoft JhengHei', 'Heiti TC', sans-serif;
+  --font-body: 'Montserrat', 'Microsoft JhengHei', 'Heiti TC', sans-serif;
+
+  /* HKSTP uses soft pills for CTAs/tags; keep base moderate for cards */
+  --radius-base: 0.5rem;
+
+  /*
+  This does not show in the theme editor
+  but is used to override the defaults based on the user's selection for radius-base
+  */
+  --radius-xs: calc(var(--radius-base) * 0.25);
+  --radius-sm: calc(var(--radius-base) * 0.5);
+  --radius-md: var(--radius-base);
+  --radius-lg: calc(var(--radius-base) * 1.5);
+  --radius-xl: calc(var(--radius-base) * 2);
+  --radius-2xl: calc(var(--radius-base) * 3);
+  --radius-3xl: calc(var(--radius-base) * 4);
+  --radius-4xl: calc(var(--radius-base) * 5);
+  --radius-pill: 9999px;
+}

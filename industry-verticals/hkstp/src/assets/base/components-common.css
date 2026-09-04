@@ -1,0 +1,78 @@
+/* boxed */
+.boxed {
+  > div {
+    @apply mx-auto! max-w-5xl;
+  }
+}
+
+/* Add highlight */
+.highlighted-top,
+.highlighted-bottom,
+.highlighted-left,
+.highlighted-right {
+  > div {
+    @apply border-accent! my-6 p-6;
+  }
+}
+.highlighted-top > div {
+  @apply border-t;
+}
+
+.highlighted-bottom > div {
+  @apply border-b;
+}
+
+.highlighted-left > div {
+  @apply border-l;
+}
+
+.highlighted-right > div {
+  @apply border-r;
+}
+
+/* Text link CTA with arrow — HKSTP editorial style */
+.arrow-btn {
+  @apply text-accent hover:text-accent-dark hover:border-b-accent inline-flex items-center justify-start gap-2 border-b border-b-transparent text-base leading-8 font-semibold transition-colors;
+
+  &::after {
+    @apply bg-accent inline-block h-3 w-8 mask-[url('./images/arrow.svg')] bg-contain bg-no-repeat mask-contain mask-center mask-no-repeat transition-transform content-[''];
+  }
+
+  &:hover::after {
+    @apply translate-x-0.5;
+  }
+}
+
+.carousel-btn {
+  @apply text-foreground! bg-background border-border z-10 size-11 content-center rounded-full border shadow-sm transition-shadow hover:shadow-md;
+}
+
+.surface-btn {
+  @apply bg-background-surface text-accent flex size-6 items-center justify-center rounded-full font-bold transition-shadow hover:shadow-md;
+
+  &[disabled] {
+    @apply pointer-events-none opacity-60;
+  }
+
+  &.surface-btn-lg {
+    @apply size-8 text-lg;
+  }
+}
+
+.action-btn {
+  @apply text-accent hover:text-accent-dark hover:border-accent-dark border-accent flex h-10 items-center gap-3 border-b bg-transparent text-base font-semibold;
+}
+
+/* Primary CTA — orange pill (Enquiry-style) */
+.main-btn {
+  @apply bg-accent text-background hover:bg-accent-dark inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-center text-base font-bold transition-all hover:shadow-md;
+
+  &[disabled] {
+    @apply pointer-events-none opacity-60;
+  }
+}
+
+/* Secondary blue CTA */
+.secondary-btn {
+  @apply bg-accent-secondary hover:bg-accent-secondary/90 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-center text-base font-bold text-white transition-all hover:shadow-md;
+}

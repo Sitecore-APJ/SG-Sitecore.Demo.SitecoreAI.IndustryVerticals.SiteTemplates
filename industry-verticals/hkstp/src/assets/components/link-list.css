@@ -1,0 +1,41 @@
+.link-list {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-foreground mb-4.5 text-sm font-bold tracking-wide;
+  }
+
+  ul {
+    @apply flex flex-row flex-wrap gap-4;
+  }
+
+  a {
+    @apply text-foreground-light text-sm transition-colors;
+  }
+
+  a:hover {
+    @apply text-accent;
+  }
+}
+
+/* list vertical */
+.link-list.list-vertical {
+  ul {
+    @apply flex-col;
+  }
+}
+
+.link-list.hide-title {
+  h3 {
+    @apply hidden;
+  }
+}
+
+.social-follow.hide-title {
+  h5 {
+    @apply hidden;
+  }
+}
