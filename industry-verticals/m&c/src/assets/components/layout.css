@@ -5,7 +5,7 @@
   }
 }
 
-.fix-background {
+.fixed-background {
   > .component-content {
     @apply bg-cover bg-fixed bg-top-left bg-no-repeat;
   }
@@ -42,23 +42,31 @@
 
 .container-dark-background {
   > .component-content {
-    @apply border-accent;
+    @apply border-foreground;
   }
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-accent border-accent text-background;
+    @apply bg-foreground border-foreground text-background;
 
     * {
       @apply text-inherit;
     }
 
     .arrow-btn {
-      @apply border-b-background;
+      @apply border-b-background text-background;
 
       &::after {
         @apply bg-background;
       }
+    }
+
+    .main-btn {
+      @apply border-background text-background hover:bg-background hover:text-foreground;
+    }
+
+    .eyebrow {
+      @apply border-background text-background;
     }
   }
 }
@@ -74,18 +82,17 @@
   }
 }
 
-/* Spacing */
-/* Using padding for the sides so it doesn't break the grid widths */
+/* Spacing — generous Millennium-style section breathing room */
 .indent {
   @apply px-12;
 }
 
 .indent-top {
-  @apply mt-6;
+  @apply mt-10;
 }
 
 .indent-bottom {
-  @apply mb-6;
+  @apply mb-10;
 }
 
 /* Content alignment */
@@ -117,11 +124,11 @@
 }
 
 .container-dark-background .shim {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(27, 27, 25, 0.45);
   padding: 50px;
 }
 
 .shim {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.55);
   padding: 50px;
 }

@@ -5,11 +5,15 @@
   h4,
   h5,
   h6 {
-    @apply text-accent mb-4.5 text-lg;
+    @apply text-foreground mb-4.5 text-xs font-semibold tracking-[0.18em] uppercase;
   }
 
   ul {
     @apply flex flex-row flex-wrap gap-4;
+  }
+
+  a {
+    @apply text-sm tracking-wide;
   }
 
   a:hover {

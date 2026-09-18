@@ -25,7 +25,7 @@ export const ProductCard = ({ product, url, className }: ProductCardProps) => {
   return (
     <Link href={url} passHref>
       <div
-        className={`flex min-h-123 w-full flex-col overflow-hidden rounded-2xl hover:drop-shadow-sm ${className}`}
+        className={`hover:border-border flex min-h-123 w-full flex-col overflow-hidden rounded-none border border-transparent transition-colors ${className}`}
       >
         {/* Product Image */}
         <div className="bg-background-surface flex h-72 w-full items-center justify-center p-6">
@@ -37,22 +37,22 @@ export const ProductCard = ({ product, url, className }: ProductCardProps) => {
         </div>
 
         {/* Product Details */}
-        <div className="bg-background flex grow-1 flex-col items-start px-5 pt-3 pb-9 text-left">
-          <p className="!text-foreground-light">
+        <div className="bg-background flex grow-1 flex-col items-start px-5 pt-4 pb-8 text-left">
+          <p className="!text-foreground-muted text-xs tracking-[0.14em] uppercase">
             <Text field={product.Category?.fields?.CategoryName} />
           </p>
 
-          <h6 className="!text-foreground mt-1 line-clamp-2 font-semibold">
+          <h6 className="!text-foreground mt-2 line-clamp-2 font-semibold tracking-normal normal-case">
             <Text field={product.Title} />
           </h6>
 
           <StarRating
             rating={product.Rating || 0}
             showOnlyFilled
-            className="!text-accent mt-1 mb-5"
+            className="!text-accent mt-2 mb-5"
           />
 
-          <h6 className="!text-foreground mt-auto font-semibold">
+          <h6 className="!text-foreground mt-auto font-semibold tracking-normal normal-case">
             <span className="mr-1 align-super text-sm">{currencySymbol} </span>
             {formattedPrice}
           </h6>

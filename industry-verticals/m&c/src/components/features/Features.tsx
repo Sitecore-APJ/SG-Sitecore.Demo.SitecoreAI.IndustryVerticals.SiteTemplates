@@ -59,14 +59,14 @@ export const Default = (props: FeaturesProps) => {
 
   return (
     <FeatureWrapper props={props}>
-      <div className="container grid grid-cols-1 py-20 lg:grid-cols-[1fr_2fr] lg:gap-10">
-        <div className="mb-20 lg:mb-0">
-          <h2 className="inline-block max-w-md font-bold max-lg:text-[42px]">
+      <div className="container grid grid-cols-1 py-16 md:py-20 lg:grid-cols-[1fr_2fr] lg:gap-12 lg:py-24">
+        <div className="mb-14 lg:mb-0">
+          <h2 className="inline-block max-w-md font-medium tracking-[0.02em] max-lg:text-[36px]">
             <Text field={featureSectionTitle.jsonValue} />
             {!hideAccentLine && <AccentLine className="w-full max-w-xs" />}
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
           {results.map((item, index) => {
             const title = item.featureTitle.jsonValue;
             const description = item.featureDescription.jsonValue;
@@ -74,10 +74,10 @@ export const Default = (props: FeaturesProps) => {
             return (
               <div className="flex flex-col" key={index}>
                 {/* Title, Link and Description */}
-                <div className="mb-5 text-2xl font-bold">
+                <div className="mb-4 text-lg font-semibold tracking-wide">
                   <Text field={title} />
                 </div>
-                <div className="text-foreground mb-3.5 flex-auto leading-7">
+                <div className="text-foreground-light mb-5 flex-auto text-sm leading-relaxed">
                   <Text field={description} />
                 </div>
                 <div>
@@ -126,15 +126,19 @@ export const ThreeColGridCentered = (props: FeaturesProps) => {
           return (
             <div className="flex flex-col items-center justify-start 2xl:w-80" key={index}>
               {/* Image */}
-              <div className="bg-accent mb-7 flex h-20 w-20 items-center justify-center rounded-full">
+              <div className="border-border mb-7 flex h-20 w-20 items-center justify-center border">
                 <Image field={image} />
               </div>
               {/* Title and Description */}
               <div className="flex flex-col items-center justify-center">
                 <div className="mb-2 leading-0.5">
-                  <Text tag="h5" className="text-accent" field={title} />
+                  <Text
+                    tag="h5"
+                    className="text-foreground text-xs tracking-[0.16em] uppercase"
+                    field={title}
+                  />
                 </div>
-                <div className="text-background-muted-light text-center">
+                <div className="text-foreground-light text-center text-sm leading-relaxed">
                   <Text field={description} />
                 </div>
               </div>
@@ -158,19 +162,19 @@ export const NumberedGrid = (props: FeaturesProps) => {
           const description = item?.featureDescription.jsonValue;
           return (
             <div
-              className="group text-background hover:bg-accent cursor-pointer rounded-xl p-6"
+              className="group border-border hover:border-foreground cursor-pointer border bg-transparent p-6 transition-colors"
               key={index}
             >
               {/* Generated Number */}
-              <h1 className="group-hover:text-background text-background-muted-dark mb-2 text-7xl leading-24">
+              <h1 className="text-foreground-muted group-hover:text-accent mb-2 text-5xl leading-none font-light tracking-tight">
                 {generateIndexes(index)}
               </h1>
               {/* Title and Description */}
               <div>
-                <div className="text-accent group-hover:text-background mb-4 text-2xl leading-8 font-bold">
+                <div className="text-foreground mb-3 text-lg leading-7 font-semibold">
                   <Text field={title} />
                 </div>
-                <div className="text-background-muted-dark group-hover:text-background leading-7">
+                <div className="text-foreground-light text-sm leading-relaxed">
                   <Text field={description} />
                 </div>
               </div>
@@ -196,15 +200,15 @@ export const FourColGrid = (props: FeaturesProps) => {
           return (
             <div className="grid grid-cols-[1fr_2fr] gap-2.5" key={index}>
               {/* Image */}
-              <div className="flex items-center justify-center rounded-full">
+              <div className="flex items-center justify-center">
                 <Image field={image} />
               </div>
               {/* Title and Description */}
               <div className="flex flex-col justify-center">
-                <div className="text-xl leading-9 font-bold">
+                <div className="text-base leading-7 font-semibold tracking-wide">
                   <Text className="text-foreground" field={title} />
                 </div>
-                <div className="text-background-muted-light leading-8">
+                <div className="text-foreground-light text-sm leading-relaxed">
                   <Text field={description} />
                 </div>
               </div>
@@ -228,15 +232,15 @@ export const ImageCardGrid = (props: FeaturesProps) => {
           const image = item.featureImage.jsonValue;
           return (
             <div key={index}>
-              <div className="mb-7 aspect-4/3 w-full overflow-hidden rounded-lg bg-white">
+              <div className="bg-background-muted mb-6 aspect-4/3 w-full overflow-hidden">
                 <Image field={image} className="h-full w-full object-cover" />
               </div>
 
-              <h6>
+              <h6 className="font-semibold tracking-wide normal-case">
                 <Text field={title} />
               </h6>
 
-              <p className="text-foreground-muted mt-1 text-lg">
+              <p className="text-foreground-light mt-2 text-sm leading-relaxed">
                 <Text field={description} />
               </p>
             </div>

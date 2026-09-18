@@ -22,18 +22,18 @@ const ArticleHorizontalItemCard = ({ className = '', article }: ArticleCardItemC
   return (
     <Link
       href={article.url}
-      className="focus:outline-accent"
+      className="focus:outline-foreground"
       aria-label={article.name || article.title}
     >
       <ArticleCard.Root
         key={article.id}
-        className={`group border-border hover:shadow-accent/20 bg-background relative my-4 flex max-h-52 w-full flex-row flex-nowrap rounded-md border p-6 shadow-sm transition-shadow hover:shadow-md ${className}`}
+        className={`group border-border hover:border-foreground bg-background relative my-4 flex max-h-52 w-full flex-row flex-nowrap rounded-none border p-5 shadow-none transition-colors ${className}`}
       >
         {validImageUrl && (
-          <div className="bg-background-surface w-1/4 flex-none overflow-hidden rounded">
+          <div className="bg-background-surface w-1/4 flex-none overflow-hidden">
             <Image
               src={validImageUrl}
-              className="h-full w-full rounded object-cover object-center lg:h-full lg:w-full"
+              className="h-full w-full object-cover object-center lg:h-full lg:w-full"
               alt="alt"
               width={500}
               height={115}
@@ -42,13 +42,13 @@ const ArticleHorizontalItemCard = ({ className = '', article }: ArticleCardItemC
         )}
         <div className="grow flex-col pl-4">
           <span aria-hidden="true" className="absolute inset-0"></span>
-          <ArticleCard.Title className="text-foreground mb-2 text-lg font-semibold">
+          <ArticleCard.Title className="text-foreground mb-2 text-base font-semibold">
             {article.name || article.title}
           </ArticleCard.Title>
-          <ArticleCard.Subtitle className="text-foreground-light mt-3 line-clamp-2 text-sm">
+          <ArticleCard.Subtitle className="text-foreground-light mt-3 line-clamp-2 text-sm leading-relaxed">
             {article.description}
           </ArticleCard.Subtitle>
-          <div className="text-foreground bg-background-accent absolute top-4 right-4 rounded-md px-2.5 py-0.5 text-xs font-semibold">
+          <div className="text-foreground border-border absolute top-4 right-4 border px-2.5 py-0.5 text-[10px] font-semibold tracking-[0.14em] uppercase">
             {article.type}
           </div>
         </div>

@@ -102,25 +102,25 @@ export const Default = ({ params, fields, rendering }: HeroBannerProps) => {
             <div className="max-w-182">
               <div className={clsx({ shim: screenLayer })}>
                 {/* Title */}
-                <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] lg:text-left xl:text-[80px]">
+                <h1 className="text-center text-4xl leading-[1.15] font-medium tracking-[0.02em] md:text-5xl md:leading-[1.2] lg:text-left xl:text-6xl">
                   <ContentSdkText field={fields.Title} />
-                  {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch] lg:mx-0" />}
+                  {!hideAccentLine && <AccentLine className="mx-auto w-[9ch] lg:mx-0" />}
                 </h1>
 
                 {/* Description */}
-                <div className="mt-7 text-xl md:text-2xl">
+                <div className="mt-6 text-base leading-relaxed md:text-lg">
                   <ContentSdkRichText
                     field={fields.Description}
-                    className="text-center lg:text-left"
+                    className="text-foreground-light text-center lg:text-left"
                   />
                 </div>
 
                 {/* CTA Link or Placeholder */}
-                <div className="mt-6 flex w-full justify-center lg:justify-start">
+                <div className="mt-8 flex w-full justify-center gap-6 lg:justify-start">
                   {withPlaceholder ? (
                     <Placeholder name={searchBarPlaceholderKey} rendering={rendering} />
                   ) : (
-                    <Link field={fields.CtaLink} className="arrow-btn" />
+                    <Link field={fields.CtaLink} className="main-btn !w-auto min-w-40" />
                   )}
                 </div>
               </div>
@@ -150,22 +150,25 @@ export const TopContent = ({ params, fields, rendering }: HeroBannerProps) => {
           >
             <div className={clsx({ shim: screenLayer })}>
               {/* Title */}
-              <h1 className="text-center text-5xl leading-[110%] font-bold capitalize md:text-7xl md:leading-[130%] xl:text-[80px]">
+              <h1 className="text-center text-4xl leading-[1.15] font-medium tracking-[0.02em] md:text-5xl md:leading-[1.2] xl:text-6xl">
                 <ContentSdkText field={fields.Title} />
-                {!hideAccentLine && <AccentLine className="mx-auto !h-5 w-[9ch]" />}
+                {!hideAccentLine && <AccentLine className="mx-auto w-[9ch]" />}
               </h1>
 
               {/* Description */}
-              <div className="mt-7 text-xl md:text-2xl">
-                <ContentSdkRichText field={fields.Description} className="text-center" />
+              <div className="mt-6 text-base leading-relaxed md:text-lg">
+                <ContentSdkRichText
+                  field={fields.Description}
+                  className="text-foreground-light text-center"
+                />
               </div>
 
               {/* CTA Link or Placeholder */}
-              <div className="mt-6 flex w-full justify-center">
+              <div className="mt-8 flex w-full justify-center">
                 {withPlaceholder ? (
                   <Placeholder name={searchBarPlaceholderKey} rendering={rendering} />
                 ) : (
-                  <Link field={fields.CtaLink} className="arrow-btn" />
+                  <Link field={fields.CtaLink} className="main-btn !w-auto min-w-40" />
                 )}
               </div>
             </div>

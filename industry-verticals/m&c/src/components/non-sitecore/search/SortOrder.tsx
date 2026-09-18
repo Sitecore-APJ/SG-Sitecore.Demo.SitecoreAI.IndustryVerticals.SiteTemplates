@@ -17,7 +17,7 @@ const SortOrder = ({ options, selected }: SortOrderProps) => {
         </SortSelect.SelectValue>
         <SortSelect.Icon />
       </SortSelect.Trigger>
-      <SortSelect.Content className="bg-background absolute top-8 z-100 min-w-37.5 rounded-md shadow-sm">
+      <SortSelect.Content className="bg-background border-border absolute top-8 z-100 min-w-37.5 rounded-none border shadow-none">
         <SortSelect.Viewport className="z-50000 p-1">
           {options.map((option) => (
             <SortSelect.Option

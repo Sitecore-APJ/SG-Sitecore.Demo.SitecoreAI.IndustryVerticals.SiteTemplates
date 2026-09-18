@@ -48,14 +48,14 @@
   }
 }
 
-/* custom bullet points */
+/* custom bullet points — architectural squares, Millennium style */
 .rich-text-lists {
   ul {
     li {
       @apply relative list-none;
 
       &:before {
-        @apply absolute top-0.5 -left-4.5 w-4 font-[FontAwesome] text-sm content-['\f046'];
+        @apply bg-foreground absolute top-2 -left-4 size-1.5 content-[''];
       }
     }
   }

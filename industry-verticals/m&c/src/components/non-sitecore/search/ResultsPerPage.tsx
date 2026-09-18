@@ -24,7 +24,7 @@ const ResultsPerPage = ({ defaultItemsPerPage }: ResultsPerPageProps) => {
           <Select.SelectValue />
           <Select.Icon />
         </Select.Trigger>
-        <Select.SelectContent className="bg-background-surface z-100 min-w-25 rounded-md shadow-sm">
+        <Select.SelectContent className="bg-background-surface border-border z-100 min-w-25 rounded-none border shadow-none">
           <Select.Viewport className="p-1">
             {options.map((option, idx) => (
               <Select.SelectItem

@@ -75,18 +75,18 @@ export const Default = (props: CarouselProps) => {
   );
 
   return (
-    <section className={`${props.params.styles} py-20`} id={id ? id : undefined}>
+    <section className={`${props.params.styles} py-16 md:py-20 lg:py-24`} id={id ? id : undefined}>
       <div className={cn(containerAlignment, 'relative overflow-hidden')}>
         <div
           className={cn('flex', 'flex-col', flexDirectionClass, 'items-center', 'w-full', 'gap-10')}
         >
-          <div className="w-full space-y-5 md:w-1/3">
-            <h2 className="inline-block max-w-md">
+          <div className="w-full space-y-6 md:w-1/3">
+            <h2 className="inline-block max-w-md font-medium tracking-[0.02em]">
               <Text field={props.fields.Title} />
               {!hideAccentLine && <AccentLine className="w-full max-w-xs" />}
             </h2>
 
-            <div className="max-w-md">
+            <div className="text-foreground-light max-w-md text-sm leading-relaxed">
               <ContentSdkRichText field={props.fields.Description} />
             </div>
 
@@ -120,7 +120,7 @@ export const Default = (props: CarouselProps) => {
                         return (
                           <SwiperSlide key={article.id}>
                             <Link href={article.url}>
-                              <div className={`overflow-hidden rounded-lg`}>
+                              <div className={`overflow-hidden rounded-none`}>
                                 <ContentSdkImage
                                   field={article.fields.Image}
                                   className={cn(
@@ -133,10 +133,10 @@ export const Default = (props: CarouselProps) => {
                               {article.fields?.Title?.value && (
                                 <div className="absolute bottom-0 z-20 m-3 max-w-full xl:m-4">
                                   <div className="flex items-end">
-                                    <div className="bg-background/75 max-w-full space-y-1 overflow-hidden p-5 text-ellipsis">
-                                      <div className="flex items-center gap-1 overflow-hidden text-xs font-extralight text-ellipsis whitespace-nowrap">
-                                        <div className="h-[1px] w-7 bg-black"></div>
-                                        <div className="text-foreground/75">
+                                    <div className="bg-background/90 border-border max-w-full space-y-1 overflow-hidden border p-5 text-ellipsis">
+                                      <div className="flex items-center gap-1 overflow-hidden text-xs font-medium tracking-[0.14em] text-ellipsis whitespace-nowrap uppercase">
+                                        <div className="bg-foreground h-px w-7"></div>
+                                        <div className="text-foreground-muted">
                                           <Text
                                             editable={false}
                                             field={article.fields?.Category?.fields?.Category}
@@ -144,12 +144,12 @@ export const Default = (props: CarouselProps) => {
                                         </div>
                                       </div>
                                       <div>
-                                        <h6 className="line-clamp-2 max-w-full overflow-hidden wrap-anywhere text-ellipsis">
+                                        <h6 className="line-clamp-2 max-w-full overflow-hidden tracking-normal wrap-anywhere text-ellipsis normal-case">
                                           <Text editable={false} field={article.fields?.Title} />
                                         </h6>
                                       </div>
                                     </div>
-                                    <div className="bg-accent inline-block p-2">
+                                    <div className="border-foreground bg-foreground inline-block border p-2">
                                       <ArrowRight
                                         size={16}
                                         strokeWidth={1}
@@ -198,7 +198,7 @@ export const Default = (props: CarouselProps) => {
                           {articles.map((article) => (
                             <SwiperSlide key={article.id}>
                               <Link href={article.url}>
-                                <div className="overflow-hidden rounded-lg">
+                                <div className="overflow-hidden rounded-none">
                                   <ContentSdkImage
                                     field={article.fields.Image}
                                     className={`h-full w-full object-cover ${articles.length >= 3 ? 'aspect-4/5' : 'aspect-[3/1.8]'}`}
@@ -213,7 +213,7 @@ export const Default = (props: CarouselProps) => {
                         <div className="inline-flex flex-row items-center gap-5">
                           <div className="flex items-center">
                             <button
-                              className={`swiper-btn-prev text-accent ${
+                              className={`swiper-btn-prev text-foreground ${
                                 currentIndex === 0 && 'article-carousel-btn-disabled'
                               }`}
                               disabled={currentIndex === 0}
@@ -228,7 +228,7 @@ export const Default = (props: CarouselProps) => {
                           <div className="flex items-center">
                             <button
                               disabled={currentIndex === articles.length - 1}
-                              className={`swiper-btn-prev text-accent ${
+                              className={`swiper-btn-prev text-foreground ${
                                 currentIndex === articles.length - 1 &&
                                 'article-carousel-btn-disabled'
                               }`}

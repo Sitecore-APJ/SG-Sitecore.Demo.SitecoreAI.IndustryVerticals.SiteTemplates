@@ -24,11 +24,11 @@ const SearchPagination = ({ currentPage, totalPages }: SearchPaginationProps) =>
           page: v,
         })
       }
-      className="mt-12 flex items-center justify-center space-x-2 text-sm md:space-x-4"
+      className="mt-12 flex items-center justify-center space-x-2 text-xs tracking-[0.12em] uppercase md:space-x-3"
     >
       <Pagination.PrevPage
         onClick={(e) => e.preventDefault()}
-        className="bg-background-accent rounded-md px-3 py-2 data-[current=true]:hidden md:px-4 md:py-3"
+        className="border-border bg-background hover:border-foreground border px-3 py-2 data-[current=true]:hidden md:px-4 md:py-3"
       >
         <span className="md:hidden">
           <ChevronLeft size={16} />
@@ -47,8 +47,10 @@ const SearchPagination = ({ currentPage, totalPages }: SearchPaginationProps) =>
                 aria-label={`Page ${page}`}
                 page={page as number}
                 onClick={(e) => e.preventDefault()}
-                className={`mx-1 rounded-md px-3 py-2 md:px-4 md:py-3 ${
-                  page === currentPage ? 'bg-accent text-background' : 'bg-background-accent'
+                className={`mx-1 border px-3 py-2 md:px-4 md:py-3 ${
+                  page === currentPage
+                    ? 'border-foreground bg-foreground text-background'
+                    : 'border-border bg-background hover:border-foreground'
                 }`}
               >
                 {page}
@@ -63,7 +65,7 @@ const SearchPagination = ({ currentPage, totalPages }: SearchPaginationProps) =>
       </Pagination.Pages>
       <Pagination.NextPage
         onClick={(e) => e.preventDefault()}
-        className="bg-background-accent rounded-md px-3 py-2 data-[current=true]:hidden md:px-4 md:py-3"
+        className="border-border bg-background hover:border-foreground border px-3 py-2 data-[current=true]:hidden md:px-4 md:py-3"
       >
         <span className="md:hidden">
           <ChevronRight size={16} />

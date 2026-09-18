@@ -71,24 +71,24 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
                 title={fields?.Title?.value || ''}
                 description={fields?.ShortDescription?.value || ''}
                 mediaUrl={fields?.Image?.value?.src || ''}
-                className="col-span-12 size-fit p-3 shadow-xl md:p-4 lg:col-span-1 lg:flex-col"
+                className="border-border col-span-12 size-fit border p-3 shadow-none md:p-4 lg:col-span-1 lg:flex-col"
               />
             )}
 
-            <div className="col-span-12 aspect-video w-full overflow-hidden rounded-lg lg:col-span-10 lg:col-start-2">
+            <div className="col-span-12 aspect-video w-full overflow-hidden rounded-none lg:col-span-10 lg:col-start-2">
               <ContentSdkImage field={fields.Image} className="h-full w-full object-cover" />
             </div>
 
             <div className="col-span-12 mt-8 lg:col-span-8 lg:col-start-3">
-              <h2>
+              <h2 className="font-medium tracking-[0.02em]">
                 <ContentSdkText field={fields.Title} />
               </h2>
 
-              <p className="text-foreground-muted mt-5 text-lg font-medium tracking-wide">
+              <p className="text-foreground-light mt-5 text-base leading-relaxed font-normal tracking-wide">
                 <ContentSdkText field={fields.ShortDescription} />
               </p>
 
-              <div className="rich-text mt-10 text-lg">
+              <div className="rich-text text-foreground-light mt-10 text-base leading-relaxed">
                 <ContentSdkRichText field={fields.Content} />
               </div>
             </div>

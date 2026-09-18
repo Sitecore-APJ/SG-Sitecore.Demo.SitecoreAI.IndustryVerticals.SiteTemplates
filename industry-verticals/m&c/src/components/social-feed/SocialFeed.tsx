@@ -63,12 +63,12 @@ export const Default = (props: PromoProps): JSX.Element => {
   } = props.fields;
 
   return (
-    <section className={`${props.params.styles} py-20 max-md:space-y-8`} id={id}>
-      <div className="container space-y-4 text-center">
+    <section className={`${props.params.styles} py-16 max-md:space-y-8 md:py-20 lg:py-24`} id={id}>
+      <div className="container space-y-5 text-center">
         <p className="eyebrow">
           <Text field={Eyebrow} />
         </p>
-        <h2>
+        <h2 className="font-medium tracking-[0.02em]">
           <Text field={Heading} />
         </h2>
       </div>
