@@ -19,7 +19,7 @@ export const ProductDescription = ({ product }: ProductDescriptionProps) => {
 
   return (
     <>
-      <h1 className="pt-3 text-4xl font-bold lg:pt-0">
+      <h1 className="pt-3 text-4xl font-normal lg:pt-0">
         <ContentSdkText field={product.Title} />
       </h1>
 

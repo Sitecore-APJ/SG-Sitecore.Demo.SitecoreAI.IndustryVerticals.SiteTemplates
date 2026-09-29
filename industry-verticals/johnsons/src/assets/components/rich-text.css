@@ -46,6 +46,10 @@
       @apply my-2;
     }
   }
+
+  a {
+    @apply text-accent font-medium hover:underline;
+  }
 }
 
 /* custom bullet points */

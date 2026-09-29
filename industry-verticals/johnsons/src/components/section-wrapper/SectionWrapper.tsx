@@ -18,11 +18,11 @@ export const Default = ({ params, fields, rendering }: SectionWrapperProps) => {
   const placeholderKey = `section-wrapper-content-${params.DynamicPlaceholderId}`;
 
   return (
-    <section className={`component section-wrapper pt-14 pb-10 ${styles}`} id={id}>
-      <div className="container flex flex-col items-center">
-        <h2>
+    <section className={`component section-wrapper pt-16 pb-12 ${styles}`} id={id}>
+      <div className="container flex flex-col items-start md:items-center">
+        <h2 className="font-normal">
           <Text field={fields.Title} />
-          {!hideAccentLine && <AccentLine className="ml-auto !h-4 w-[8ch]" />}
+          {!hideAccentLine && <AccentLine className="w-[5ch] md:mx-auto" />}
         </h2>
 
         <div className="mt-5 mb-12 w-full">

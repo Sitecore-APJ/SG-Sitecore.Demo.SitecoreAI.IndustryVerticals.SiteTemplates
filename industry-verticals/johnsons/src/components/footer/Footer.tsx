@@ -73,32 +73,36 @@ export const Default = (props: FooterProps) => {
 
   return (
     <section className={`component footer relative ${props.params.styles} overflow-hidden`} id={id}>
-      <div className="bg-background-muted">
-        <div className="container grid gap-12 py-28.5 lg:grid-cols-[1fr_3fr]">
-          <div className="flex flex-col gap-7">
-            <div className="sm:max-w-34">
+      <div className="bg-utility text-background">
+        <div className="container grid gap-12 py-16 lg:grid-cols-[1fr_3fr] lg:py-20">
+          <div className="flex flex-col gap-6">
+            <div className="sm:max-w-40 [&_img]:brightness-0 [&_img]:invert">
               <Image field={props.fields.Logo} />
             </div>
-            <RichText field={props.fields.Description} />
+            <div className="text-background/75 [&_a]:text-background [&_p]:!text-background/75 text-[15px] leading-relaxed">
+              <RichText field={props.fields.Description} />
+            </div>
           </div>
-          <div className="grid gap-13 sm:grid-cols-3 lg:grid-cols-5 lg:gap-5 xl:gap-12">
+          <div className="grid gap-10 sm:grid-cols-3 lg:grid-cols-5 lg:gap-5 xl:gap-8">
             {sections.map(({ key, title, content }) => (
               <div key={key}>
-                <div className="text-accent mb-8 text-lg font-bold">{title}</div>
-                <div className="space-y-4">{content}</div>
+                <div className="text-background mb-5 text-[15px] font-medium">{title}</div>
+                <div className="text-background/70 [&_a]:hover:text-background space-y-3 text-sm [&_a]:hover:underline">
+                  {content}
+                </div>
               </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="bg-background">
-        <div className="container flex items-center justify-between py-8.5 max-sm:flex-col max-sm:items-start max-sm:gap-10">
+      <div className="bg-foreground text-background/70">
+        <div className="container flex items-center justify-between py-5 text-sm max-sm:flex-col max-sm:items-start max-sm:gap-6">
           <div className="max-sm:order-2">
             <Text field={props.fields.CopyrightText} />
           </div>
-          <div className="flex items-center justify-between gap-20 max-lg:gap-10 max-sm:order-1 max-sm:flex-col max-sm:items-start max-sm:gap-5">
-            <Link field={props.fields.TermsText} className="hover:underline" />
-            <Link field={props.fields.PolicyText} className="hover:underline" />
+          <div className="[&_a]:hover:text-background flex items-center justify-between gap-10 max-sm:order-1 max-sm:flex-col max-sm:items-start max-sm:gap-3 [&_a]:hover:underline">
+            <Link field={props.fields.TermsText} />
+            <Link field={props.fields.PolicyText} />
           </div>
         </div>
       </div>

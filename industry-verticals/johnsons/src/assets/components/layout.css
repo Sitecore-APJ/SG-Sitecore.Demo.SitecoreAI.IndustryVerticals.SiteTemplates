@@ -5,7 +5,7 @@
   }
 }
 
-.fix-background {
+.fixed-background {
   > .component-content {
     @apply bg-cover bg-fixed bg-top-left bg-no-repeat;
   }
@@ -42,23 +42,27 @@
 
 .container-dark-background {
   > .component-content {
-    @apply border-accent;
+    @apply border-utility;
   }
 
   &:not(.container),
   &.container > .component-content {
-    @apply bg-accent border-accent text-background;
+    @apply bg-utility border-utility text-background;
 
     * {
       @apply text-inherit;
     }
 
     .arrow-btn {
-      @apply border-b-background;
+      @apply text-background;
 
       &::after {
-        @apply bg-background;
+        @apply text-background;
       }
+    }
+
+    .segment-card__banner {
+      @apply bg-accent;
     }
   }
 }
@@ -117,11 +121,11 @@
 }
 
 .container-dark-background .shim {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
   padding: 50px;
 }
 
 .shim {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.85);
   padding: 50px;
 }

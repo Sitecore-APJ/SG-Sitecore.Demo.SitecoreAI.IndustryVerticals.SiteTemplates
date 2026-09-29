@@ -30,20 +30,21 @@
   @apply border-r;
 }
 
+/* J&J text CTA with arrow motif */
 .arrow-btn {
-  @apply border-b-accent text-accent inline-flex items-center justify-start gap-3 border-b leading-8;
+  @apply text-accent inline-flex items-center justify-start gap-2 border-0 text-[15px] leading-8 font-medium no-underline hover:underline;
 
   &::after {
-    @apply bg-accent inline-block h-3 w-11 mask-[url('./images/arrow.svg')] bg-contain bg-no-repeat mask-contain mask-center mask-no-repeat content-[''];
+    @apply text-accent inline-block text-base leading-none font-normal content-['→'];
   }
 }
 
 .carousel-btn {
-  @apply text-foreground! bg-background z-10 size-12 content-center rounded-full shadow-md;
+  @apply text-foreground! bg-background border-border z-10 size-12 content-center border;
 }
 
 .surface-btn {
-  @apply bg-background-surface text-accent flex size-6 items-center justify-center rounded font-bold transition-shadow hover:shadow-md;
+  @apply bg-background-surface text-accent hover:bg-background-muted flex size-6 items-center justify-center font-bold transition-colors;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
@@ -55,13 +56,42 @@
 }
 
 .action-btn {
-  @apply text-accent hover:text-accent/80 hover:border-accent/80 border-accent flex h-10 items-center gap-3 border-b bg-transparent text-lg font-semibold;
+  @apply text-accent hover:text-accent/80 flex h-10 items-center gap-2 border-0 bg-transparent text-base font-medium hover:underline;
 }
 
 .main-btn {
-  @apply bg-accent text-background hover:bg-accent/95 flex w-full items-center justify-center rounded-md p-3 text-center text-lg font-semibold transition-all hover:shadow-md;
+  @apply bg-accent text-background hover:bg-accent/90 flex w-full items-center justify-center p-3.5 text-center text-base font-medium transition-colors;
 
   &[disabled] {
     @apply pointer-events-none opacity-60;
   }
+}
+
+/* J&J segment card: red banner + white body */
+.segment-card {
+  @apply bg-background flex h-full flex-col;
+}
+
+.segment-card__banner {
+  @apply bg-accent text-background flex items-center justify-between gap-4 px-6 py-4 text-lg font-medium md:text-xl;
+}
+
+.segment-card__banner::after {
+  @apply shrink-0 text-xl leading-none font-normal content-['→'];
+}
+
+.segment-card__body {
+  @apply border-border flex flex-1 flex-col gap-6 border border-t-0 p-6 md:p-8;
+}
+
+.segment-card__links {
+  @apply text-accent mt-auto flex flex-wrap gap-x-6 gap-y-2 text-[15px] font-medium;
+}
+
+.segment-card__links a {
+  @apply inline-flex items-center gap-1.5 hover:underline;
+}
+
+.segment-card__links a::after {
+  @apply content-['→'];
 }

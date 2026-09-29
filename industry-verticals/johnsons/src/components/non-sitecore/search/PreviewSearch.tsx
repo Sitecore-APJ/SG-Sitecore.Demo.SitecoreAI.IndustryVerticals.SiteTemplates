@@ -105,7 +105,7 @@ export const PreviewSearchComponent = ({
       <form ref={formRef} onSubmit={handleSubmit} className="flex-1">
         <PreviewSearch.Input
           name="query"
-          className="focus:ring-accent border-border w-full rounded-md border px-3 py-2 text-base focus:border-transparent focus:ring-2 focus:outline-none sm:px-4 sm:py-3 sm:text-lg"
+          className="focus:border-accent border-border w-full border px-3 py-2 text-base focus:outline-none sm:px-4 sm:py-3 sm:text-lg"
           onChange={keyphraseHandler}
           autoComplete="off"
           placeholder="Search content, products..."
@@ -113,7 +113,7 @@ export const PreviewSearchComponent = ({
       </form>
 
       <PreviewSearch.Content
-        className="bg-background mt-0.5 flex h-100 justify-center overflow-hidden rounded-b-md pt-0 shadow-xl transition-opacity sm:w-(--radix-popover-trigger-width)"
+        className="border-border bg-background mt-0.5 flex h-100 justify-center overflow-hidden border pt-0 transition-opacity sm:w-(--radix-popover-trigger-width)"
         style={contentWidth ? { width: `${contentWidth}px` } : undefined}
       >
         <Spinner loading={loading} />
@@ -153,9 +153,9 @@ export const PreviewSearchComponent = ({
                             })
                           }
                           href={article.url}
-                          className="box-border flex max-h-48 w-full text-black no-underline focus:shadow-sm"
+                          className="text-foreground box-border flex max-h-48 w-full no-underline"
                         >
-                          <ArticleCard.Root className="block w-full cursor-pointer rounded-md border border-solid border-transparent p-2 text-center shadow-sm transition-shadow focus-within:shadow-xl hover:shadow-md">
+                          <ArticleCard.Root className="hover:border-accent block w-full cursor-pointer border border-solid border-transparent p-2 text-center transition-colors">
                             <div className="relative m-auto mb-2 flex h-20 items-center justify-center overflow-hidden sm:mb-2.5 sm:h-24">
                               <Image
                                 src={
