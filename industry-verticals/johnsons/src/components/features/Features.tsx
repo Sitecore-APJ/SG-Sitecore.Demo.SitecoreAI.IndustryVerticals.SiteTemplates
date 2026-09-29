@@ -17,8 +17,8 @@ interface Fields {
       children: {
         results: Feature[];
       };
+      title: IGQLTextField;
     };
-    title: IGQLTextField;
   };
 }
 
